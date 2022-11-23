@@ -1,43 +1,36 @@
+/* An initialization of fonts, proper margin, and etc. */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
-
-body {
-    font-family: 'Josefin Sans', sans-serif;
+body{
     margin: 0;
     padding: 0;
     height: 100%;
 }
-html {
-    height: 100%;
-}
+
+* {font-family: 'Josefin Sans', sans-serif;}
+
+/* navbar setup */
 #navbar {
-    margin-bottom: 0;
     position: sticky;
-    padding: 30px;
-    top: 0;
-    background: transparent;
+    top: 0px;
+    padding: 40px;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 0px 0px 20px 20px;
+    z-index: 99;
 }
 
 #navbar #actions span {
-    margin: 0px 10px 0px;
+    margin: 0px 10px;
 }
 
 #navbar h1, #logo {
-    margin: 0;
+    margin: 0px;
     color: white;
     text-shadow: 2px 2px rgb(0, 0, 0);
     float: left;
-    text-decoration: none;
 }
-a {
-    text-decoration: none;
-    color: inherit;
-    outline: 0;
-}
+
 #navbar #actions {
     float: right;
-}
-button {
-    font-family: 'Josefin Sans';
 }
 
 #booknow {
@@ -61,36 +54,52 @@ button {
     #navbar h1 {
         display: block;
         float: none;
-        text-align:center;
+        text-align: center;
     }
+    
     #navbar #actions {
         display: block;
-        float:none;
-        margin-left:auto;
-        margin-right:auto;
+        float: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-  }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    outline: 0;
+    transition: all 200ms;
+}
+
+a:hover {
+    text-decoration: underline;
+    outline: 0;
+}
+
 #bg {
     background-image: url("https://c0.wallpaperflare.com/path/924/673/261/philippines-tagaytay-nature-horizon-070722549fa602a175b870f9255a2cbb.jpg");
-    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-
-#content  {
-    text-align: center;
-
 }
+
+/* tagaytay, visit tagaytay now, and content inside front page */
+#content {
+    text-align: center;
+}
+
 #content #bottomtext {
     font-size: 60px;
 }
+
 #content h2 {
-    margin-bottom: 50px;
-    margin-top: 100px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
     font-size: 120px;
-    color: white;
-    text-shadow: 3px 3px pink;
+    color: darkblue;
 }
 
 #content button {
@@ -99,40 +108,56 @@ button {
     color: white;
     border: none;
     background-color: red;
-    padding: 20px 40px;
+    padding: 20px 30px;
     border-radius: 50px;
-    transition: background-color 100ms;
+    transition: background-color 100ms, transform .15s;
 }
 
 #content button:hover {
     background-color: rgb(255, 72, 72);
+    transform: scale(1.2);
 }
 
 #content button:active {
     background-color: rgb(123, 0, 0);
+    transform: scale(0.7);
 }
 
+/* historical info in tagaytay */
 #details {
     width: 1000px;
     margin: 50px auto;
 }
 
 #details #side1 {
-    width: 45%;
-    margin: 10px;
     float: left;
+    width: 50%;
 }
-#details #side1 div {
-    white-space: pre;
-}
-#details #side2 {
-    width: 45%;
-    margin: 10px;
-    float: left;
-}
+
 #details #side2 img {
-    /* daisuki onii chan */
-    margin: 10px;
-    width: 100%;
-    float: left;
+    width: 45%;
+    float: right;
+}
+
+@media only screen and (max-width: 1000px) {
+    #details #side1 {
+        width: 100%;
+    }
+    #details {
+        width: 100vw;
+    }
+    #details #side2 img {
+        width: 80vw;
+        margin: 0px auto;
+        float: none;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #details {
+        width: 100%;
+        float: none;
+        display: block;
+    }
 }

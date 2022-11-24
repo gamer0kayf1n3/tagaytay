@@ -127,6 +127,7 @@ a:hover {
 #details {
     width: 1000px;
     margin: 50px auto;
+    overflow: hidden;
 }
 
 #details #side1 {
@@ -160,4 +161,16 @@ a:hover {
         float: none;
         display: block;
     }
+}
+
+#footer {
+    font-size: 7.5pt;
+    text-align: center;
+    display: block;
+    margin: 5px;
+}
+
+#footer #links a {
+    font-size: 10pt;
+    padding: 0 50px;
 }

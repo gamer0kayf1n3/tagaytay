@@ -172,14 +172,17 @@ a:hover {
     font-size: 7.5pt;
     text-align: center;
     display: block;
-    margin: 5px;
+    padding: 5px;
+    background-color: white;
+}
+
+#links {
+    padding-top: 10px;
 }
 
 #footer #links a {
     font-size: 10pt;
     padding: 0 50px;
     margin: auto 10px;
-    border-radius: 20px;
-    background-color: rgb(80, 90, 91);
-    color: antiquewhite;
+    color: black;
 }

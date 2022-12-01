@@ -4,6 +4,7 @@ body{
     margin: 0;
     padding: 0;
     height: 100%;
+    background-color: rgb(148, 176, 218);
 }
 
 * {font-family: 'Josefin Sans', sans-serif;}
@@ -13,8 +14,7 @@ body{
     position: sticky;
     top: 0px;
     padding: 40px;
-    background-color: rgba(255,255,255,0.5);
-    border-radius: 0px 0px 20px 20px;
+    background-color: rgb(220, 237, 255);
     z-index: 99;
 }
 
@@ -23,7 +23,7 @@ body{
 }
 
 #navbar h1, #logo {
-    margin: 0px;
+    margin: -16px;
     color: white;
     text-shadow: 2px 2px rgb(0, 0, 0);
     float: left;
@@ -31,6 +31,7 @@ body{
 
 #navbar #actions {
     float: right;
+    margin: -10px;
 }
 
 #booknow {
@@ -83,6 +84,7 @@ a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 50px;
 }
 
 /* tagaytay, visit tagaytay now, and content inside front page */
@@ -125,8 +127,11 @@ a:hover {
 
 /* historical info in tagaytay */
 #details {
-    width: 1000px;
+    width: 1050px;
     margin: 50px auto;
+    padding: 25px; 
+    border-radius: 15px;
+    background-color: rgb(220, 237, 255);
     overflow: hidden;
 }
 
@@ -173,4 +178,8 @@ a:hover {
 #footer #links a {
     font-size: 10pt;
     padding: 0 50px;
+    margin: auto 10px;
+    border-radius: 20px;
+    background-color: rgb(80, 90, 91);
+    color: antiquewhite;
 }

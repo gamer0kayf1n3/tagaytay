@@ -79,6 +79,8 @@ a:hover {
     outline: 0;
 }
 
+
+/* css declarations for main bg */
 #bg {
     background-image: url("https://c0.wallpaperflare.com/path/924/673/261/philippines-tagaytay-nature-horizon-070722549fa602a175b870f9255a2cbb.jpg");
     background-position: center;
@@ -104,7 +106,7 @@ a:hover {
     color: darkblue;
 }
 
-#content button {
+#content form button {
     margin: 20px 0;
     font-size: 40px;
     color: white;
@@ -112,6 +114,7 @@ a:hover {
     background-color: red;
     padding: 20px 30px;
     border-radius: 50px;
+    box-shadow: 10px 10px 52px -22px rgba(0,0,0,0.44);
     transition: background-color 100ms, transform .15s;
 }
 
@@ -133,6 +136,9 @@ a:hover {
     border-radius: 15px;
     background-color: rgb(220, 237, 255);
     overflow: hidden;
+    box-shadow: 10px 10px 52px -22px rgba(0,0,0,0.44);
+    animation: fadeup 0.5s;
+    transition: all 0.25s;
 }
 
 #details #side1 {
@@ -144,7 +150,30 @@ a:hover {
     width: 45%;
     float: right;
 }
-
+/*SPECIFIC FOR EXPLAINER PAGES*/
+#details_explainer {
+    width: 1050px;
+    margin: 50px auto;
+    padding: 25px; 
+    border-radius: 15px;
+    background-color: rgb(220, 237, 255);
+    overflow: hidden;
+    box-shadow: 10px 10px 52px -22px rgba(0,0,0,0.44);
+    animation: fadeup 0.5s;
+    transition: all 0.25s;
+}
+#details_explainer h2 {
+    font-size: 35pt;
+}
+#details_explainer h3 {
+    font-size: 25pt;
+}
+#details_explainer p {
+    font-size: 15pt;
+}
+#textual_part {
+    padding: 0 150px;
+}
 @media only screen and (max-width: 1000px) {
     #details #side1 {
         width: 100%;
@@ -161,7 +190,7 @@ a:hover {
 }
 
 
-
+/* footer declarations */
 #footer {
     font-size: 7.5pt;
     text-align: center;
@@ -204,10 +233,46 @@ a:hover {
         margin: 0;
         padding:0;
     }
+    #details_explainer {
+        width: 100%;
+        float: none;
+        display: block;
+        margin: 0;
+        padding:0;
+    }
+    #details_explainer #textual_part {
+        width: 100%;
+        float: none;
+        display: block;
+        margin: 0;
+        padding:0;
+    }
     #footer #links a {
         padding: 0 10px;
     }
     #heightadj {
         height: 50px;
     }
+}
+
+/* custom animation */
+@keyframes fadeup {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+#details:hover {
+    box-shadow: 10px 10px 75px -22px rgba(0,0,0,0.5);
+    transform: scale(1.05);
+}
+
+/* extra bits */
+.quote {
+    font-size: 35pt;
 }

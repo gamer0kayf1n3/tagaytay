@@ -276,3 +276,19 @@ a:hover {
 .quote {
     font-size: 35pt;
 }
+
+/* profile cards */
+
+#profile-card-container {
+    width: 100%;
+    display: flex;}
+
+.profile-card {
+    width: 25%;
+    background-color: lightgreen;
+    float: left;
+}
+
+.profile-card * {
+    text-align: center;
+}

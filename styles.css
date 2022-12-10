@@ -174,6 +174,11 @@ a:hover {
 #textual_part {
     padding: 0 150px;
 }
+@media only screen and (max-width: 480px) {
+    #textual_part {
+        padding: 0;
+    }
+}
 @media only screen and (max-width: 1000px) {
     #details #side1 {
         width: 100%;
@@ -281,14 +286,53 @@ a:hover {
 
 #profile-card-container {
     width: 100%;
-    display: flex;}
+    display: flex;
+}
 
 .profile-card {
     width: 25%;
     background-color: lightgreen;
     float: left;
+    border: 1px solid black;
+    box-sizing: border-box;
+    transition: all 0.1s;
 }
-
+.profile-card:hover {
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+.profile-card img{
+    width: 100%;
+    height: auto;
+}
 .profile-card * {
     text-align: center;
+}
+@media only screen and (max-width: 480px) {
+    #profile-card-container {
+        width: 100%;
+        display: block;
+    }
+    .profile-card {
+        width: 100%;
+        float: none;
+        display: block;
+    }
+}
+/* gallery css content */
+.pics {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    height: 100%;
+}
+.pics img {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 480px) {
+    .pics {
+        width: 100%;
+    }
 }

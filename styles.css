@@ -375,3 +375,19 @@ a:hover {
 .contact-links:hover {
     transform: scale(1.1);
 }
+
+/* reviews */
+
+.review {
+    width: 100%;
+    background-color: lightgreen;
+    margin: 20px 0;
+    overflow: hidden;
+    padding: 10px;
+
+}
+.review img {
+    width: 200px;
+    float: left;
+    border-radius: 200px;
+}

@@ -296,6 +296,7 @@ a:hover {
     border: 1px solid black;
     box-sizing: border-box;
     transition: all 200ms;
+    margin: 5px 10px;
 }
 .profile-card:hover {
     transform: scale(1.1);
@@ -357,6 +358,7 @@ a:hover {
     padding: 20px;
     transition: all 200ms;
     margin: 20px 0;
+    border-radius: 10px;
 }
  .contact-links * {
     display: inline-block;
@@ -379,12 +381,12 @@ a:hover {
 /* reviews */
 
 .review {
-    width: 100%;
-    background-color: lightgreen;
+    width: 99%;
+    background-color: rgb(0, 255, 132);
     margin: 20px 0;
     overflow: hidden;
     padding: 10px;
-
+    border-radius: 10px;
 }
 .review img {
     width: 200px;

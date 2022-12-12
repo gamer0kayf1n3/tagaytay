@@ -393,3 +393,13 @@ a:hover {
     float: left;
     border-radius: 200px;
 }
+
+.user-review, .name {
+    position: inline;
+    padding-left: 100px;
+    margin-left: 110px;
+}
+
+.user-review {
+    font-size: 18pt;
+}

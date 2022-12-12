@@ -1,15 +1,20 @@
 /* An initialization of fonts, proper margin, and etc. */
+
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
-body{
+body {
     margin: 0;
     padding: 0;
     height: 100%;
     background-color: rgb(148, 176, 218);
 }
 
-* {font-family: 'Josefin Sans', sans-serif;}
+* {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 
 /* navbar setup */
+
 #navbar {
     position: sticky;
     top: 0px;
@@ -22,7 +27,8 @@ body{
     margin: 0px 10px;
 }
 
-#navbar h1, #logo {
+#navbar h1,
+#logo {
     margin: -16px;
     color: white;
     text-shadow: 2px 2px rgb(0, 0, 0);
@@ -57,7 +63,6 @@ body{
         float: none;
         text-align: center;
     }
-    
     #navbar #actions {
         display: block;
         float: none;
@@ -81,6 +86,7 @@ a:hover {
 
 
 /* css declarations for main bg */
+
 #bg {
     background-image: url("https://c0.wallpaperflare.com/path/924/673/261/philippines-tagaytay-nature-horizon-070722549fa602a175b870f9255a2cbb.jpg");
     background-position: center;
@@ -89,7 +95,9 @@ a:hover {
     padding: 50px;
 }
 
+
 /* tagaytay, visit tagaytay now, and content inside front page */
+
 #content {
     text-align: center;
 }
@@ -114,7 +122,7 @@ a:hover {
     background-color: red;
     padding: 20px 30px;
     border-radius: 50px;
-    box-shadow: 10px 10px 52px -22px rgba(0,0,0,0.44);
+    box-shadow: 10px 10px 52px -22px rgba(0, 0, 0, 0.44);
     transition: background-color 100ms, transform 200ms;
 }
 
@@ -128,15 +136,17 @@ a:hover {
     transform: scale(0.7);
 }
 
+
 /* historical info in tagaytay */
+
 #details {
     width: 1050px;
     margin: 50px auto;
-    padding: 25px; 
+    padding: 25px;
     border-radius: 15px;
     background-color: rgb(220, 237, 255);
     overflow: hidden;
-    box-shadow: 10px 10px 52px -22px rgba(0,0,0,0.44);
+    box-shadow: 10px 10px 52px -22px rgba(0, 0, 0, 0.44);
     animation: fadeup 0.5s;
     transition: all 200ms;
 }
@@ -150,35 +160,44 @@ a:hover {
     width: 45%;
     float: right;
 }
+
+
 /*SPECIFIC FOR EXPLAINER PAGES*/
+
 #details_explainer {
     width: 1050px;
     margin: 50px auto;
-    padding: 25px; 
+    padding: 25px;
     border-radius: 15px;
     background-color: rgb(220, 237, 255);
     overflow: hidden;
-    box-shadow: 10px 10px 52px -22px rgba(0,0,0,0.44);
+    box-shadow: 10px 10px 52px -22px rgba(0, 0, 0, 0.44);
     animation: fadeup 0.5s;
     transition: all 200ms;
 }
+
 #details_explainer h2 {
     font-size: 35pt;
 }
+
 #details_explainer h3 {
     font-size: 25pt;
 }
+
 #details_explainer p {
     font-size: 15pt;
 }
+
 #textual_part {
     padding: 0 150px;
 }
+
 @media only screen and (max-width: 480px) {
     #textual_part {
         padding: 0;
     }
 }
+
 @media only screen and (max-width: 1000px) {
     #details #side1 {
         width: 100%;
@@ -196,6 +215,7 @@ a:hover {
 
 
 /* footer declarations */
+
 #footer {
     font-size: 7.5pt;
     text-align: center;
@@ -218,6 +238,7 @@ a:hover {
 #heightadj {
     height: 0px;
 }
+
 @media only screen and (max-width: 480px) {
     #bg {
         width: 100vw;
@@ -227,7 +248,7 @@ a:hover {
     }
     #footer {
         width: 100vw;
-        padding:0;
+        padding: 0;
         margin: 0;
         padding-bottom: 30px;
     }
@@ -236,21 +257,21 @@ a:hover {
         float: none;
         display: block;
         margin: 0;
-        padding:0;
+        padding: 0;
     }
     #details_explainer {
         width: 100%;
         float: none;
         display: block;
         margin: 0;
-        padding:0;
+        padding: 0;
     }
     #details_explainer #textual_part {
         width: 100%;
         float: none;
         display: block;
         margin: 0;
-        padding:0;
+        padding: 0;
     }
     #footer #links a {
         padding: 0 10px;
@@ -260,7 +281,9 @@ a:hover {
     }
 }
 
+
 /* custom animation */
+
 @keyframes fadeup {
     0% {
         opacity: 0;
@@ -273,14 +296,17 @@ a:hover {
 }
 
 #details:hover {
-    box-shadow: 10px 10px 75px -22px rgba(0,0,0,0.5);
+    box-shadow: 10px 10px 75px -22px rgba(0, 0, 0, 0.5);
     transform: scale(1.05);
 }
 
+
 /* extra bits */
+
 .quote {
     font-size: 35pt;
 }
+
 
 /* profile cards */
 
@@ -296,18 +322,23 @@ a:hover {
     border: 1px solid black;
     box-sizing: border-box;
     transition: all 200ms;
+    margin: 5px 10px;
 }
+
 .profile-card:hover {
     transform: scale(1.1);
     border-radius: 10px;
 }
-.profile-card img{
+
+.profile-card img {
     width: 100%;
     height: auto;
 }
+
 .profile-card * {
     text-align: center;
 }
+
 @media only screen and (max-width: 480px) {
     #profile-card-container {
         width: 100%;
@@ -319,7 +350,10 @@ a:hover {
         display: block;
     }
 }
+
+
 /* gallery css content */
+
 .pics {
     width: 50%;
     float: left;
@@ -331,11 +365,13 @@ a:hover {
     overflow: hidden;
     transition: all 200ms;
 }
+
 .pics:hover {
     transform: scale(1.1);
     border: 1px black solid;
     background-color: black;
 }
+
 .pics img {
     width: 100%;
     height: auto;
@@ -347,7 +383,9 @@ a:hover {
     }
 }
 
+
 /* contact info */
+
 .contact-links {
     background-color: lightgreen;
     float: left;
@@ -357,10 +395,12 @@ a:hover {
     padding: 20px;
     transition: all 200ms;
     margin: 20px 0;
+    border-radius: 10px;
 }
- .contact-links * {
+
+.contact-links * {
     display: inline-block;
- }
+}
 
 .contact-links img {
     width: 100px;
@@ -376,16 +416,18 @@ a:hover {
     transform: scale(1.1);
 }
 
+
 /* reviews */
 
 .review {
-    width: 100%;
-    background-color: lightgreen;
+    width: 99%;
+    background-color: rgb(0, 255, 132);
     margin: 20px 0;
     overflow: hidden;
     padding: 10px;
-
+    border-radius: 10px;
 }
+
 .review img {
     width: 200px;
     float: left;
@@ -397,20 +439,23 @@ a:hover {
     transform: translateX(0px);
     transition: all 200ms;
 }
+
 #next span {
     height: 100%;
     font-size: 3em;
     margin: 0;
-
 }
+
 #next:hover {
     transform: translateX(10px);
     background-color: rgb(144, 238, 144, 0.8);
 }
+
 #next img {
     transform: translateX(0px);
     transition: all 200ms;
 }
+
 #next:hover img {
     transform: translateX(10px);
 }
@@ -420,4 +465,18 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+
+/* user reviews, thanks kyle*/
+
+.user-review,
+.name {
+    position: inline;
+    padding-left: 100px;
+    margin-left: 110px;
+}
+
+.user-review {
+    font-size: 18pt;
 }

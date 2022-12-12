@@ -391,3 +391,33 @@ a:hover {
     float: left;
     border-radius: 200px;
 }
+
+#next {
+    float: right;
+    transform: translateX(0px);
+    transition: all 200ms;
+}
+#next span {
+    height: 100%;
+    font-size: 3em;
+    margin: 0;
+
+}
+#next:hover {
+    transform: translateX(10px);
+    background-color: rgb(144, 238, 144, 0.8);
+}
+#next img {
+    transform: translateX(0px);
+    transition: all 200ms;
+}
+#next:hover img {
+    transform: translateX(10px);
+}
+
+.decopics {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

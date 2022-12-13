@@ -477,7 +477,7 @@ a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 75%;
 }
 
 
@@ -512,7 +512,17 @@ body {
     display: inline;
 }
 
+table {
+    width: 100%;
 
+}
+table, tr, td,th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td {
+    width: 33.33%;
+}
 /* booking endpoint */
 
 #thanks {

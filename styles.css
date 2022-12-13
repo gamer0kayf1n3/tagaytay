@@ -537,10 +537,10 @@ body {
     display: block;
     float: left;
     height: 100px;
-    width: 33.33%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 33.33%;;
+    display:flex;
+    justify-content:center;
+    align-items:center; 
     background-color: lightgreen;
     font-size: 2EM;
     transform: scale(1);
@@ -554,4 +554,11 @@ body {
 #thanks div div.visit-these a {
     display: block;
     width: 33.33%;
+}
+
+.places {
+    margin-left:auto;
+    margin-right:auto; 
+    width: 600px;
+    display: block;
 }

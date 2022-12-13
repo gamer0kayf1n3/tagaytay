@@ -89,9 +89,10 @@ a:hover {
 
 #bg {
     background-image: url("https://c0.wallpaperflare.com/path/924/673/261/philippines-tagaytay-nature-horizon-070722549fa602a175b870f9255a2cbb.jpg");
-    background-position: center;
+    background-position: 0 85%;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     padding: 50px;
 }
 
@@ -222,6 +223,7 @@ a:hover {
     display: block;
     padding: 5px;
     background-color: white;
+
 }
 
 #links {
@@ -479,4 +481,33 @@ a:hover {
 
 .user-review {
     font-size: 18pt;
+}
+
+/* last min changes */
+body {
+    background-image: url("https://image.kkday.com/v2/image/get/s1.kkday.com/product_132968/20220906073211_AKBtu/jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
+}
+#min-width-hack {
+    min-height:85vh;
+}
+
+/* booking endpoint */
+#thanks {
+    text-align: center;
+}
+
+#thanks h1 {
+    font-size: 8em;
+    font-weight: bold;
+}
+
+#thanks h2 {
+    font-size: 5em;
+    font-weight: 300;
+}
+#thanks p {
+    font-size: 2.5em;
 }

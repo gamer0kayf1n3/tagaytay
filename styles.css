@@ -386,9 +386,11 @@ a:hover {
 
 
 /* contact info */
+
 .clclick {
     display: inline-block;
 }
+
 .contact-links {
     width: 100%;
     transition: all 200ms;
@@ -418,12 +420,15 @@ a:hover {
     color: white;
     transition: all 200ms;
 }
+
 .contact-links .content:hover {
     display: inline-block;
     background-color: white;
     padding: 10px;
     color: black;
 }
+
+
 /* reviews */
 
 .review {
@@ -528,13 +533,11 @@ body {
     font-size: 2.5em;
 }
 
-
 #thanks div div.visit-these {
     display: block;
     float: left;
     height: 100px;
     width: 33.33%;
-    ;
     display: flex;
     justify-content: center;
     align-items: center;

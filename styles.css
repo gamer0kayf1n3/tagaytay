@@ -494,6 +494,9 @@ body {
     min-height:85vh;
 }
 
+#navbar #actions form {
+    display: inline;
+}
 /* booking endpoint */
 #thanks {
     text-align: center;
@@ -510,4 +513,27 @@ body {
 }
 #thanks p {
     font-size: 2.5em;
+}
+#thanks div {
+    display: flex;
+}
+#thanks div div.visit-these {
+    display: block;
+    float: left;
+    width: 33.33%;
+    height: 100px;
+    display:flex;justify-content:center;align-items:center; 
+    background-color: lightgreen;
+    font-size: 2EM;
+    transform: scale(1);
+    transition: all 200ms;
+}
+
+
+#thanks div div.visit-these:hover {
+    transform: scale(1.1);
+}
+#thanks div div.visit-these a {
+    display: block;
+    width: 100%;
 }

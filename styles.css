@@ -219,20 +219,21 @@ a:hover {
 
 #footer {
     font-size: 7.5pt;
-    text-align: center;
     display: block;
-    padding: 5px;
+    padding: 5px 100px;
+    padding-top: 20px;
     background-color: white;
 }
 
 #links {
     padding-top: 10px;
+    text-align: center;
 }
 
 #footer #links a {
-    font-size: 10pt;
-    padding: 0 50px;
-    margin: auto 10px;
+    font-size: 12pt;
+    display: inline-block;
+    padding: 2px 50px;
     color: black;
 }
 
@@ -572,4 +573,42 @@ td {
     margin-right:auto; 
     width: 75%;
     display: block;
+}
+
+#footer {
+    height: 100px;
+}
+#footer #logo {
+    height: 100%;
+    width: 20%;
+    margin: 0;
+    text-align: center;
+}
+#footer #logo {
+    font-size: 10pt;
+    text-shadow: none;
+    color: black;
+}
+#footer #logo img {
+    height: 30px;
+}
+
+@media only screen and (max-width: 480px) {
+    #footer {
+        height: auto;
+    }
+    #footer #logo {
+        display: block;
+        float: none;
+        width: 40%;
+        margin: 0 auto;
+    }
+    #footer #links {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+    #footer #links a {
+        display: block;
+    }
 }

@@ -568,7 +568,7 @@ td {
     width: 33.33%;
 }
 
-.places {
+.places, .food {
     margin-left:auto;
     margin-right:auto; 
     width: 75%;

@@ -22,7 +22,7 @@ body {
   }
   
   input[type=text], input[type=email], input[type=number] {
-    width: 100%;
+    width: auto;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
@@ -107,3 +107,52 @@ body {
       margin-bottom: 10px;
     }
   }
+
+
+
+ @media (min-width:481px){
+ 
+  /* Details explainer */
+  #details_explainer{
+   width:654px;
+  }
+  
+ }
+
+ label, input {
+  display: inline-block;
+ }
+ 
+/* Name inputs */
+ .name {
+  margin: auto;
+ }
+
+ #mname {
+  width: 20%;
+ }
+
+ #fname {
+  width: 30%;
+ }
+  
+ #lname {
+  width: 35%;
+ }
+
+ #suffix {
+  width: 10%;
+ }
+
+
+
+ 
+ #birth {
+  width: 100%;
+ }
+
+ .formdivide {
+  display: inline-block;
+  margin-left: 40px;
+  width: 40%;
+}

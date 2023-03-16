@@ -26,45 +26,36 @@
     <!--this part is our main content-->
     <div id="details_explainer">
         <div class="container">
-            <h1>Sign Up for Tagaytay!</h1>
+            <h1>Register</h1>
             <form>
               <label id="labelname">Name:</label><br>
-              <input class="name" type="text" name="first_name" required id="fname" placeholder="First Name">
-              <input class="name" type="text" name="middle_initial" id="mname" placeholder="Middle Name">
-              <input class="name" type="text" name="last_name" required id="lname" placeholder="Last Name">
-              <input class="name" type="text" name="suffix" id="suffix" placeholder="Suffix">
-      
-              <div class="formdivide">
-                <label>Date of Birth:</label><br>
-                <input type="date" name="dob" id="birth" required>
-              </div>
-
-              <div class="formdivide">
-                <label id="labelgender">Gender:</label><br>
+              <input class="nameinput" type="text" name="first_name" required id="fname" placeholder="First Name">
+              <input class="nameinput" type="text" name="middle_initial" id="mname" placeholder="Middle Name">
+              <input class="nameinput" type="text" name="last_name" required id="lname" placeholder="Last Name">
+              <input class="nameinput" type="text" name="suffix" id="suffix" placeholder="Suffix">
+              <br>
+              <label>Date of Birth:</label><br>
+              <input type="date" name="dob" id="birth" required>
+              <label id="labelgender">Gender:</label><br>
               <select name="gender" id="gen" required>
                 <option value=""></option>
                 <option value="M">Male</option>
                 <option value="F">Female</option>
                 <option value="O">Other</option>
               </select>
-              </div>
               <br>
-              <label>Email Address:</label>
+              <label>Email Address:</label><br>
               <input type="email" name="email" required>
-      
-              <label>Address:</label>
-              <input type="text" name="address" required>
-      
-              <label>Zip Code:</label>
-              <input type="number" name="zip_code" required>
-      
-              <label>Credit Card:</label>
-              <div class="credit-card">
-                <input type="number" name="cc_number" placeholder="Card number" required>
-                <input type="month" name="cc_expiry" placeholder="MM / YY" required>
-                <input type="number" name="cc_cvc" placeholder="CVC" required>
-              </div>
-      
+              <br>
+              <label>Address:</label><br>
+              <input type="text" name="address" placeholder="Address" required>
+              <input type="number" name="zip_code" required placeholder="Zip Code">
+              <br>
+              <label>Credit Card:</label><br>
+              <input type="number" name="cc_number" placeholder="Card number" required>
+              <input type="month" name="cc_expiry" placeholder="MM / YY" required>
+              <input type="number" name="cc_cvc" placeholder="CVC" required>
+              <br>
               <input type="submit" value="Submit">
             </form>
           </div>

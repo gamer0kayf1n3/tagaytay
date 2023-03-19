@@ -12,6 +12,7 @@ button {
     border: none;
     border-radius: 10px;
     transition: background-color 200ms;
+    width: auto;
 
 }
 
@@ -36,7 +37,10 @@ button:active {
 }
 
 .accobook {
-    width: 40%;
     height: 40%;
-    font-size: 120%;;
+    font-size: 120%;
+    padding: 10px 10px;
+}
+h2 {
+    font-weight: 400;
 }

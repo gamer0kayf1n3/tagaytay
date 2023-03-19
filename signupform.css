@@ -11,7 +11,7 @@ input, select {
 }
 #details_explainer {
   width: 700px;
-  margin: 0 50px;
+  margin: 30px auto;
   background-color: white;
 }
 input[name="first_name"] {
@@ -28,13 +28,43 @@ input[name="suffix"] {
 }
 
 label {
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 5px;
   display: inline-block;
+  margin: 10px 70px auto 10px;
 }
 input[name="address"] {
   width: 64.5%;
 }
 input[name="zip_code"] {
-  width: 12.5s%;
+  width: 12.5%;
+}
+
+.fields {
+  display: inline-block;
+}
+
+input[name="dob"] {
+  width: 67%;
+}
+
+input[name="gender"] {
+  width: 17%;
+}
+
+input[name="email"] {
+  width: 80%;
+}
+
+#emailfield {
+  width: 50%;
+}
+
+input[type="submit"] {
+  background-color: aliceblue;
+  transition: all 100ms;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(170, 215, 255);
 }

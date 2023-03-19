@@ -28,33 +28,47 @@
         <div class="container">
             <h1>Register</h1>
             <form>
-              <label id="labelname">Name:</label><br>
-              <input class="nameinput" type="text" name="first_name" required id="fname" placeholder="First Name">
-              <input class="nameinput" type="text" name="middle_initial" id="mname" placeholder="Middle Name">
-              <input class="nameinput" type="text" name="last_name" required id="lname" placeholder="Last Name">
-              <input class="nameinput" type="text" name="suffix" id="suffix" placeholder="Suffix">
+                <label>Name:</label><br>
+                <input class="nameinput" type="text" name="first_name" required id="fname" placeholder="First Name">
+                <input class="nameinput" type="text" name="middle_initial" id="mname" placeholder="Middle Name">
+                <input class="nameinput" type="text" name="last_name" required id="lname" placeholder="Last Name">
+                <input class="nameinput" type="text" name="suffix" id="suffix" placeholder="Suffix">
               <br>
-              <label>Date of Birth:</label><br>
-              <input type="date" name="dob" id="birth" required>
-              <label id="labelgender">Gender:</label><br>
-              <select name="gender" id="gen" required>
-                <option value=""></option>
-                <option value="M">Male</option>
-                <option value="F">Female</option>
-                <option value="O">Other</option>
-              </select>
+
+              <div class="fields">
+                <label>Date of Birth:</label><br>
+                <input type="date" name="dob" required>
+              </div>
+
+              <div class="fields">
+                <label>Gender:</label><br>
+                <select name="gender" required>
+                    <option value=""></option>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                    <option value="O">Other</option>
+                  </select>
+              </div>
+
+              <div class="fields" id="emailfield">
+                <label>Email Address:</label><br>
+                <input type="email" name="email" required>
+              </div>
+
               <br>
-              <label>Email Address:</label><br>
-              <input type="email" name="email" required>
-              <br>
-              <label>Address:</label><br>
-              <input type="text" name="address" placeholder="Address" required>
-              <input type="number" name="zip_code" required placeholder="Zip Code">
-              <br>
-              <label>Credit Card:</label><br>
-              <input type="number" name="cc_number" placeholder="Card number" required>
-              <input type="month" name="cc_expiry" placeholder="MM / YY" required>
-              <input type="number" name="cc_cvc" placeholder="CVC" required>
+              
+              <div>
+                <label>Address:</label><br>
+                <input type="text" name="address" placeholder="Address" required>
+                <input type="number" name="zip_code" required placeholder="Zip Code">
+              </div>
+                
+              <div>
+                <label>Credit Card:</label><br>
+                <input type="number" name="cc_number" placeholder="Card number" required>
+                <input type="month" name="cc_expiry" placeholder="MM / YY" required>
+                <input type="number" name="cc_cvc" placeholder="CVC" required>
+              </div>
               <br>
               <input type="submit" value="Submit">
             </form>

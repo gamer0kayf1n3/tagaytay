@@ -1,12 +1,12 @@
 #details_explainer {
     background-color: white;
     border-radius: 0;
-    width:700px;
+    width: 700px;
     padding: 20px 80px;
 }
 
-
-input, select {
+input,
+select {
     padding: 10px;
     box-sizing: border-box;
     border: 3px solid black;
@@ -14,15 +14,22 @@ input, select {
     height: 50px;
 }
 
-#nameUser, #centerparent, #mai, #live, #payinfo{
+#nameUser,
+#centerparent,
+#mai,
+#live,
+#payinfo {
     margin: 35px 0;
 }
+
 input[name="first_name"] {
     width: 40%;
 }
+
 input[name="middle_initial"] {
     width: 15%;
 }
+
 input[name="suffix"] {
     width: 10%;
 }
@@ -36,44 +43,28 @@ input[name="last_name"] {
     align-items: center;
     justify-content: space-evenly;
 }
-#birth, #gen {
+
+#birth,
+#gen {
     width: 250px;
 }
+
 #gen {
-    appearance:none;
-    background-image:
-      linear-gradient(45deg, transparent 50%, black 50%),
-      linear-gradient(135deg, black 50%, transparent 50%),
-      linear-gradient(to right, #ccc, #ccc);
-    background-position:
-      calc(100% - 20px) calc(1em + 2px),
-      calc(100% - 15px) calc(1em + 2px),
-      calc(100% - 2.5em) 0.5em;
-    background-size:
-      5px 5px,
-      5px 5px,
-      1px 1.5em;
+    appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, black 50%), linear-gradient(135deg, black 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 1px 1.5em;
     background-repeat: no-repeat;
     transition: all 100ms;
-  }
-  
-  #gen:focus {
-    background-image:
-      linear-gradient(45deg, black 50%, transparent 50%),
-      linear-gradient(135deg, transparent 50%, black 50%),
-      linear-gradient(to right, #ccc, #ccc);
-    background-position:
-      calc(100% - 15px) 1em,
-      calc(100% - 20px) 1em,
-      calc(100% - 2.5em) 0.5em;
-    background-size:
-      5px 5px,
-      5px 5px,
-      1px 1.5em;
+}
+
+#gen:focus {
+    background-image: linear-gradient(45deg, black 50%, transparent 50%), linear-gradient(135deg, transparent 50%, black 50%), linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em, calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 1px 1.5em;
     background-repeat: no-repeat;
     outline: 0;
-  }
-
+}
 
 input[name="email"] {
     width: 60%;
@@ -83,7 +74,6 @@ input[name="pwd"] {
     width: 37.5%;
 }
 
-
 input[name="address"] {
     width: 80%;
 }
@@ -91,10 +81,12 @@ input[name="address"] {
 input[name="zip_code"] {
     width: 17.5%;
 }
+
 #submitparent {
     display: flex;
     justify-content: center;
 }
+
 input[type="submit"] {
     background-color: black;
     color: white;

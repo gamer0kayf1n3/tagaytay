@@ -1,6 +1,6 @@
 /* An initialization of fonts, proper margin, and etc. */
 
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap');
 body {
     margin: 0;
     padding: 0;
@@ -10,8 +10,12 @@ body {
 
 * {
     font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
 }
-
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+}
 
 /* navbar setup */
 

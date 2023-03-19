@@ -2,7 +2,8 @@
     background-color: white;
     border-radius: 0;
     width: 700px;
-    padding: 20px 80px;
+    padding: 90px 80px;
+    padding-top: 20px;
 }
 
 input,
@@ -10,7 +11,7 @@ select {
     padding: 10px;
     box-sizing: border-box;
     border: 3px solid black;
-    font-size: 18px;
+    font-size: 20px;
     height: 50px;
 }
 
@@ -31,11 +32,11 @@ input[name="middle_initial"] {
 }
 
 input[name="suffix"] {
-    width: 10%;
+    width: 12.5%;
 }
 
 input[name="last_name"] {
-    width: 32.5%;
+    width: 30%;
 }
 
 #centerparent {
@@ -94,4 +95,18 @@ input[type="submit"] {
     text-align: center;
     font-weight: bold;
     border-radius: 30px;
+    font-size: 20px;
+    padding: 8px 70px;
+}
+
+input[name="cc_number"] {
+    width: 50%;
+}
+
+input[name="cc_expiry"] {
+    width: 32.5%;
+}
+
+input[name="cc_cvc"] {
+    width: 15%;
 }

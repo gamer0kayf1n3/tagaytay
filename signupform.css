@@ -1,109 +1,112 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    color: #333;
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  h1, h2, h3 {
-    margin-top: 0;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    font-size: larger;
-  }
-  
-  input[type=text], input[type=email], input[type=number] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
+#details_explainer {
+    background-color: white;
+    border-radius: 0;
+    width: 700px;
+    padding: 90px 80px;
+    padding-top: 20px;
+}
 
-  input[type=date] {
-    margin-bottom: 20px;
-    width: 20%;
-    padding: 10px; 
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  select {
-    width: 100%;
+input,
+select {
     padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
     box-sizing: border-box;
-  }
-  
-  input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-  }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  .error {
-    color: red;
-    font-weight: bold;
-  }
-  
-  .credit-card {
-    width: 100%;
+    border: 3px solid black;
+    font-size: 20px;
+    height: 50px;
+}
+
+#nameUser,
+#centerparent,
+#mai,
+#live,
+#payinfo {
+    margin: 35px 0;
+}
+
+input[name="first_name"] {
+    width: 40%;
+}
+
+input[name="middle_initial"] {
+    width: 15%;
+}
+
+input[name="suffix"] {
+    width: 12.5%;
+}
+
+input[name="last_name"] {
+    width: 30%;
+}
+
+#centerparent {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .credit-card input[type=number] {
-    width: 40%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  .credit-card input[type=month] {
-    width: 40%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  .credit-card input[type=number]:last-of-type {
-    width: 20%;
-  }
-  
-  .credit-card label {
-    margin-bottom: 0;
-  }
-  
-  @media screen and (max-width: 600px) {
-    input[type=date], .credit-card input[type=number], .credit-card input[type=month], .credit-card input[type=number]:last-of-type {
-      width: 100%;
-      margin-bottom: 10px;
-    }
-  }
+    justify-content: space-evenly;
+}
+
+#birth,
+#gen {
+    width: 250px;
+}
+
+#gen {
+    appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, black 50%), linear-gradient(135deg, black 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    background-repeat: no-repeat;
+    transition: all 100ms;
+}
+
+#gen:focus {
+    background-image: linear-gradient(45deg, black 50%, transparent 50%), linear-gradient(135deg, transparent 50%, black 50%), linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em, calc(100% - 2.5em) 0.5em;
+    background-size: 5px 5px, 5px 5px, 1px 1.5em;
+    background-repeat: no-repeat;
+    outline: 0;
+}
+
+input[name="email"] {
+    width: 60%;
+}
+
+input[name="pwd"] {
+    width: 37.5%;
+}
+
+input[name="address"] {
+    width: 80%;
+}
+
+input[name="zip_code"] {
+    width: 17.5%;
+}
+
+#submitparent {
+    display: flex;
+    justify-content: center;
+}
+
+input[type="submit"] {
+    background-color: black;
+    color: white;
+    letter-spacing: 5px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 8px 70px;
+}
+
+input[name="cc_number"] {
+    width: 50%;
+}
+
+input[name="cc_expiry"] {
+    width: 32.5%;
+}
+
+input[name="cc_cvc"] {
+    width: 15%;
+}

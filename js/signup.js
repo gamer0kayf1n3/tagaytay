@@ -3,7 +3,7 @@
 // and the cookie should say that user is already signed up
 var submitButton = document.getElementById("submitter")
 
-var inputElements = document.querySelectorAll("#signupform input, select")
+var inputElements = document.querySelectorAll("#signupform input, select")  
 
 function logger() {
     for (el of inputElements) {

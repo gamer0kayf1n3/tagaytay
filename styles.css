@@ -616,3 +616,7 @@ td {
         display: block;
     }
 }
+
+.modal-content {
+    border-radius: 10px;
+}

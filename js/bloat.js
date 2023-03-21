@@ -22,3 +22,11 @@ function getCookie(cname) {
     return "";
   }
 
+function hasTagContext(element) {
+  return element.getAttribute("data") != "null"
+}
+
+function getTagContext(element) {
+  return element.getAttribute("data")
+}
+

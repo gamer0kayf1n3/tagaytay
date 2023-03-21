@@ -32,7 +32,7 @@
                 <h2>Single</h2>
                 <p>₱700/night</p>
                 <p>Suitable for 1 person</p>
-                <button class="accobook" onclick="">Book now</button>
+                <button class="accobook" data="single">Book now</button>
             </div>
         </div>
         <div class="room">
@@ -41,7 +41,7 @@
                 <h2>Double</h2>
                 <p>₱900/night</p>
                 <p>Suitable for up to 2 people</p>
-                <button class="accobook" onclick="">Book now</button>
+                <button class="accobook" data="double">Book now</button>
             </div>
         </div>
         <div class="room">
@@ -50,7 +50,7 @@
                 <h2>Triple</h2>
                 <p>₱1100/night</p>
                 <p>Suitable for 3 people</p>
-                <button class="accobook" onclick="">Book now</button>
+                <button class="accobook" data="triple">Book now</button>
             </div>
         </div>
         <div class="room">
@@ -59,7 +59,7 @@
                 <h2>Quad</h2>
                 <p>₱1100/night</p>
                 <p>Suitable for up to 4 people</p>
-                <button class="accobook" onclick="">Book now</button>
+                <button class="accobook" data="quad">Book now</button>
             </div>
         </div>
         <div class="room">
@@ -68,7 +68,7 @@
                 <h2>Family</h2>
                 <p>₱1400/night</p>
                 <p>Suitable for 5-6 people</p>
-                <button class="accobook" onclick="">Book now</button>
+                <button class="accobook" data="family">Book now</button>
             </div>
         </div>
 
@@ -93,6 +93,29 @@
         </div>
 
     </div>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Modal Header</h2>
+              </div>
+            <p id="date"></p>
+            <label for="bfr">Set Before Date</label>
+            <input type="date" name="bfr" id="before"><br>
+            <label for="bfr">Set After Date</label>
+            <input type="date" name="bfr" id="after"><br>
+            <button>Add to Cart</button>
+            <div class="modal-footer">
+                <h3>Modal Footer</h3>
+              </div>
+        </div>
+      
+    </div>
+    <script src="js/bloat.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/accommodation.js"></script>
 </body>
 
 </html>

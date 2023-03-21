@@ -1,7 +1,7 @@
 //main scripts
 function isSignedIn() {
     if (getCookie("signedIn") != "") {
-        alert("signed in")
+        location.href="accommodations.html"
     } else {
         location.href = "signupform.html"
     }

@@ -54,3 +54,16 @@ function setCost(ctx) {
   price = pricing[ctx]
   return (new Date(after.value) - new Date(before.value))/1000/86400
 }
+
+function isValidForm() {
+  try {
+  cartcookie = JSON.parse(getCookie("cart"))
+}
+  catch(e) {
+    setCookie("cart", JSON.stringify([]),365)
+    console.log(e)
+  }
+  setCookie("cart", cartcookie.append("dum"),365)
+  debugger
+  return false
+}

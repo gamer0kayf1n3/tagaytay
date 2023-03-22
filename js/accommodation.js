@@ -63,7 +63,6 @@ function isValidForm() {
     setCookie("cart", JSON.stringify([]),365)
     console.log(e)
   }
-  setCookie("cart", cartcookie.append("dum"),365)
-  debugger
-  return false
+  setCookie("cart", JSON.stringify(cartcookie.push("urmom")),365)
+  alert("done")
 }

@@ -31,3 +31,12 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// pricing
+pricing = {
+  "single":700.00,
+  "double":800.00,
+  "triple":900.00,
+  "quad":1000.00,
+  "family":1200.00
+}

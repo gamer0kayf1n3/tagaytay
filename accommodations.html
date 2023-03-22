@@ -105,11 +105,15 @@
                 <p id="date"></p>
                 <form>
                     <label for="bfr">Set Before Date</label>
-                    <input type="date" name="bfr" id="before"><br><br>
+                    <input type="date" name="bfr" id="before" required><br><br>
                     <label for="bfr">Set After Date</label>
-                    <input type="date" name="bfr" id="after"><br><br>
+                    <input type="date" name="aft" id="after" required><br><br>
                     <label for="coupons">Coupons: </label>
                     <input type="text" id="coupons"><br>
+                    <div class="rightalign">
+                        <span>Total: </span>
+                        <span id="total"></span>
+                    </div>
                     <div  id="tocartparent" >
                         <input class="custombutton" id="tocart" type="submit" value="Add to Cart">
                     </div>

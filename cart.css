@@ -7,3 +7,19 @@ cart.html = table with javascript that uses data from user
 NOT PREFERABLE.
 
 When styling, preview static_cart basically*/
+table, th, td {
+    background-color: rgb(230, 255, 255);
+    border: 1px solid black;
+    border-collapse: separate;
+    padding: 7px;
+  }
+
+th, td {
+    margin: 10px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+table {
+    border-radius: 10px;
+}

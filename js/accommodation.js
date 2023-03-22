@@ -9,6 +9,7 @@ for (els of document.getElementsByClassName("accobook")) {
       after.value=""
       document.getElementById("description").innerText = ""
       document.getElementById("total").innerText = ""
+      document.getElementById("val").innerText = ""
         if (hasTagContext(e.target)) {
           before.min = new Date().toISOString().split("T")[0];
             //alert(getTagContext(e.target))
@@ -40,6 +41,7 @@ window.onclick = function(event) {
 after.addEventListener("input", (e) => {
   document.getElementById("description").innerText = `Booking for ${setCost(ctxGlobal) + 1} day${(setCost(ctxGlobal) + 1)>1?"s":""}`
   document.getElementById("total").innerText = `PHP ${((setCost(ctxGlobal) + 1)*price).toLocaleString()}.00`
+  document.getElementById("val").innerText = ((setCost(ctxGlobal) + 1)*price)
 })
 // pricing
 pricing = {
@@ -56,13 +58,13 @@ function setCost(ctx) {
 }
 
 function isValidForm() {
-  try {
-  cartcookie = JSON.parse(getCookie("cart"))
-}
-  catch(e) {
-    setCookie("cart", JSON.stringify([]),365)
-    console.log(e)
-  }
-  setCookie("cart", JSON.stringify(cartcookie.push("urmom")),365)
-  alert("done")
+  // attempt to get cartData
+  cartData = getCookie("cartData")
+  cartData = JSON.parse(cartData)
+  
+  //we have successfully parsed cartData cookie, now time to add things on it!
+  console.log(cartData)
+  cartData.push(`${ctxGlobal} ${before.value} ${after.value}`)
+  console.log(cartData)
+  setCookie("cartData", JSON.stringify(cartData), 365)
 }

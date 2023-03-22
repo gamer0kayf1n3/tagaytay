@@ -620,3 +620,10 @@ td {
 .modal-content {
     border-radius: 10px;
 }
+.rightalign {
+    text-align: right;
+}
+#total {
+    font-weight: 400;
+    font-size: 32px;
+}

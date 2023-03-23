@@ -50,6 +50,12 @@ for(delbtn of deleteBtns) {
 
 document.getElementById("delete").onclick = function () {
   toDelete.target.parentNode.style.animation = "bye 0.3s"
+  var index = parseInt(
+    toDelete.target
+        .parentElement.getAttribute("index")
+    )
+    data.splice(index,1)
+    setCookie("cartData", JSON.stringify(data), 365)
   setTimeout(()=>{  toDelete.target.parentNode.remove()},300)
   modal.style.display = "none";
 }

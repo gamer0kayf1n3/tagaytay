@@ -21,7 +21,7 @@ for (els of document.getElementsByClassName("accobook")) {
         }
     }
 }
-var header = document.getElementById("headermod")
+var header = document.getElementById("headermod") //ima do something real quick brb
 var modal = document.getElementById("myModal");
 var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {

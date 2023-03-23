@@ -18,3 +18,33 @@ function onStartup() {
     if (getCookie("signedIn") != "") welcome()
 }
 onStartup()
+
+//admin stuff
+function admin() {
+    HTMLCode = `<div id="myModal" class="modal">  <div class="modal-content"> <div class="modal-header"> <span class="close">&times;</span> <h2 id="headermod">Admin Sign-in</h2> </div> <div class="modal-body"> <p id="date"></p> <form onsubmit="adminSubmit(); return false"> <label for="uname">Username: </label> <input type="text" id="uname" required><br><br> <label for="pwd">Password: </label> <input type="password" id="pwd" required><br> <div id="tocartparent"> <input class="custombutton" id="adminSubmitButton" type="submit" value="Log In"> </div> </form> </div> </div></div>`
+    wrapper = document.createElement('div')
+    wrapper.setAttribute("id","wrapper")
+    wrapper.innerHTML = HTMLCode
+    document.body.appendChild(wrapper)
+    document.getElementById("myModal")
+    document.getElementById("myModal").style.display = "block"
+    window.onclick = function(event) {
+        if (event.target == document.getElementById("myModal")) {
+            document.getElementById("wrapper").remove()
+        }
+      }
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() {
+        document.getElementById("wrapper").remove()
+      }
+}
+
+function adminSubmit() {
+    uname = document.getElementById("uname").value
+    pwd = document.getElementById("pwd").value
+    if ((uname == "steven" && pwd == "ilikecats") || (uname="kyle" && pwd=="Icode")) {
+        location.href="admin.html"
+    } else {
+        document.getElementById("wrapper").remove()
+    }
+}

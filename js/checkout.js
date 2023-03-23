@@ -50,14 +50,14 @@ for (datas of data)
     checkout = new Date(datas[2])
     daynumbs = (checkout - checkind)/1000/86400
     subtotal = daynumbs * roomrate
-    console.log(
+    receipt.insertAdjacentHTML("beforeend",
         `<div class="room-info">
         <p><strong>Room Type:</strong> ${roomtype}</p>
-        <p><strong>Room Rate:</strong> ${roomrate}</p>
-        <p><strong>Check-in Date:</strong> ${checkind}</p>
-        <p><strong>Check-out Date:</strong> ${checkout}</p>
+        <p><strong>Room Rate:</strong> ${`PHP ${(roomrate).toLocaleString()}.00`}</p>
+        <p><strong>Check-in Date:</strong> ${checkind.toLocaleString('default', {weekday:"long", month: 'long', day:"numeric",year:"numeric"})}</p>
+        <p><strong>Check-out Date:</strong> ${checkout.toLocaleString('default', {weekday:"long", month: 'long', day:"numeric",year:"numeric"})}</p>
         <p><strong>Number of Days:</strong> ${daynumbs}</p>
-        <p><strong>Subtotal:</strong> ${subtotal}</p>
-    </div>`
+        <p><strong>Subtotal:</strong> ${`PHP ${(subtotal).toLocaleString()}.00`}</p>
+    </div><hr>`
     )
 }

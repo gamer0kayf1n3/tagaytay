@@ -38,10 +38,11 @@ String.prototype.toProperCase = function () {
 function createTable(tableData) {
   var table = document.createElement('table');
   var tableBody = document.createElement('tbody');
-
+  i = -2;
   tableData.forEach(function(rowData) {
+    i++;
     var row = document.createElement('tr');
-
+    row.setAttribute("index", i);
     rowData.forEach(function(cellData) {
       var cell = document.createElement('td');
       cell.appendChild(document.createTextNode(cellData));

@@ -23,3 +23,7 @@ th, td {
 table {
     border-radius: 10px;
 }
+
+table tbody tr:first-child {
+    font-size: 22px;
+}

@@ -66,4 +66,5 @@ function isValidForm() {
   cartData.push(`${ctxGlobal} ${before.value} ${after.value}`)
   console.log(cartData)
   setCookie("cartData", JSON.stringify(cartData), 365)
+  modal.style.display = "none";
 }

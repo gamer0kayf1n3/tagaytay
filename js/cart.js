@@ -10,7 +10,7 @@ pricing = {
 for (ds in data) {
     Datas = data[ds].split(" ")
     roomType = pricing[Datas[0].toLowerCase()]
-    delta = (new Date(Datas[2]) - new Date(Datas[1]))/1000/86400
+    delta = ((new Date(Datas[2]) - new Date(Datas[1]))/1000/86400)+1
     
     console.log(delta)
     table2d.push([...Datas, `PHP ${delta*roomType.toLocaleString()}.00`, "delete"])

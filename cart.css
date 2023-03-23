@@ -55,3 +55,50 @@ td {
  #myModal {
     display: none;
  }
+
+ #delete {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 200ms;
+ }
+
+#delete:hover {
+    background-color: rgb(255, 129, 60);
+}
+
+#delete:active {
+    background-color: rgb(117, 54, 29);
+}
+
+#checkout {
+    background-color: black;
+    color: white;
+    letter-spacing: 5px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 8px 70px;
+    transition: all 250ms;
+}
+
+#checkout:hover {
+    background-color: rgb(67, 129, 255);
+    border: 2px solid rgb(67, 129, 255);
+    color: white;
+    letter-spacing: 5px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 8px 70px;
+}
+
+#sub {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

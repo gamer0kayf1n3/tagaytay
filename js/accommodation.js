@@ -9,7 +9,6 @@ for (els of document.getElementsByClassName("accobook")) {
       after.value=""
       document.getElementById("description").innerText = ""
       document.getElementById("total").innerText = ""
-      document.getElementById("val").innerText = ""
         if (hasTagContext(e.target)) {
           before.min = new Date().toISOString().split("T")[0];
             //alert(getTagContext(e.target))
@@ -41,7 +40,6 @@ window.onclick = function(event) {
 after.addEventListener("input", (e) => {
   document.getElementById("description").innerText = `Booking for ${setCost(ctxGlobal) + 1} day${(setCost(ctxGlobal) + 1)>1?"s":""}`
   document.getElementById("total").innerText = `PHP ${((setCost(ctxGlobal) + 1)*price).toLocaleString()}.00`
-  document.getElementById("val").innerText = ((setCost(ctxGlobal) + 1)*price)
 })
 // pricing
 pricing = {

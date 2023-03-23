@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <!-- saved from url=(0033)cart.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="icon" href="static/logo.png">
     <meta name="viewport" content="width=480, initial-scale=1.0, maximum-scale=1.0">
     <title>template</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="cart.css">
-<style type="text/css">@font-face { font-family: Roboto; src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf"); }</style></head>
+    <style type="text/css">
+        @font-face {
+            font-family: Roboto;
+            src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf");
+        }
+    </style>
+</head>
 
 <body>
     <!--this is the navbar, we dont want to modify this-->
@@ -18,13 +27,47 @@
             <span><a href="about.html">About</a></span>
             <span><a href="contact.html">Contact Us</a></span>
             <button id="booknow" type="submit" onclick="isSignedIn()">Book Now</button>
-        <span style="font-size: 20px;">Welcome, wswdasd!</span></div>
+            <span style="font-size: 20px;">Welcome, wswdasd!</span></div>
     </div>
     <!--this part is our main content-->
     <div id="details_explainer">
         <div id="textualpart">
-            
-        <table><tbody><tr><td>Room Type</td><td>Start Date</td><td>End Date</td></tr><tr><td>double</td><td>2023-04-07</td><td>2023-04-28</td></tr><tr><td>single</td><td>2023-04-06</td><td>2023-04-21</td></tr><tr><td>quad</td><td>2023-03-22</td><td>2023-04-07</td></tr><tr><td>family</td><td>2023-03-22</td><td>2023-04-22</td></tr><tr><td>single</td><td>2023-03-22</td><td>2023-03-23</td></tr></tbody></table></div>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Room Type</td>
+                        <td>Start Date</td>
+                        <td>End Date</td>
+                    </tr>
+                    <tr>
+                        <td>double</td>
+                        <td>2023-04-07</td>
+                        <td>2023-04-28</td>
+                    </tr>
+                    <tr>
+                        <td>single</td>
+                        <td>2023-04-06</td>
+                        <td>2023-04-21</td>
+                    </tr>
+                    <tr>
+                        <td>quad</td>
+                        <td>2023-03-22</td>
+                        <td>2023-04-07</td>
+                    </tr>
+                    <tr>
+                        <td>family</td>
+                        <td>2023-03-22</td>
+                        <td>2023-04-22</td>
+                    </tr>
+                    <tr>
+                        <td>single</td>
+                        <td>2023-03-22</td>
+                        <td>2023-03-23</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
     <!--this part is the footer-->
     <div id="footer">
@@ -40,11 +83,13 @@
             <a href="privacy.html">Privacy</a>
             <a href="reviews.html">Reviews</a>
             <a href="gallery">Gallery</a>
-            <a href="https://github.com/gamer0kayf1n3/tagaytay">Source Code</a>
+            <a onclick="admin()"></a> <a href="https://github.com/gamer0kayf1n3/tagaytay">Source Code</a>
         </div>
 
     </div>
     <script src="bloat.js"></script>
     <script src="scripts.js"></script>
     <script src="cart.js"></script>
-</body></html>
+</body>
+
+</html>

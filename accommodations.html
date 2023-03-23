@@ -71,9 +71,9 @@
                 <button class="accobook" data="family">Book now</button>
             </div>
         </div>
-
-
-
+        <form action="cart.html">
+            <button type="submit">Go to Cart</button>
+        </form>
     </div>
     <!--this part is the footer-->
     <div id="footer">
@@ -103,7 +103,7 @@
               </div>
               <div class="modal-body">
                 <p id="date"></p>
-                <form onsubmit="return isValidForm()">
+                <form onsubmit="isValidForm(); return false">
                     <label for="bfr">Set Before Date</label>
                     <input type="date" name="bfr" id="before" required><br><br>
                     <label for="bfr">Set After Date</label>

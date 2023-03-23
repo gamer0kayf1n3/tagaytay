@@ -1,4 +1,16 @@
 var data = JSON.parse(getCookie("cartData"))
+var newData = []
+for (ds of data) {
+  Datas = ds.split(" ")
+  delta = new Date(Datas[1])
+  if (delta < new Date()) {
+    continue
+  } else {
+    newData.push(ds)
+  }
+}
+setCookie("cartData", JSON.stringify(newData), 365)
+data = newData
 var table2d = [["Room Type", "Start Date", "End Date","Price","Action"]]
 pricing = {
     "single":700.00,

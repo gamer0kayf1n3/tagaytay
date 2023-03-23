@@ -59,3 +59,6 @@ document.getElementById("delete").onclick = function () {
   setTimeout(()=>{  toDelete.target.parentNode.remove()},300)
   modal.style.display = "none";
 }
+
+//select only first delete button
+document.querySelector("table tbody tr td:last-child").onclick=""

@@ -58,6 +58,7 @@ function setCost(ctx) {
 function isValidForm() {
   // attempt to get cartData
   cartData = getCookie("cartData")
+  if (cartData == "") {setCookie("cartData", JSON.stringify([]), 365); console.log("reset");cartData = getCookie("cartData")}
   cartData = JSON.parse(cartData)
   
   //we have successfully parsed cartData cookie, now time to add things on it!

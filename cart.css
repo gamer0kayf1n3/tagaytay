@@ -27,3 +27,11 @@ table {
 table tbody tr:first-child {
     font-size: 22px;
 }
+
+table tbody tr td:last-child {
+    width: 20%;
+}
+
+td {
+    width: 0;
+}

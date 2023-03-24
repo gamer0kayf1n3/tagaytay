@@ -44,3 +44,31 @@ button:active {
 h2 {
     font-weight: 400;
 }
+
+.checkout {
+    background-color: black;
+    color: white;
+    letter-spacing: 5px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 8px 70px;
+    transition: all 250ms;
+}
+
+.checkout:hover {
+    background-color: rgb(67, 129, 255);
+    border: 2px solid rgb(67, 129, 255);
+    color: white;
+    letter-spacing: 5px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 8px 70px;
+}
+
+form[action="cart.html"] {
+    text-align:center;
+}

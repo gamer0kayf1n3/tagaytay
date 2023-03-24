@@ -61,3 +61,13 @@ for (datas of data)
     </div><hr>`
     )
 }
+
+fullName = `${getCookie("first_name")} ${getCookie("middle_initial")} ${getCookie("last_name")} ${getCookie("suffix")}`
+email = getCookie("email")
+cc = getCookie("cc_number")
+zc = getCookie("zip_code")
+
+document.getElementById("fullname").innerText = fullName
+document.getElementById("useremail").innerText = email
+document.getElementById("ccnumber").innerText = `########${cc.substr(cc.length - 4)}`
+document.getElementById("zipcode").innerText = zc

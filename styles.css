@@ -693,3 +693,38 @@ select {
 transform: scale(120%) translateX(85px);
 padding: 20px 0;
 }
+
+.alert {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    font-size: 18px;
+    z-index: 9999;
+    display: none;
+    margin-top: 10px;
+    animation-name: slide-in;
+    animation-duration: 0.5s;
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateX(100%);
+    }
+  
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .alert.show {
+    display: block;
+  }
+  
+  #alert-container.hide {
+    animation-name: slide-out;
+    animation-duration: 0.5s;
+  }

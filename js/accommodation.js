@@ -67,4 +67,5 @@ function isValidForm() {
   console.log(cartData)
   setCookie("cartData", JSON.stringify(cartData), 365)
   modal.style.display = "none";
+  showAlert("Added to cart success!")
 }

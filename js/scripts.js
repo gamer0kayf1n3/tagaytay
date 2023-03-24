@@ -48,3 +48,33 @@ function adminSubmit() {
         document.getElementById("wrapper").remove()
     }
 }
+
+//alert system
+function showAlert(message) {
+    var alertContainer = document.getElementById("alert-container");
+  
+    // Create a new alert element
+    var alertElement = document.createElement("div");
+    alertElement.classList.add("alert");
+    alertElement.innerHTML = message;
+  
+    // Add the alert element to the container
+    alertContainer.appendChild(alertElement);
+  
+    // Show the alert
+    alertElement.classList.add("show");
+  
+    // Set a timeout to hide the alert after 5 seconds
+    setTimeout(function() {
+      alertElement.classList.remove("show");
+  
+      // Remove the alert element from the container after it has been hidden
+      setTimeout(function() {
+        alertContainer.removeChild(alertElement);
+      }, 500);
+    }, 5000);
+  }
+//<div id="alert-container"></div>
+alertCont = document.createElement("div")
+alertCont.setAttribute("id","alert-container")
+document.body.appendChild(alertCont)

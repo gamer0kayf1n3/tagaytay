@@ -24,12 +24,13 @@
     </div>
     <!--this part is our main content-->
     <div id="details_explainer">
+        <h1>Your Cart</h1>
         <div id="textualpart">
 
         </div>
         <div id="sub">
-            <form action="checkout.html">
-                <button id="checkout">Checkout</button>
+            <form action="checkout.html" onsubmit="return false;">
+                <button id="checkout" onclick="showAlert('Processing payment...');setTimeout(()=>{location.href='checkout.html'},5200)">Checkout</button>
             </form>
         </div>
     </div>

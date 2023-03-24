@@ -730,7 +730,7 @@ padding: 20px 0;
   }
 
 @media print {
-#navbar, #footer {
+#navbar, #footer,.dontprint {
     display:none;
 }
 }

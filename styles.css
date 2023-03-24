@@ -728,3 +728,10 @@ padding: 20px 0;
     animation-name: slide-out;
     animation-duration: 0.5s;
   }
+
+@media print {
+#navbar, #footer {
+    display:none;
+}
+}
+@page { margin: 0; }

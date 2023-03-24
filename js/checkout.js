@@ -2,12 +2,12 @@ receipt = document.getElementsByClassName("receipt")[0]
 
 /*
 <div class="room-info">
-    <p><strong>Room Type:</strong> <span id="roomtype"></span></p>
-    <p><strong>Room Rate:</strong> <span id="roomrate"></span></p>
-    <p><strong>Check-in Date:</strong> <span id="indate"></span></p>
-    <p><strong>Check-out Date:</strong> <span id="outdate"></span></p>
-    <p><strong>Number of Days:</strong> <span id="days"></span></p>
-    <p><strong>Subtotal:</strong> <span id="subtotal"></span></p>
+    <span><strong>Room Type:</strong> <span id="roomtype"></span></span>
+    <span><strong>Room Rate:</strong> <span id="roomrate"></span></span>
+    <span><strong>Check-in Date:</strong> <span id="indate"></span></span>
+    <span><strong>Check-out Date:</strong> <span id="outdate"></span></span>
+    <span><strong>Number of Days:</strong> <span id="days"></span></span>
+    <span><strong>Subtotal:</strong> <span id="subtotal"></span></span>
 </div>
 */
 
@@ -52,12 +52,12 @@ for (datas of data)
     subtotal = daynumbs * roomrate
     receipt.insertAdjacentHTML("beforeend",
         `<div class="room-info">
-        <p><strong>Room Type:</strong> ${roomtype}</p>
-        <p><strong>Room Rate:</strong> ${`PHP ${(roomrate).toLocaleString()}.00`}</p>
-        <p><strong>Check-in Date:</strong> ${checkind.toLocaleString('default', {weekday:"long", month: 'long', day:"numeric",year:"numeric"})}</p>
-        <p><strong>Check-out Date:</strong> ${checkout.toLocaleString('default', {weekday:"long", month: 'long', day:"numeric",year:"numeric"})}</p>
-        <p><strong>Number of Days:</strong> ${daynumbs}</p>
-        <p><strong>Subtotal:</strong> ${`PHP ${(subtotal).toLocaleString()}.00`}</p>
+        <strong>Room Type:</strong><span class="right"> ${roomtype}</span><br>
+        <strong>Room Rate:</strong><span class="right"> ${`PHP ${(roomrate).toLocaleString()}.00`}</span><br>
+        <strong>Check-in Date:</strong><span class="right"> ${checkind.toLocaleString('default', {weekday:"long", month: 'long', day:"numeric",year:"numeric"})}</span><br>
+        <strong>Check-out Date:</strong><span class="right"> ${checkout.toLocaleString('default', {weekday:"long", month: 'long', day:"numeric",year:"numeric"})}</span><br>
+        <strong>Number of Days:</strong><span class="right"> ${daynumbs}</span><br>
+        <strong>Subtotal:</strong><span class="right"> ${`PHP ${(subtotal).toLocaleString()}.00`}</span><br>
     </div><hr>`
     )
 }

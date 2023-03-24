@@ -17,3 +17,11 @@
 .receipt strong {
   font-weight: bold;
 }
+
+.right, strong {
+  display:inline-block;
+  font-size: 20px;
+}
+.right {
+  float: right;
+}

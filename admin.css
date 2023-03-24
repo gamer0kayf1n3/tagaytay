@@ -1,0 +1,82 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+}
+
+svg {
+    height: 150px;
+    width: auto;
+    animation: introexit 1.2s 1.2s ease forwards;
+}
+
+.cls-1 {
+    stroke-dasharray: 762.3447265625;
+    stroke-dashoffset: 762.3447265625;
+    animation: dash 1s cubic-bezier(.77, .61, .49, .99) forwards;
+}
+
+#gradient {
+    opacity: 0;
+    animation: fadein 0.2s 1s linear forwards;
+}
+@keyframes introexitbg {
+    0% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes introexit {
+    0% {
+        transform: scale(100%);
+        opacity: 1;
+    }
+    30% {
+        transform: scale(90%);
+        opacity: 1;
+    }
+    60% {
+        transform: scale(90%);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(400%);
+        opacity: 0;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 762.3447265625;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+#intro {
+    background-color: black;
+    position: static;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: introexitbg 1.2s 1.2s ease forwards;
+}

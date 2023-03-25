@@ -25,3 +25,14 @@ function getTime() {
     const currentTime = getTime();
     timeEl.innerText = currentTime
   }, 1000);
+
+
+sitemap = "about accommodations admin booknow cart checkout contact delicacies economical endpoint explainertemplate index learnmore privacy reviews signupform static_cart template terms test"
+sitemap = sitemap.split(" ")
+sitemapcont = document.getElementById("sitemap")
+for (site of sitemap) {
+    atag = document.createElement("a")
+    atag.href = site+".html"
+    atag.innerText = site+".html"
+    sitemapcont.appendChild(atag)
+}

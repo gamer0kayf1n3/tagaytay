@@ -1,5 +1,6 @@
 setTimeout(()=> {
     document.getElementById("intro").remove()
+    document.body.style.overflowY = 'auto';
 },2400)
 
 dashboarbutton = document.getElementById("dashboard")

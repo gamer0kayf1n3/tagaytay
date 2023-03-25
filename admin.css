@@ -4,6 +4,7 @@ body {
     padding: 0;
     height: 100%;
     background-color: rgb(148, 176, 218);
+    overflow-x: hidden;
 }
 
 * {
@@ -158,7 +159,8 @@ body {
 #top-half,
 #bot-half {
     padding: 30px;
-    width: 100%
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #top-half {
@@ -174,6 +176,7 @@ body {
 
 /* top cards */
 .wide-card, .card {
+    box-sizing: border-box;
     display: inline-block;
     border: 1px solid rgb(112, 112, 112);
     background-color: #6588a3;
@@ -183,11 +186,11 @@ body {
 }
 
 .wide-card:hover {
-    border: 3px solid white;
+    outline: 3px solid white;
 }
 
 .card:hover {
-    border: 3px solid white;
+    outline: 3px solid white;
 }
 
 .card {

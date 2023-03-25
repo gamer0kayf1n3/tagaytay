@@ -6,7 +6,7 @@
     <link rel="icon" href="static/logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=480, initial-scale=1.0, maximum-scale=1.0">
-    <title>Sign Up</title>
+    <title>Hotel Booking Receipt</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" type="text/css" href="checkout.css">
 </head>
@@ -24,7 +24,29 @@
     </div>
     <!--this part is our main content-->
     <div id="details_explainer">
+        
         <div class="receipt">
+            <div class="dontprint" id="thanks">
+                <h1>Thank you</h1>
+                <h2>For booking at our services!</h2>
+                <p>We wish you a pleasant travel!</p>
+                <div>
+                    <span>May we suggest visiting...</span>
+                    <div>
+                        <a href="index.html">
+                            <div class="visit-these">Homepage</div>
+                        </a>
+                        <a href="reviews.html">
+                            <div class="visit-these">Reviews</div>
+                        </a>
+                        <a href="gallery">
+                            <div class="visit-these">Gallery</div>
+                        </a>
+                    </div>
+                </div>
+                </div>
+                <br>
+                <br><br>
             <h2>Hotel Booking Receipt</h2>
             <div id="userdata">
                 <p><strong>Guest Name:</strong> <span id="fullname">John Doe</span></p>
@@ -34,6 +56,9 @@
             </div>
             <hr>
         </div>
+        <h1>Thank you for booking our services in Tagaytay!</h1>
+        <p style="font-size: 24px;">We wish you a pleasant travel~!</p>
+        <div style="text-align: right;"><span>The GroupOne Team</span></div>
         <a href="cart.html" class="dontprint">Go Back</a><br>
         <a onclick="window.print()" class="dontprint">Print</a>
     </div>

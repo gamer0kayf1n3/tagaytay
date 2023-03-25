@@ -2,7 +2,8 @@
     display: inline-block;
     margin: 10px;
     padding: 10px;
-    translate: 0px -50px;
+    box-sizing: border-box;
+    width: 50%;
 }
 
 button {

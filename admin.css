@@ -182,7 +182,7 @@ body {
     border: 1px solid rgb(112, 112, 112);
     background-color: #6588a3;
     filter: drop-shadow(5px 5px 1px #505a88);
-    transition: all 100ms;
+    transition: all 100ms ease-out;
     padding: 8px;
 }
 
@@ -215,15 +215,6 @@ body {
 #sitemap * {
     color: white;
 }
-
-
-/* 
-sort website previews to 
-signed in people only
-guests allowed
-unsued
-bom.m4a
-*/
 
 .pic-cont {
     margin: 20px;

@@ -1,3 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: rgb(148, 176, 218);
+}
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
 body,
 html {
     padding: 0;
@@ -96,4 +109,37 @@ body {
 
 #current-time {
     float: right;
+}
+
+#sidebar {
+    position:absolute;
+    top:0;
+    left:0;
+    background-color: black;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 20%;
+}
+
+#sidebar * {
+    padding: 10px 0;
+    font-size: 24px;
+    font-weight: 400;
+    background-color: inherit;
+    transition: all 200ms;
+    color: inherit;
+    cursor:pointer;
+}
+
+#sidebar *:hover {
+    background-color: darkgray;
+    color: white;
+}
+#sidebar {
+    display:none;
+}
+@keyframes slidein {
+    from {transform:translateX(-100%);};
+    to {transform:translateX(0%);};
 }

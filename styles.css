@@ -735,3 +735,48 @@ padding: 20px 0;
 }
 }
 @page { margin: 0; }
+
+#contactparent {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    width: 100%;
+}
+
+#contactparent * {
+    transform: scale(100%);
+    transition: all 100ms;
+}
+#contactparent .box {
+    background-color: #ccc;
+    display: flex;
+    padding: 0.5em;
+    margin-bottom: 20px;
+
+}
+
+.contact-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+
+}
+
+#contactparent .box:hover {
+    background-color: #ddd;
+    transform: scale(110%);
+}
+
+#contactparent .box:active {
+    background-color: #bbb;
+    transform: scale(95%);
+}
+
+.contact-links img {
+    height: 50px;
+    width: auto;
+}

@@ -209,12 +209,9 @@ body {
 
 #sitemap {
     display: block;
-    height: 100px;
+    margin: 0 auto;
 }
-
 #sitemap * {
-    float: left;
-    clear: left;
     color: white;
 }
 
@@ -226,3 +223,26 @@ guests allowed
 unsued
 bom.m4a
 */
+
+.pic-cont {
+    margin: 20px;
+    display:block;
+    float: left;
+    width: auto;
+    text-decoration: none;
+
+}
+.preview {
+    width: 297px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.preview-title,.preview-desc {
+    margin:5px 0;
+}
+.preview-title {font-weight: 400;}
+h1 {
+    padding-left: 20px;
+    font-weight: 400;
+}

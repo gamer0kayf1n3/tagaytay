@@ -72,3 +72,7 @@ h2 {
 form[action="cart.html"] {
     text-align:center;
 }
+
+#before, #after, #coupons {
+    width:100%;
+}

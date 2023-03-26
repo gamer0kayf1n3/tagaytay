@@ -103,7 +103,7 @@ svg {
 }
 
 body {
-    background-color: rgba(0, 0, 0, 0.77);
+    background-color: #1b2838;
     color: white;
 }
 
@@ -157,22 +157,17 @@ body {
     ;
 }
 
-#top-half,
-#bot-half {
+#top-half {
     padding: 30px;
     width: 100%;
     box-sizing: border-box;
-}
-
-#top-half {
     background-color: #2a475e;
     height: 30vh;
 }
 
-#bot-half {
-    background-color: #1b2838;
-    bottom: 0px;
-    height: 50vh;
+#top-half p {
+    margin-left: 10px;
+    font-size: 20px;
 }
 
 /* top cards */
@@ -228,6 +223,11 @@ body {
     width: 297px;
     height: auto;
     border-radius: 5px;
+    transition: all 100ms ease-out;
+}
+
+.preview:hover {
+    outline: 3px solid white
 }
 
 .preview-title,.preview-desc {

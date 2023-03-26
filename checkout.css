@@ -1,0 +1,27 @@
+.receipt {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.receipt h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.receipt p {
+  margin: 10px 0;
+}
+
+.receipt strong {
+  font-weight: bold;
+}
+
+.right, strong {
+  display:inline-block;
+  font-size: 20px;
+}
+.right {
+  float: right;
+}

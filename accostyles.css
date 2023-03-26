@@ -1,0 +1,79 @@
+.roominfo {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+button {
+    background-color: rgb(231, 97, 63);
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 200ms;
+    width: auto;
+
+}
+
+button:hover {
+    background-color: rgb(255, 129, 60);
+}
+
+button:active {
+    background-color: rgb(117, 54, 29);
+}
+
+.accopic {
+    border: 5px solid rgb(0, 204, 255);
+    border-radius: 4px;
+    width: 40%;
+    height: 40%;
+}
+
+#details {
+    width: 50%;
+    font-size: 130%;
+}
+
+.accobook {
+    height: 40%;
+    font-size: 120%;
+    padding: 10px 10px;
+}
+h2 {
+    font-weight: 400;
+}
+
+.checkout {
+    background-color: black;
+    color: white;
+    letter-spacing: 5px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 8px 70px;
+    transition: all 250ms;
+}
+
+.checkout:hover {
+    background-color: rgb(67, 129, 255);
+    border: 2px solid rgb(67, 129, 255);
+    color: white;
+    letter-spacing: 5px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 8px 70px;
+}
+
+form[action="cart.html"] {
+    text-align:center;
+}
+
+#before, #after, #coupons {
+    width:100%;
+}

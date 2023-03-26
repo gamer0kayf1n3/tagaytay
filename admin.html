@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GroupOne Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+    <!-- jQuery only required for smooth scrolling -->
+    <script src="static/modules/flowchart/example/jquery-2.1.3.min.js"></script>
+    <script src="static/modules/flowchart/example/jquery.scrollTo.min.js"></script>
+    <script src="static/modules/flowchart/example/svg.js"></script>
+    <script src="static/modules/flowchart/dist/flowsvg.min.js"></script>
+
+</head>
+
+<body>
+    <div id="intro">
+        <svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 134.21 267.24"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:15px;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><image id="gradient" width="129" height="263" transform="translate(5.27 2.5) scale(0.96 0.99)" xlink:href="grad.png"/><path class="cls-1" d="M60.66,69.83l-43.89,10L3,24.08,79.26,2.5h52.45V264.74H60.66Z"/></g></g></svg>
+    </div>
+    <div id="header">
+        <span id="dashboard">Tagaytay Dashboard</span>
+        <a href="#sales">Sales</a>
+        <a href="#sitemap">Sitemap</a>
+        <a href="#logs">Logs</a>
+        <a href="#flowchart">Flowchart</a>
+        <a href="#chart">Chart</a>
+        <span id="current-time">asd</span>
+    </div>
+
+    <div id="content-main">
+        <span id="sales"></span>
+        <div id="top-half">
+            <div class="wide-card">
+                <div class="flat">
+                    <h1>PHP 450,764.78</h1>
+                    <p>Sales</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="flat">
+                    <h1>75</h1>
+                    <p>Singles Sold</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="flat">
+                    <h1>148</h1>
+                    <p>Doubles Sold</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="flat">
+                    <h1>72</h1>
+                    <p>Triples Sold</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="flat">
+                    <h1>203</h1>
+                    <p>Quads Sold</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="flat">
+                    <h1>a lot</h1>
+                    <p>Families Sold</p>
+                </div>
+            </div>
+        </div>
+        <!--
+        <div id="bot-half">
+            
+        </div>
+        -->
+        <h1>Sitemap Manager</h1>
+        <span id="sitemap"></span>
+        <div id="sitemap">
+
+        </div>
+        <h1>Logs</h1>
+        <div id="logs">
+            <!--basically github commit history but on console format-->
+        </div>
+        <h1>Flowchart</h1>
+        <span id="flowchart"></span>
+        <div id="drawing" style="background-color: rgb(84, 84, 84);padding: 20px"></div>
+    </div>
+    <h1 id="chart">Projected Sales Chart</h1>
+    <canvas id="myChart"></canvas>
+    <canvas id="myChart2"></canvas>
+
+    <script src="js/admin.js"></script>
+    <script src="js/flow.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/chart.js"></script>
+</body>

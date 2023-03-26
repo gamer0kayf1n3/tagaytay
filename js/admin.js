@@ -39,7 +39,7 @@ for (site of sitemap) {
     divparent.setAttribute("class","divparent")
     //img
     imgEl = document.createElement("img")
-    imgEl.src = `/thumbnails/html-ss/${site}.jpg`
+    imgEl.src = `./thumbnails/html-ss/${site}.jpg`
     imgEl.setAttribute("class", "preview")
     divparent.appendChild(imgEl)
     //title

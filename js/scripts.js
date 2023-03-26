@@ -45,6 +45,7 @@ function adminSubmit() {
     if ((uname == "steven" && pwd == "ilikecats") || (uname="kyle" && pwd=="Icode")) {
         location.href="admin.html"
     } else {
+        showAlert("💀💀💀")
         document.getElementById("wrapper").remove()
     }
 }

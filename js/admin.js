@@ -3,17 +3,7 @@ setTimeout(()=> {
     document.body.style.overflowY = 'auto';
 },2400)
 
-dashboarbutton = document.getElementById("dashboard")
-dashboard = document.getElementById("sidebar")
-exitButton = document.getElementById("bye")
 timeEl = document.getElementById("current-time")
-dashboarbutton.onclick = function() {
-    dashboard.style.display = "block"
-    dashboard.style.animation = "slidein 200ms ease forwards"
-}
-exitButton.onclick = function() {
-    dashboard.style.display = "none"
-}
 
 function getTime() {
     const now = new Date();
@@ -68,3 +58,7 @@ for (site of sitemap) {
     i++;
 }
 sitemapcont.insertAdjacentHTML("beforeend",`<div style="clear:both"></div>`)
+
+fetch('commit_history.txt')
+  .then(response => response.text())
+  .then(text => document.getElementById("logs").innerText = text);

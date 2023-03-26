@@ -1,0 +1,1 @@
+git --no-pager log --graph --raw --stat --summary > ../commit_history.txt

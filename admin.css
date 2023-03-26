@@ -19,7 +19,7 @@ html {
     margin: 0;
 }
 
-svg {
+.logo {
     height: 150px;
     width: auto;
     animation: introexit 1.2s 1.2s ease forwards;
@@ -110,51 +110,17 @@ body {
 #header {
     background-color: black;
     padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+#header #dashboard, #current-time {
+    font-size: 32px;
+    font-weight: 400;
 }
 
 #current-time {
     float: right;
-}
-
-#sidebar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: black;
-    height: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    width: 20%;
-}
-
-#sidebar * {
-    padding: 10px 0;
-    font-size: 24px;
-    font-weight: 400;
-    background-color: inherit;
-    transition: all 200ms;
-    color: inherit;
-    cursor: pointer;
-}
-
-#sidebar *:hover {
-    background-color: darkgray;
-    color: white;
-}
-
-#sidebar {
-    display: none;
-}
-
-@keyframes slidein {
-    from {
-        transform: translateX(-100%);
-    }
-    ;
-    to {
-        transform: translateX(0%);
-    }
-    ;
 }
 
 #top-half {
@@ -162,7 +128,7 @@ body {
     width: 100%;
     box-sizing: border-box;
     background-color: #2a475e;
-    height: 30vh;
+    height: 300px;
 }
 
 #top-half p {
@@ -170,15 +136,19 @@ body {
     font-size: 20px;
 }
 
+
 /* top cards */
-.wide-card, .card {
+
+.wide-card,
+.card {
     box-sizing: border-box;
     display: inline-block;
     border: 1px solid rgb(112, 112, 112);
     background-color: #6588a3;
     filter: drop-shadow(5px 5px 1px #505a88);
     transition: all 100ms ease-out;
-    padding: 8px;
+    padding: 1px;
+    border-radius: 5px;
 }
 
 .wide-card:hover {
@@ -201,24 +171,23 @@ body {
     margin: 10px;
 }
 
-
-
 #sitemap {
     display: block;
     margin: 0 auto;
 }
+
 #sitemap * {
     color: white;
 }
 
 .pic-cont {
     margin: 20px;
-    display:block;
+    display: block;
     float: left;
     width: auto;
     text-decoration: none;
-
 }
+
 .preview {
     width: 297px;
     height: auto;
@@ -230,11 +199,59 @@ body {
     outline: 3px solid white
 }
 
-.preview-title,.preview-desc {
-    margin:5px 0;
+.preview-title,
+.preview-desc {
+    margin: 5px 0;
 }
-.preview-title {font-weight: 400;}
+
+.preview-title {
+    font-weight: 400;
+}
+
 h1 {
     padding-left: 20px;
     font-weight: 400;
+}
+
+#drawing {
+    margin: 0 auto;
+    width:900px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+:root {
+    color-scheme: dark;
+  }
+#logs {
+    background-color: black;
+    width: 800px;
+    padding: 30px;
+    height: 500px;
+    overflow-y: auto;
+    margin:0 auto;
+    font-family: "Fira Code", monospace;
+    white-space: pre-line;
+    font-size: 12px;
+}
+
+#myChart,#myChart2 {
+    width: 1000px;
+    margin: 20px auto;
+    background-color: #6588a3;
+}
+
+#header a {
+    padding: 0 10px;
+    text-decoration: none;
+    transform: scale(100%);
+    transition: all 100ms;
+    color: lightblue;
+}
+#header a:hover {
+  color: white;
+}
+
+.flat {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }

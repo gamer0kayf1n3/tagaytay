@@ -92,7 +92,7 @@ a:hover {
 /* css declarations for main bg */
 
 #bg {
-    background-image: url("https://c0.wallpaperflare.com/path/924/673/261/philippines-tagaytay-nature-horizon-070722549fa602a175b870f9255a2cbb.jpg");
+    background-image: url("static/imgs/philippines-tagaytay-nature-horizon-070722549fa602a175b870f9255a2cbb.jpg");
     background-position: 0 85%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -504,7 +504,7 @@ a:hover {
 /* last min changes */
 
 body {
-    background-image: url("https://drive.google.com/uc?id=1YjyxQ7kwNorj05onLYp6-_YTsxuVEj00");
+    background-image: url("static/imgs/blurred.png");
     background-size: cover;
     background-attachment: fixed;
     

@@ -144,7 +144,7 @@ a:hover {
 
 /* historical info in tagaytay */
 
-#details {
+.details, #details {
     width: 1050px;
     margin: 50px auto;
     padding: 25px;
@@ -156,12 +156,12 @@ a:hover {
     transition: all 200ms;
 }
 
-#details #side1 {
+.details #side1 {
     float: left;
     width: 50%;
 }
 
-#details #side2 img {
+.details #side2 img {
     width: 45%;
     float: right;
 }
@@ -204,13 +204,13 @@ a:hover {
 }
 
 @media only screen and (max-width: 1000px) {
-    #details #side1 {
+    .details #side1 {
         width: 100%;
     }
-    #details {
+    .details {
         width: 100vw;
     }
-    #details #side2 img {
+    .details #side2 img {
         width: 80vw;
         margin: 0px auto;
         float: none;
@@ -301,9 +301,9 @@ a:hover {
     }
 }
 
-#details:hover {
+.details:hover, #details:hover {
     box-shadow: 10px 10px 75px -22px rgba(0, 0, 0, 0.5);
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 
@@ -779,4 +779,30 @@ padding: 20px 0;
 .contact-links img {
     height: 50px;
     width: auto;
+}
+
+#offerings {
+    width: 70%;
+    text-align: center;
+}
+
+.offer {
+    width: 30%;
+    height: 450px;
+    text-align: inherit;
+    margin: 1%;
+    padding: 5px;
+    display: inline-block;
+    border: 1px solid red;
+    border-radius: 15px;
+    transition: all 200ms;
+    color: white;
+}
+
+#offer1 {
+    background-image: url(static\buffet1.jpg); /* DOesent work */
+}
+
+.offer:hover {
+    transform: scale(1.02);
 }

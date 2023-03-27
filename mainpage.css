@@ -1,0 +1,65 @@
+
+/* Updated Styles */
+
+#offerings {
+    width: 70%;
+    text-align: center;
+}
+
+.offer {
+    width: 30%;
+    height: 450px;
+    text-align: inherit;
+    margin: 1%;
+    padding: 5px;
+    display: inline-block;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    transition: all 200ms;
+    color: white;
+    vertical-align: middle;
+    background-position: center;
+    background-size: 170%;
+}
+
+.offer:hover {
+    transform: scale(1.02);
+}
+
+.offer {
+    position: relative;
+    overflow: hidden; 
+}
+  
+.offer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+    filter: blur(3px); 
+    z-index: 1;
+}
+
+/* The size of this thing blocks the navbar*/
+.offer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.offer h1 {
+    position: relative;
+    z-index: 2;
+}
+  
+.offer img{
+    position: inherit;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    z-index: 2;
+}

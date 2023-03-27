@@ -220,7 +220,7 @@ h1 {
 :root {
     color-scheme: dark;
   }
-#logs {
+#logs,#counter {
     background-color: black;
     width: 800px;
     padding: 30px;
@@ -228,7 +228,7 @@ h1 {
     overflow-y: auto;
     margin:0 auto;
     font-family: "Fira Code", monospace;
-    white-space: pre-line;
+    white-space: pre;
     font-size: 12px;
 }
 

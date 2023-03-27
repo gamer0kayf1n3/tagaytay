@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: rgb(148, 176, 218);
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -103,7 +102,7 @@ html {
 }
 
 body {
-    background-color: #1b2838;
+    background-color: #1c2c38;
     color: white;
 }
 
@@ -221,7 +220,7 @@ h1 {
 :root {
     color-scheme: dark;
   }
-#logs {
+#logs,#counter {
     background-color: black;
     width: 800px;
     padding: 30px;
@@ -229,14 +228,14 @@ h1 {
     overflow-y: auto;
     margin:0 auto;
     font-family: "Fira Code", monospace;
-    white-space: pre-line;
+    white-space: pre;
     font-size: 12px;
 }
 
 #myChart,#myChart2 {
     width: 1000px;
     margin: 20px auto;
-    background-color: #6588a3;
+    background-color: #1c2c38;
 }
 
 #header a {
@@ -255,3 +254,5 @@ h1 {
     bottom: 0;
     left: 0;
 }
+
+#sec-sink {color:white;}

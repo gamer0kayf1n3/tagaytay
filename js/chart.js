@@ -9,15 +9,23 @@ var chart = new Chart(ctx, {
     datasets: [{
       label: 'Sales',
       data: [3518000, 3652000, 4540000, 4112000, 3940000, 4540000, 4550000, 4168000, 3790000, 4302000, 4520000, 6460000],
-      backgroundColor: 'rgba(255, 99, 132, 0.2)',
+      backgroundColor: '#1c2c38',
       borderColor: 'rgba(255, 99, 132, 1)',
       borderWidth: 3
     }]
   },
   options: {
     scales: {
+      x: {
+        grid: {
+          color: 'darkgrey'
+        }
+      },
       y: {
-        beginAtZero: true
+        grid: {
+          color: 'darkgrey',
+          beginAtZero: true
+        }
       }
     }
   }
@@ -30,15 +38,23 @@ var chart2 = new Chart(ctx2, {
       datasets: [{
         label: 'Occupancy Rate',
         data: [54, 62, 70, 65, 60, 72, 70, 64, 60, 66, 72, 100],
-        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+        backgroundColor: '#1c2c38',
         borderColor: 'rgba(255, 99, 132, 1)',
         borderWidth: 3
       }]
     },
     options: {
       scales: {
+        x: {
+          grid: {
+            color: 'darkgrey'
+          }
+        },
         y: {
-          beginAtZero: true
+          grid: {
+            color: 'darkgrey',
+            beginAtZero: true
+          }
         }
       }
     }

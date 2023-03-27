@@ -1,0 +1,1 @@
+"nodejs-scripts/linecounter.exe" * > count.txt

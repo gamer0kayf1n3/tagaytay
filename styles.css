@@ -25,6 +25,7 @@ h1,h2,h3,h4,h5,h6 {
     padding: 40px;
     background-color: rgb(220, 237, 255);
     z-index: 99;
+    box-shadow: 0px 10px 52px -22px rgba(0, 0, 0, 1);
 }
 
 #navbar #actions span {
@@ -92,12 +93,13 @@ a:hover {
 /* css declarations for main bg */
 
 #bg {
-    background-image: url("static/imgs/philippines-tagaytay-nature-horizon-070722549fa602a175b870f9255a2cbb.jpg");
+    background-image: url("static/mainpage/hotel.jpg");
     background-position: 0 85%;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     padding: 50px;
+    outline: 5px solid rgb(146, 250, 255);
 }
 
 
@@ -105,6 +107,7 @@ a:hover {
 
 #content {
     text-align: center;
+    color: white;
 }
 
 #content #bottomtext {
@@ -116,7 +119,7 @@ a:hover {
     padding: 0;
     margin-bottom: 40px;
     font-size: 120px;
-    color: darkblue;
+    color: rgb(255, 255, 255);
 }
 
 #content form button, .custombutton {
@@ -154,6 +157,7 @@ a:hover {
     box-shadow: 10px 10px 52px -22px rgba(0, 0, 0, 0.44);
     animation: fadeup 0.5s;
     transition: all 200ms;
+    position: static;
 }
 
 .details #side1 {

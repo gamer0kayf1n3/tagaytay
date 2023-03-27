@@ -63,3 +63,36 @@
     object-fit: cover;
     z-index: 2;
 }
+
+#waitfor {
+    text-align: center;
+}
+
+#bigger {
+    background-color: rgb(231, 97, 63);
+    color: white;
+    padding: 30px;
+    border: none;
+    border-radius: 50px;
+    transition: all 200ms;
+    font-size: 100px;
+    font-weight: 400;
+}
+
+#bigger:hover {
+    background-color: rgb(255, 129, 60);
+    transform: scale(1.1);
+}
+
+#bigger:active {
+    background-color: rgb(117, 54, 29);
+    transform: scale(0.9);
+}
+
+#waitfor h1 {
+   font-size: 80px; 
+}
+
+#waitfor {
+    padding: 50px; 
+ }

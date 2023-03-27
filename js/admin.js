@@ -62,3 +62,7 @@ sitemapcont.insertAdjacentHTML("beforeend",`<div style="clear:both"></div>`)
 fetch('commit_history.txt')
   .then(response => response.text())
   .then(text => document.getElementById("logs").innerText = text);
+
+  fetch('count.txt')
+  .then(response => response.text())
+  .then(text => document.getElementById("counter").innerText = text);

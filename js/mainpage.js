@@ -1,7 +1,9 @@
 //Functions to cycle through images in main page
 
+//used to keep track of which images in the array to show
 var currentIndex = 0;
 
+//
 var offer1 = document.getElementById("offer1");
 var images1 = ["static/mainpage/buffet1.jpg", "static/mainpage/buffet2.jpg", "static/mainpage/buffet3.jpg"]; 
 

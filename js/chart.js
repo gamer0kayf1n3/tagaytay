@@ -16,8 +16,16 @@ var chart = new Chart(ctx, {
   },
   options: {
     scales: {
+      x: {
+        grid: {
+          color: 'darkgrey'
+        }
+      },
       y: {
-        beginAtZero: true
+        grid: {
+          color: 'darkgrey',
+          beginAtZero: true
+        }
       }
     }
   }
@@ -37,8 +45,16 @@ var chart2 = new Chart(ctx2, {
     },
     options: {
       scales: {
+        x: {
+          grid: {
+            color: 'darkgrey'
+          }
+        },
         y: {
-          beginAtZero: true
+          grid: {
+            color: 'darkgrey',
+            beginAtZero: true
+          }
         }
       }
     }

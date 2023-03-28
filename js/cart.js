@@ -12,13 +12,7 @@ for (ds of data) {
 setCookie("cartData", JSON.stringify(newData), 365)
 data = newData
 var table2d = [["Room Type", "Start Date", "End Date","Price","Action"]]
-pricing = {
-    "single":700.00,
-    "double":800.00,
-    "triple":900.00,
-    "quad":1000.00,
-    "family":1200.00
-  }
+pricing = prices
 for (ds in data) {
     Datas = data[ds].split(" ")
     roomType = pricing[Datas[0].toLowerCase()]

@@ -13,13 +13,7 @@ receipt = document.getElementsByClassName("receipt")[0]
 
 var data = JSON.parse(getCookie("cartData"))
 
-pricing = {
-    "single": 700.00,
-    "double": 800.00,
-    "triple": 900.00,
-    "quad": 1000.00,
-    "family": 1200.00
-}
+pricing = prices;
 altnames = {
         "single": "Standard Single",
         "double": "Standard Double",

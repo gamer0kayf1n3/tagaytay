@@ -58,7 +58,10 @@ for (site of sitemap) {
     i++;
 }
 sitemapcont.insertAdjacentHTML("beforeend",`<div style="clear:both"></div>`)
-
+for (altname in altnames) {
+  var element = document.getElementById(`${altname}-text`)
+  element.innerText = `${altnames[altname]} Rooms sold`
+}
 fetch('commit_history.txt')
   .then(response => response.text())
   .then(text => document.getElementById("logs").innerText = text);

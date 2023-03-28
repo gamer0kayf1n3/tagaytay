@@ -163,6 +163,7 @@ a:hover {
 .details #side1 {
     float: left;
     width: 50%;
+    font-size: 130%;
 }
 
 .details #side2 img {
@@ -809,4 +810,8 @@ padding: 20px 0;
 
 .offer:hover {
     transform: scale(1.02);
+}
+
+#details_explainer #textual_part p a{
+    font-weight: 500;
 }

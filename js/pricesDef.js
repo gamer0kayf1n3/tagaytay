@@ -8,7 +8,7 @@ var prices = {
 altnames = {
     "single": "Standard Queen",
     "double": "Standard King",
-    "triple": "Luxury Queen",
+    "triple": "Luxury Twin",
     "quad": "Luxury Double Queen",
     "family": "Luxury Double King"
   }

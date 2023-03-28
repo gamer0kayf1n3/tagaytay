@@ -43,6 +43,7 @@ for (datas of data) {
     checkind = new Date(datas[1])
     checkout = new Date(datas[2])
     daynumbs = (checkout - checkind) / 1000 / 86400
+    daynumbs++;
     subtotal = daynumbs * roomrate
     receipt.insertAdjacentHTML("beforeend",
             `<div class="room-info">

@@ -1,6 +1,13 @@
 var before = document.getElementById("before")
 var after = document.getElementById("after")
 var ctxGlobal;
+altnames = {
+  "single": "Standard Queen",
+  "double": "Standard King",
+  "triple": "Luxury Queen",
+  "quad": "Luxury Double Queen",
+  "family": "Luxury Double King"
+}
 for (els of document.getElementsByClassName("accobook")) {
     els.onclick = function(e) {
       after.style.opacity = 0.5;
@@ -12,7 +19,7 @@ for (els of document.getElementsByClassName("accobook")) {
         if (hasTagContext(e.target)) {
           before.min = new Date().toISOString().split("T")[0];
             //alert(getTagContext(e.target))
-            header.innerText = `Booking a ${getTagContext(e.target).toProperCase()} room`
+            header.innerText = `Booking a ${altnames[getTagContext(e.target)]} room`
             var modal = document.getElementById("myModal");
             modal.style.display = "block";
             modal.style.position = "fixed";

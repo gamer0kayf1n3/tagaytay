@@ -9,6 +9,13 @@ for (ds of data) {
     newData.push(ds)
   }
 }
+altnames = {
+  "single": "Standard Queen",
+  "double": "Standard King",
+  "triple": "Luxury Queen",
+  "quad": "Luxury Double Queen",
+  "family": "Luxury Double King"
+}
 setCookie("cartData", JSON.stringify(newData), 365)
 data = newData
 var table2d = [["Room Type", "Start Date", "End Date","Price","Action"]]
@@ -16,6 +23,7 @@ pricing = prices
 for (ds in data) {
     Datas = data[ds].split(" ")
     roomType = pricing[Datas[0].toLowerCase()]
+    Datas[0] = altnames[Datas[0]]
     delta = ((new Date(Datas[2]) - new Date(Datas[1]))/1000/86400)+1
     
     console.log(delta)

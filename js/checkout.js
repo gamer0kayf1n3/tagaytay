@@ -15,11 +15,11 @@ var data = JSON.parse(getCookie("cartData"))
 
 pricing = prices;
 altnames = {
-        "single": "Standard Single",
-        "double": "Standard Double",
-        "triple": "Standard Triple",
-        "quad": "Standard Quad",
-        "family": "Deluxe Family"
+        "single": "Standard Queen",
+        "double": "Standard King",
+        "triple": "Luxury Queen",
+        "quad": "Luxury Double Queen",
+        "family": "Luxury Double King"
     }
     /*
     //roomtype

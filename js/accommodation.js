@@ -41,17 +41,9 @@ after.addEventListener("input", (e) => {
   document.getElementById("description").innerText = `Booking for ${setCost(ctxGlobal) + 1} day${(setCost(ctxGlobal) + 1)>1?"s":""}`
   document.getElementById("total").innerText = `PHP ${((setCost(ctxGlobal) + 1)*price).toLocaleString()}.00`
 })
-// pricing
-pricing = {
-  "single":700.00,
-  "double":800.00,
-  "triple":900.00,
-  "quad":1000.00,
-  "family":1200.00
-}
 
 function setCost(ctx) {
-  price = pricing[ctx]
+  price = prices[ctx]
   return (new Date(after.value) - new Date(before.value))/1000/86400
 }
 
@@ -68,4 +60,8 @@ function isValidForm() {
   setCookie("cartData", JSON.stringify(cartData), 365)
   modal.style.display = "none";
   showAlert("Added to cart success!")
+}
+
+for (roomtype in prices) {
+  document.getElementById(`price-${roomtype}`).innerText = `PHP ${prices[roomtype].toLocaleString()}/night`;
 }

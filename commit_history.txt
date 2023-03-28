@@ -1,1273 +1,2133 @@
-* commit 8ab88ae0ddcca1f417789ee58721ac3036b6916b
+* commit 5d3d2fa9e1f24b1bff81783f26003bf092c8d443
 | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Sun Mar 26 21:38:55 2023 +0800
+| Date:   Wed Mar 29 05:01:40 2023 +0800
 | 
-|     BIG FINAL EDIT
-|     
-|     Co-authored-by: BermudaVI <BermudaVI@users.noreply.github.com>
+|     keep consistency to excel file
 | 
-| :000000 100644 0000000 46ebd25 A	.vscode/settings.json
-| :100644 100644 6d23913 0e4abd7 M	admin.css
-| :100644 100644 1a70529 dfdb2b7 M	admin.html
-| :000000 100644 0000000 fc38a1c A	commit_history.txt
-| :100644 100644 3a0ee93 0db1e5d M	js/admin.js
-| :000000 100644 0000000 d75154e A	js/chart.js
-| :000000 100644 0000000 4027924 A	js/flow.js
-| :100644 100644 510799f c9a7f79 M	js/scripts.js
-| :000000 100644 0000000 b1099e4 A	nodejs-scripts/commits.bat
-| :000000 100644 0000000 b512c09 A	static/modules/flowchart/.gitignore
-| :000000 100644 0000000 f4d6c05 A	static/modules/flowchart/Gruntfile.js
-| :000000 100644 0000000 7030384 A	static/modules/flowchart/MIT-LICENSE
-| :000000 100644 0000000 42dd6e6 A	static/modules/flowchart/README.md
-| :000000 100644 0000000 779b4a4 A	static/modules/flowchart/contributors.txt
-| :000000 100644 0000000 b322c6b A	static/modules/flowchart/dist/flowsvg.js
-| :000000 100644 0000000 a378177 A	static/modules/flowchart/dist/flowsvg.min.js
-| :000000 100644 0000000 25714ed A	static/modules/flowchart/example/jquery-2.1.3.min.js
-| :000000 100644 0000000 d9f9b15 A	static/modules/flowchart/example/jquery.scrollTo.min.js
-| :000000 100644 0000000 95e16ab A	static/modules/flowchart/example/rcuk.html
-| :000000 100644 0000000 fe53bc5 A	static/modules/flowchart/example/svg.js
-| :000000 100644 0000000 95c284b A	static/modules/flowchart/package.json
-| :000000 100644 0000000 8f6d92b A	static/modules/flowchart/spec/configSpec.js
-| :000000 100644 0000000 bb527ea A	static/modules/flowchart/src/addarrows.js
-| :000000 100644 0000000 0bf26d7 A	static/modules/flowchart/src/addconnectors.js
-| :000000 100644 0000000 74a94b6 A	static/modules/flowchart/src/addlabels.js
-| :000000 100644 0000000 897a19e A	static/modules/flowchart/src/angleline.js
-| :000000 100644 0000000 459a3dc A	static/modules/flowchart/src/arrowhead.js
-| :000000 100644 0000000 9bce077 A	static/modules/flowchart/src/arrowline.js
-| :000000 100644 0000000 5ab4161 A	static/modules/flowchart/src/buttonbar.js
-| :000000 100644 0000000 a371a4b A	static/modules/flowchart/src/decision.js
-| :000000 100644 0000000 073eb78 A	static/modules/flowchart/src/finish.js
-| :000000 100644 0000000 74eed55 A	static/modules/flowchart/src/generatelookups.js
-| :000000 100644 0000000 d323e2b A	static/modules/flowchart/src/hideshapes.js
-| :000000 100644 0000000 962d43c A	static/modules/flowchart/src/init.js
-| :000000 100644 0000000 1923bae A	static/modules/flowchart/src/intro.js
-| :000000 100644 0000000 e1c2d47 A	static/modules/flowchart/src/layoutshapes.js
-| :000000 100644 0000000 9c7d54c A	static/modules/flowchart/src/linelabel.js
-| :000000 100644 0000000 a62860f A	static/modules/flowchart/src/makeshapes.js
-| :000000 100644 0000000 7ab73b2 A	static/modules/flowchart/src/nodepoints.js
-| :000000 100644 0000000 06fe44a A	static/modules/flowchart/src/outro.js
-| :000000 100644 0000000 6937f8d A	static/modules/flowchart/src/positionshapes.js
-| :000000 100644 0000000 41adcdb A	static/modules/flowchart/src/process.js
-| :000000 100644 0000000 b18fc94 A	static/modules/flowchart/src/referringids.js
-| :000000 100644 0000000 58ea5b8 A	static/modules/flowchart/src/setroot.js
-| :000000 100644 0000000 e97af70 A	static/modules/flowchart/src/shapefuncs.js
-| :000000 100644 0000000 eca9f53 A	static/modules/flowchart/src/start.js
-| :000000 100644 0000000 48956d5 A	static/modules/flowchart/src/staticaddarrows.js
-| :000000 100644 0000000 466cec4 A	static/modules/flowchart/src/staticaddconnectors.js
-| :000000 100644 0000000 17c76b9 A	static/modules/flowchart/src/staticaddlabels.js
-| :000000 100644 0000000 6a70c59 A	static/modules/flowchart/src/staticnodepoints.js
-| :000000 100644 0000000 b19ec67 A	static/modules/flowchart/src/togglenext.js
-| :000000 100644 0000000 4397281 A	static/modules/flowchart/src/yesnoids.js
-| :000000 100644 0000000 fe53bc5 A	static/modules/flowchart/vendor/svg.js
-|  .vscode/settings.json                             |    8 +
-|  admin.css                                         |  119 +-
-|  admin.html                                        |   77 +-
-|  commit_history.txt                                | 2552 +++++++++++++
-|  js/admin.js                                       |   16 +-
-|  js/chart.js                                       |   47 +
-|  js/flow.js                                        |   49 +
-|  js/scripts.js                                     |    1 +
-|  nodejs-scripts/commits.bat                        |    1 +
-|  static/modules/flowchart/.gitignore               |    1 +
-|  static/modules/flowchart/Gruntfile.js             |  126 +
-|  static/modules/flowchart/MIT-LICENSE              |   19 +
-|  static/modules/flowchart/README.md                |  184 +
-|  static/modules/flowchart/contributors.txt         |    1 +
-|  static/modules/flowchart/dist/flowsvg.js          | 1267 +++++++
-|  static/modules/flowchart/dist/flowsvg.min.js      |    3 +
-|  .../modules/flowchart/example/jquery-2.1.3.min.js |    4 +
-|  .../flowchart/example/jquery.scrollTo.min.js      |    7 +
-|  static/modules/flowchart/example/rcuk.html        |  250 ++
-|  static/modules/flowchart/example/svg.js           | 3621 +++++++++++++++++++
-|  static/modules/flowchart/package.json             |   45 +
-|  static/modules/flowchart/spec/configSpec.js       |   20 +
-|  static/modules/flowchart/src/addarrows.js         |   46 +
-|  static/modules/flowchart/src/addconnectors.js     |   46 +
-|  static/modules/flowchart/src/addlabels.js         |   37 +
-|  static/modules/flowchart/src/angleline.js         |   64 +
-|  static/modules/flowchart/src/arrowhead.js         |   15 +
-|  static/modules/flowchart/src/arrowline.js         |   17 +
-|  static/modules/flowchart/src/buttonbar.js         |   82 +
-|  static/modules/flowchart/src/decision.js          |   30 +
-|  static/modules/flowchart/src/finish.js            |   76 +
-|  static/modules/flowchart/src/generatelookups.js   |    6 +
-|  static/modules/flowchart/src/hideshapes.js        |   10 +
-|  static/modules/flowchart/src/init.js              |   80 +
-|  static/modules/flowchart/src/intro.js             |    5 +
-|  static/modules/flowchart/src/layoutshapes.js      |   32 +
-|  static/modules/flowchart/src/linelabel.js         |   29 +
-|  static/modules/flowchart/src/makeshapes.js        |   22 +
-|  static/modules/flowchart/src/nodepoints.js        |   86 +
-|  static/modules/flowchart/src/outro.js             |    6 +
-|  static/modules/flowchart/src/positionshapes.js    |   35 +
-|  static/modules/flowchart/src/process.js           |   41 +
-|  static/modules/flowchart/src/referringids.js      |   62 +
-|  static/modules/flowchart/src/setroot.js           |   18 +
-|  static/modules/flowchart/src/shapefuncs.js        |    5 +
-|  static/modules/flowchart/src/start.js             |   56 +
-|  static/modules/flowchart/src/staticaddarrows.js   |   54 +
-|  .../modules/flowchart/src/staticaddconnectors.js  |   25 +
-|  static/modules/flowchart/src/staticaddlabels.js   |   27 +
-|  static/modules/flowchart/src/staticnodepoints.js  |   89 +
-|  static/modules/flowchart/src/togglenext.js        |  121 +
-|  static/modules/flowchart/src/yesnoids.js          |   14 +
-|  static/modules/flowchart/vendor/svg.js            | 3621 +++++++++++++++++++
-|  53 files changed, 13188 insertions(+), 87 deletions(-)
-|  create mode 100644 .vscode/settings.json
-|  create mode 100644 commit_history.txt
-|  create mode 100644 js/chart.js
-|  create mode 100644 js/flow.js
-|  create mode 100644 nodejs-scripts/commits.bat
-|  create mode 100644 static/modules/flowchart/.gitignore
-|  create mode 100644 static/modules/flowchart/Gruntfile.js
-|  create mode 100644 static/modules/flowchart/MIT-LICENSE
-|  create mode 100644 static/modules/flowchart/README.md
-|  create mode 100644 static/modules/flowchart/contributors.txt
-|  create mode 100644 static/modules/flowchart/dist/flowsvg.js
-|  create mode 100644 static/modules/flowchart/dist/flowsvg.min.js
-|  create mode 100644 static/modules/flowchart/example/jquery-2.1.3.min.js
-|  create mode 100644 static/modules/flowchart/example/jquery.scrollTo.min.js
-|  create mode 100644 static/modules/flowchart/example/rcuk.html
-|  create mode 100644 static/modules/flowchart/example/svg.js
-|  create mode 100644 static/modules/flowchart/package.json
-|  create mode 100644 static/modules/flowchart/spec/configSpec.js
-|  create mode 100644 static/modules/flowchart/src/addarrows.js
-|  create mode 100644 static/modules/flowchart/src/addconnectors.js
-|  create mode 100644 static/modules/flowchart/src/addlabels.js
-|  create mode 100644 static/modules/flowchart/src/angleline.js
-|  create mode 100644 static/modules/flowchart/src/arrowhead.js
-|  create mode 100644 static/modules/flowchart/src/arrowline.js
-|  create mode 100644 static/modules/flowchart/src/buttonbar.js
-|  create mode 100644 static/modules/flowchart/src/decision.js
-|  create mode 100644 static/modules/flowchart/src/finish.js
-|  create mode 100644 static/modules/flowchart/src/generatelookups.js
-|  create mode 100644 static/modules/flowchart/src/hideshapes.js
-|  create mode 100644 static/modules/flowchart/src/init.js
-|  create mode 100644 static/modules/flowchart/src/intro.js
-|  create mode 100644 static/modules/flowchart/src/layoutshapes.js
-|  create mode 100644 static/modules/flowchart/src/linelabel.js
-|  create mode 100644 static/modules/flowchart/src/makeshapes.js
-|  create mode 100644 static/modules/flowchart/src/nodepoints.js
-|  create mode 100644 static/modules/flowchart/src/outro.js
-|  create mode 100644 static/modules/flowchart/src/positionshapes.js
-|  create mode 100644 static/modules/flowchart/src/process.js
-|  create mode 100644 static/modules/flowchart/src/referringids.js
-|  create mode 100644 static/modules/flowchart/src/setroot.js
-|  create mode 100644 static/modules/flowchart/src/shapefuncs.js
-|  create mode 100644 static/modules/flowchart/src/start.js
-|  create mode 100644 static/modules/flowchart/src/staticaddarrows.js
-|  create mode 100644 static/modules/flowchart/src/staticaddconnectors.js
-|  create mode 100644 static/modules/flowchart/src/staticaddlabels.js
-|  create mode 100644 static/modules/flowchart/src/staticnodepoints.js
-|  create mode 100644 static/modules/flowchart/src/togglenext.js
-|  create mode 100644 static/modules/flowchart/src/yesnoids.js
-|  create mode 100644 static/modules/flowchart/vendor/svg.js
+| :100644 100644 c855093 0721fbb M	js/pricesDef.js
+|  js/pricesDef.js | 4 ++--
+|  1 file changed, 2 insertions(+), 2 deletions(-)
 | 
-* commit 143984b62162805352993c78dc3b6c82f91e4da8
+* commit 757ebc0cf970cbc1473d44a16e2519f2deab9b98
+| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| Date:   Wed Mar 29 05:00:45 2023 +0800
+| 
+|     formula+chart finalize
+| 
+| :100644 100644 57a96df bb48434 M	admin.css
+| :100644 100644 c1511e1 8bd1375 M	admin.html
+| :100644 100644 fea04df 2df4d7e M	js/chart.js
+|  admin.css   |  45 +++++++++++++++++-
+|  admin.html  | 143 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+|  js/chart.js |  15 +++++-
+|  3 files changed, 200 insertions(+), 3 deletions(-)
+| 
+* commit b741420e6d26f934131a648b006b0e0d96fbb04b
 | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
-| Date:   Sun Mar 26 12:37:25 2023 +0800
+| Date:   Tue Mar 28 21:18:28 2023 +0800
 | 
-|     Layout Update
+|     corrected
+| 
+| :100644 100644 536455e c855093 M	js/pricesDef.js
+|  js/pricesDef.js | 2 +-
+|  1 file changed, 1 insertion(+), 1 deletion(-)
+| 
+* commit dedb2dc6ee01af0db7074ce14ea8ede735e9b152
+| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| Date:   Tue Mar 28 21:15:53 2023 +0800
+| 
+|     name controller
+| 
+| :100644 100644 4509469 c1511e1 M	admin.html
+| :100644 100644 68111c3 44ae9df M	js/admin.js
+| :100644 100644 f99d180 536455e M	js/pricesDef.js
+|  admin.html      | 11 ++++++-----
+|  js/admin.js     |  5 ++++-
+|  js/pricesDef.js |  9 ++++++++-
+|  3 files changed, 18 insertions(+), 7 deletions(-)
+| 
+* commit b5ba98985c266715b5bcf1a71ccb4396489bd9e2
+| Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| Date:   Tue Mar 28 21:04:02 2023 +0800
+| 
+|     updated chart for projected
 |     
-|     - Eliminated bottom half div
-|     - Placed sItemap in its place
-|     - Adjusted styles accordingly
-|     - Gave image previews a hover effect
+|     yes
+| 
+| :100644 100644 2bc4b24 4509469 M	admin.html
+| :100644 000000 f879919 0000000 D	bom.m4a
+| :000000 100644 0000000 125490a A	bom.mp3
+| :100644 100644 f2fb2e8 fea04df M	js/chart.js
+|  admin.html  |  11 ++++++++++-
+|  bom.m4a     | Bin 20169 -> 0 bytes
+|  bom.mp3     | Bin 0 -> 32813 bytes
+|  js/chart.js |   2 +-
+|  4 files changed, 11 insertions(+), 2 deletions(-)
+|  delete mode 100644 bom.m4a
+|  create mode 100644 bom.mp3
+| 
+* commit 40e110fcb5a5c5bd9aad703b3065e664cc2210f6
+| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| Date:   Tue Mar 28 20:29:53 2023 +0800
+| 
+|     oneline to fix it
+|     basically making date delta (subtraction) inclusive
+| 
+| :100644 100644 03fba45 104f8b9 M	js/checkout.js
+|  js/checkout.js | 1 +
+|  1 file changed, 1 insertion(+)
+| 
+* commit 5c4549c116695e2babad73f4f303f7201672ec5a
+| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| Date:   Tue Mar 28 20:26:15 2023 +0800
+| 
+|     JS compat to HTML
+|     essentially making changing prices faster
+| 
+| :100644 100644 08348bb 6442919 M	js/accommodation.js
+| :100644 100644 e246cda 0f2985c M	js/cart.js
+| :100644 100644 26e95f3 03fba45 M	js/checkout.js
+|  js/accommodation.js |  9 ++++++++-
+|  js/cart.js          |  8 ++++++++
+|  js/checkout.js      | 10 +++++-----
+|  3 files changed, 21 insertions(+), 6 deletions(-)
+| 
+* commit 033c95e0a3c220dcacc7a89184d422e114e54691
+| Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| Date:   Tue Mar 28 20:25:38 2023 +0800
+| 
+|     EXC YOURS I SWEAR THIS IS THE LAST
 |     
-|     Note:
-|     uh
+|     AWD
 | 
-| :100644 100644 a763fbc 6d23913 M	admin.css
-| :100644 100644 9247fe9 1a70529 M	admin.html
-|  admin.css  | 20 ++++++++++----------
-|  admin.html | 22 ++++++++++++----------
-|  2 files changed, 22 insertions(+), 20 deletions(-)
-|   
-*   commit f4ae3eb0bf656a619121aa216ff7bb97c84f08f5
-|\  Merge: 81992cc 104ec32
-| | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
-| | Date:   Sat Mar 25 20:47:04 2023 +0800
-| | 
-| |     Merge branch 'gamer0kayf1n3/issue26' of https://github.com/gamer0kayf1n3/tagaytay into gamer0kayf1n3/issue26
-| | 
-| * commit 104ec329ba8d4e4af526ab4df34ea7ab934fe2ad
-| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| | Date:   Sat Mar 25 20:45:56 2023 +0800
-| | 
-| |     title changes; next time fix og tags
-| | 
-| | :100644 100644 46fa78d 95c6ef9 M	accommodations.html
-| | :100644 100644 e457612 b328543 M	admin.html
-| | :100644 100644 e75749e 1f5300a M	booknow.html
-| | :100644 100644 d014b6d ca1fe57 M	cart.html
-| | :100644 100644 139ca9c cc2ca4a M	checkout.html
-| | :100644 100644 efd8b6d 3798825 M	endpoint.html
-| | :100644 100644 c798166 739bf72 M	gallery/index.html
-| | :100644 100644 8347c92 98cf094 M	static_cart.html
-| |  accommodations.html | 2 +-
-| |  admin.html          | 2 +-
-| |  booknow.html        | 2 +-
-| |  cart.html           | 2 +-
-| |  checkout.html       | 2 +-
-| |  endpoint.html       | 2 +-
-| |  gallery/index.html  | 2 +-
-| |  static_cart.html    | 2 +-
-| |  8 files changed, 8 insertions(+), 8 deletions(-)
-| | 
-| * commit c807d4f4a7663c73612cf48620c7e21add97ea22
-| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| | Date:   Sat Mar 25 20:42:33 2023 +0800
-| | 
-| |     logs template
-| | 
-| | :100644 100644 337e588 e457612 M	admin.html
-| |  admin.html | 3 +++
-| |  1 file changed, 3 insertions(+)
-| | 
-| * commit d93f7ba3260d00b3100df2a3779efd54284ad73e
-| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| | Date:   Sat Mar 25 20:41:26 2023 +0800
-| | 
-| |     css for previous
-| | 
-| | :100644 100644 5cc7daf c22b57d M	accostyles.css
-| | :100644 100644 cb190ef 139ca9c M	checkout.html
-| | :100644 100644 297ab28 efd8b6d M	endpoint.html
-| |  accostyles.css |  3 ++-
-| |  checkout.html  | 25 +++++++++++++++++++++++++
-| |  endpoint.html  |  3 ---
-| |  3 files changed, 27 insertions(+), 4 deletions(-)
-| | 
-| * commit be446a385f1be51eb40301acefd04c9e89b6ea55
-| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| | Date:   Sat Mar 25 20:41:10 2023 +0800
-| | 
-| |     desc fix
-| | 
-| | :100644 100644 8aeae38 46fa78d M	accommodations.html
-| |  accommodations.html | 11 ++++++-----
-| |  1 file changed, 6 insertions(+), 5 deletions(-)
-| | 
-* | commit 81992ccb6eddcea27b8a75fc926b5e935b1ddfe0
-|/  Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
-|   Date:   Sat Mar 25 20:46:47 2023 +0800
-|   
-|       .
-|   
-|   :100644 100644 bf1d284 a763fbc M	admin.css
-|   :100644 100644 337e588 18602b4 M	admin.html
-|    admin.css  | 11 +----------
-|    admin.html | 11 ++++++-----
-|    2 files changed, 7 insertions(+), 15 deletions(-)
+| :100644 100644 5ccc242 d6fee21 M	accommodations.html
+|  accommodations.html | 6 +++---
+|  1 file changed, 3 insertions(+), 3 deletions(-)
 | 
-* commit 1bbe4c416e7e6c7174dd7caddb5db37004352960
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Sat Mar 25 19:55:59 2023 +0800
+* commit 54dcef610a82d6ed7401e2922513730cbbc128a2
+| Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| Date:   Tue Mar 28 20:21:19 2023 +0800
 | 
-|     intro bug
+|     DOne room descs
+|     
+|     theyre expansive lol
 | 
-| :100644 100644 f5c6603 bf1d284 M	admin.css
-| :100644 100644 4b4d532 3a0ee93 M	js/admin.js
-|  admin.css   | 1 +
-|  js/admin.js | 1 +
-|  2 files changed, 2 insertions(+)
-| 
-* commit 079c8b88b38b3d5c1bee1ad56dc35e42bbb7646b
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Sat Mar 25 19:52:15 2023 +0800
-| 
-|     massive sitemap update
-| 
-| :100644 100644 b2ea208 f5c6603 M	admin.css
-| :100644 100644 2b15764 337e588 M	admin.html
-| :100644 100644 1ad4c89 4b4d532 M	js/admin.js
-| :000000 100644 0000000 0df368d A	nodejs-scripts/compressimg.js
-| :000000 100644 0000000 67b6a16 A	nodejs-scripts/thumbnails.js
-| :000000 100644 0000000 e69de29 A	thumbnails/a
-| :000000 100644 0000000 1d86c37 A	thumbnails/html-ss -hq/about.png
-| :000000 100644 0000000 d6706aa A	thumbnails/html-ss -hq/accommodations.png
-| :000000 100644 0000000 53af330 A	thumbnails/html-ss -hq/admin.png
-| :000000 100644 0000000 7bef997 A	thumbnails/html-ss -hq/booknow.png
-| :000000 100644 0000000 52f1e76 A	thumbnails/html-ss -hq/cart.png
-| :000000 100644 0000000 bbe31eb A	thumbnails/html-ss -hq/checkout.png
-| :000000 100644 0000000 8bb032a A	thumbnails/html-ss -hq/contact.png
-| :000000 100644 0000000 34f1d4d A	thumbnails/html-ss -hq/delicacies.png
-| :000000 100644 0000000 d23e4df A	thumbnails/html-ss -hq/economical.png
-| :000000 100644 0000000 dbb44a5 A	thumbnails/html-ss -hq/endpoint.png
-| :000000 100644 0000000 9f344e6 A	thumbnails/html-ss -hq/explainertemplate.png
-| :000000 100644 0000000 29e0d80 A	thumbnails/html-ss -hq/index.png
-| :000000 100644 0000000 5b06ea3 A	thumbnails/html-ss -hq/learnmore.png
-| :000000 100644 0000000 5018e2e A	thumbnails/html-ss -hq/privacy.png
-| :000000 100644 0000000 16ef6a3 A	thumbnails/html-ss -hq/reviews.png
-| :000000 100644 0000000 ae4edb6 A	thumbnails/html-ss -hq/signupform.png
-| :000000 100644 0000000 20be51c A	thumbnails/html-ss -hq/static_cart.png
-| :000000 100644 0000000 9f344e6 A	thumbnails/html-ss -hq/template.png
-| :000000 100644 0000000 7c4cb7f A	thumbnails/html-ss -hq/terms.png
-| :000000 100644 0000000 f56c531 A	thumbnails/html-ss -hq/test.png
-| :000000 100644 0000000 d51d308 A	thumbnails/html-ss/about.jpg
-| :000000 100644 0000000 a61a933 A	thumbnails/html-ss/accommodations.jpg
-| :000000 100644 0000000 72ae6e5 A	thumbnails/html-ss/admin.jpg
-| :000000 100644 0000000 0879870 A	thumbnails/html-ss/booknow.jpg
-| :000000 100644 0000000 9eed599 A	thumbnails/html-ss/cart.jpg
-| :000000 100644 0000000 1ef11c0 A	thumbnails/html-ss/checkout.jpg
-| :000000 100644 0000000 645bc78 A	thumbnails/html-ss/contact.jpg
-| :000000 100644 0000000 ea5ce94 A	thumbnails/html-ss/delicacies.jpg
-| :000000 100644 0000000 3b884ce A	thumbnails/html-ss/economical.jpg
-| :000000 100644 0000000 5459659 A	thumbnails/html-ss/endpoint.jpg
-| :000000 100644 0000000 e998f09 A	thumbnails/html-ss/explainertemplate.jpg
-| :000000 100644 0000000 d7b0b99 A	thumbnails/html-ss/index.jpg
-| :000000 100644 0000000 ab27fed A	thumbnails/html-ss/learnmore.jpg
-| :000000 100644 0000000 c091efd A	thumbnails/html-ss/privacy.jpg
-| :000000 100644 0000000 1f16f57 A	thumbnails/html-ss/reviews.jpg
-| :000000 100644 0000000 efc7e2f A	thumbnails/html-ss/signupform.jpg
-| :000000 100644 0000000 7f07daa A	thumbnails/html-ss/static_cart.jpg
-| :000000 100644 0000000 e998f09 A	thumbnails/html-ss/template.jpg
-| :000000 100644 0000000 0f8dda9 A	thumbnails/html-ss/terms.jpg
-| :000000 100644 0000000 16824ea A	thumbnails/html-ss/test.jpg
-|  admin.css                                    |  30 ++++++++++++---
-|  admin.html                                   |   5 ++-
-|  js/admin.js                                  |  35 +++++++++++++++++-
-|  nodejs-scripts/compressimg.js                |  27 ++++++++++++++
-|  nodejs-scripts/thumbnails.js                 |  49 +++++++++++++++++++++++++
-|  thumbnails/a                                 |   0
-|  thumbnails/html-ss -hq/about.png             | Bin 0 -> 270048 bytes
-|  thumbnails/html-ss -hq/accommodations.png    | Bin 0 -> 172954 bytes
-|  thumbnails/html-ss -hq/admin.png             | Bin 0 -> 7081 bytes
-|  thumbnails/html-ss -hq/booknow.png           | Bin 0 -> 39169 bytes
-|  thumbnails/html-ss -hq/cart.png              | Bin 0 -> 40915 bytes
-|  thumbnails/html-ss -hq/checkout.png          | Bin 0 -> 63111 bytes
-|  thumbnails/html-ss -hq/contact.png           | Bin 0 -> 39687 bytes
-|  thumbnails/html-ss -hq/delicacies.png        | Bin 0 -> 523535 bytes
-|  thumbnails/html-ss -hq/economical.png        | Bin 0 -> 861427 bytes
-|  thumbnails/html-ss -hq/endpoint.png          | Bin 0 -> 62561 bytes
-|  thumbnails/html-ss -hq/explainertemplate.png | Bin 0 -> 35517 bytes
-|  thumbnails/html-ss -hq/index.png             | Bin 0 -> 751381 bytes
-|  thumbnails/html-ss -hq/learnmore.png         | Bin 0 -> 909012 bytes
-|  thumbnails/html-ss -hq/privacy.png           | Bin 0 -> 115291 bytes
-|  thumbnails/html-ss -hq/reviews.png           | Bin 0 -> 235959 bytes
-|  thumbnails/html-ss -hq/signupform.png        | Bin 0 -> 41418 bytes
-|  thumbnails/html-ss -hq/static_cart.png       | Bin 0 -> 61984 bytes
-|  thumbnails/html-ss -hq/template.png          | Bin 0 -> 35517 bytes
-|  thumbnails/html-ss -hq/terms.png             | Bin 0 -> 118843 bytes
-|  thumbnails/html-ss -hq/test.png              | Bin 0 -> 12319 bytes
-|  thumbnails/html-ss/about.jpg                 | Bin 0 -> 43390 bytes
-|  thumbnails/html-ss/accommodations.jpg        | Bin 0 -> 26359 bytes
-|  thumbnails/html-ss/admin.jpg                 | Bin 0 -> 7300 bytes
-|  thumbnails/html-ss/booknow.jpg               | Bin 0 -> 18267 bytes
-|  thumbnails/html-ss/cart.jpg                  | Bin 0 -> 18929 bytes
-|  thumbnails/html-ss/checkout.jpg              | Bin 0 -> 29982 bytes
-|  thumbnails/html-ss/contact.jpg               | Bin 0 -> 18275 bytes
-|  thumbnails/html-ss/delicacies.jpg            | Bin 0 -> 42972 bytes
-|  thumbnails/html-ss/economical.jpg            | Bin 0 -> 56364 bytes
-|  thumbnails/html-ss/endpoint.jpg              | Bin 0 -> 28682 bytes
-|  thumbnails/html-ss/explainertemplate.jpg     | Bin 0 -> 16915 bytes
-|  thumbnails/html-ss/index.jpg                 | Bin 0 -> 40952 bytes
-|  thumbnails/html-ss/learnmore.jpg             | Bin 0 -> 53257 bytes
-|  thumbnails/html-ss/privacy.jpg               | Bin 0 -> 54980 bytes
-|  thumbnails/html-ss/reviews.jpg               | Bin 0 -> 50580 bytes
-|  thumbnails/html-ss/signupform.jpg            | Bin 0 -> 29945 bytes
-|  thumbnails/html-ss/static_cart.jpg           | Bin 0 -> 37240 bytes
-|  thumbnails/html-ss/template.jpg              | Bin 0 -> 16915 bytes
-|  thumbnails/html-ss/terms.jpg                 | Bin 0 -> 45839 bytes
-|  thumbnails/html-ss/test.jpg                  | Bin 0 -> 11108 bytes
-|  46 files changed, 137 insertions(+), 9 deletions(-)
-|  create mode 100644 nodejs-scripts/compressimg.js
-|  create mode 100644 nodejs-scripts/thumbnails.js
-|  create mode 100644 thumbnails/a
-|  create mode 100644 thumbnails/html-ss -hq/about.png
-|  create mode 100644 thumbnails/html-ss -hq/accommodations.png
-|  create mode 100644 thumbnails/html-ss -hq/admin.png
-|  create mode 100644 thumbnails/html-ss -hq/booknow.png
-|  create mode 100644 thumbnails/html-ss -hq/cart.png
-|  create mode 100644 thumbnails/html-ss -hq/checkout.png
-|  create mode 100644 thumbnails/html-ss -hq/contact.png
-|  create mode 100644 thumbnails/html-ss -hq/delicacies.png
-|  create mode 100644 thumbnails/html-ss -hq/economical.png
-|  create mode 100644 thumbnails/html-ss -hq/endpoint.png
-|  create mode 100644 thumbnails/html-ss -hq/explainertemplate.png
-|  create mode 100644 thumbnails/html-ss -hq/index.png
-|  create mode 100644 thumbnails/html-ss -hq/learnmore.png
-|  create mode 100644 thumbnails/html-ss -hq/privacy.png
-|  create mode 100644 thumbnails/html-ss -hq/reviews.png
-|  create mode 100644 thumbnails/html-ss -hq/signupform.png
-|  create mode 100644 thumbnails/html-ss -hq/static_cart.png
-|  create mode 100644 thumbnails/html-ss -hq/template.png
-|  create mode 100644 thumbnails/html-ss -hq/terms.png
-|  create mode 100644 thumbnails/html-ss -hq/test.png
-|  create mode 100644 thumbnails/html-ss/about.jpg
-|  create mode 100644 thumbnails/html-ss/accommodations.jpg
-|  create mode 100644 thumbnails/html-ss/admin.jpg
-|  create mode 100644 thumbnails/html-ss/booknow.jpg
-|  create mode 100644 thumbnails/html-ss/cart.jpg
-|  create mode 100644 thumbnails/html-ss/checkout.jpg
-|  create mode 100644 thumbnails/html-ss/contact.jpg
-|  create mode 100644 thumbnails/html-ss/delicacies.jpg
-|  create mode 100644 thumbnails/html-ss/economical.jpg
-|  create mode 100644 thumbnails/html-ss/endpoint.jpg
-|  create mode 100644 thumbnails/html-ss/explainertemplate.jpg
-|  create mode 100644 thumbnails/html-ss/index.jpg
-|  create mode 100644 thumbnails/html-ss/learnmore.jpg
-|  create mode 100644 thumbnails/html-ss/privacy.jpg
-|  create mode 100644 thumbnails/html-ss/reviews.jpg
-|  create mode 100644 thumbnails/html-ss/signupform.jpg
-|  create mode 100644 thumbnails/html-ss/static_cart.jpg
-|  create mode 100644 thumbnails/html-ss/template.jpg
-|  create mode 100644 thumbnails/html-ss/terms.jpg
-|  create mode 100644 thumbnails/html-ss/test.jpg
-| 
-* commit b96f5eb6834da212b84cb919f917997d2afbc7fb
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Sat Mar 25 18:12:48 2023 +0800
-| 
-|     fix css issues
-| 
-| :100644 100644 ff789cd b2ea208 M	admin.css
-|  admin.css | 9 ++++++---
+| :100644 100644 e295fb7 5ccc242 M	accommodations.html
+|  accommodations.html | 9 ++++++---
 |  1 file changed, 6 insertions(+), 3 deletions(-)
 | 
-* commit 06fa90aac980c2a8532aa5eaf660bc774b89abed
+* commit 68a48c95a48d1a07ee73ee5b948552f58125a5a9
+| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| Date:   Tue Mar 28 20:10:44 2023 +0800
+| 
+|     no comment
+| 
+| :100644 100644 0d4aa83 f99d180 M	js/pricesDef.js
+|  js/pricesDef.js | 16 +---------------
+|  1 file changed, 1 insertion(+), 15 deletions(-)
+| 
+* commit 6a77e09415d40944d776bd2e18b70bcefbca486a
 | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
-| Date:   Sat Mar 25 15:17:18 2023 +0800
+| Date:   Tue Mar 28 20:06:14 2023 +0800
 | 
-|     Steam UI replication 30%-ish done
+|     Prices
 |     
-|     top cards dont have content and the bottom half (sitemap) unfinished
+|     yung js nalang i rename
 | 
-| :100644 100644 7b8c33c ff789cd M	admin.css
-| :100644 100644 1fed203 2b15764 M	admin.html
-| :100644 100644 af88e87 1ad4c89 M	js/admin.js
-|  admin.css   | 100 ++++++++++++++++++++++++++++++++++++++++++++++++++++------
-|  admin.html  |  36 +++++++++++++++++++++
-|  js/admin.js |  13 +++++++-
-|  3 files changed, 138 insertions(+), 11 deletions(-)
+| :100644 100644 690bbab e295fb7 M	accommodations.html
+| :100644 100644 6e53404 0d4aa83 M	js/pricesDef.js
+|  accommodations.html | 12 +++++++-----
+|  js/pricesDef.js     | 26 ++++++++++++++++++++------
+|  2 files changed, 27 insertions(+), 11 deletions(-)
 | 
-* commit d40df4e7eb5efd266d1a2d5a8ea0d204b2b629e6
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Sat Mar 25 13:27:20 2023 +0800
+* commit 139b9cdc73637024b8a3f054e20e942a7ac083b5
+| Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| Date:   Tue Mar 28 19:49:14 2023 +0800
 | 
-|     time + sidebar
+|     NEW ROOMS
+|     
+|     wala pa yung bagong price
 | 
-| :100644 100644 0605dba 7b8c33c M	admin.css
-| :100644 100644 56e8a48 1fed203 M	admin.html
-| :100644 100644 20615d3 af88e87 M	js/admin.js
-|  admin.css   | 46 ++++++++++++++++++++++++++++++++++++++++++++++
-|  admin.html  | 11 +++++++++--
-|  js/admin.js | 26 +++++++++++++++++++++++++-
-|  3 files changed, 80 insertions(+), 3 deletions(-)
-| 
-* commit 285064fb11216bdebe6c1be3d06d095c4acb303e
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Sat Mar 25 12:42:11 2023 +0800
-| 
-|     bugfix for adminpanel
-| 
-| :100644 100644 76f4bf7 0605dba M	admin.css
-| :100644 100644 87e9653 56e8a48 M	admin.html
-|  admin.css  | 19 ++++++++++++++++++-
-|  admin.html |  4 ++++
-|  2 files changed, 22 insertions(+), 1 deletion(-)
-| 
-* commit 92112bc95ff63e4ab4ce67873ee8394259a8c9f8
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Sat Mar 25 12:35:38 2023 +0800
-| 
-|     improved contact us page
-| 
-| :100644 100644 62191f6 46e9038 M	contact.html
-| :100644 100644 de1d5ff f066f66 M	styles.css
-|  contact.html | 45 +++++++++++++++++++++++----------------------
-|  styles.css   | 47 ++++++++++++++++++++++++++++++++++++++++++++++-
-|  2 files changed, 69 insertions(+), 23 deletions(-)
-| 
-* commit 6101345464dd0ef9c7952869485ea9c6fbc6bd99
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Sat Mar 25 12:10:17 2023 +0800
-| 
-|     improved acco modal
-| 
-| :100644 100644 bf0e6eb 8aeae38 M	accommodations.html
-| :100644 100644 fab922a 5cc7daf M	accostyles.css
-|  accommodations.html | 6 +++---
-|  accostyles.css      | 4 ++++
-|  2 files changed, 7 insertions(+), 3 deletions(-)
-| 
-* commit 86ec01eb71dfb95eed9f88ed9aa79b6c1f5d0b46
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Fri Mar 24 22:02:58 2023 +0800
-| 
-|     for sum reason total in cart.html disappeared
-| 
-| :100644 100644 2fc6885 d014b6d M	cart.html
-|  cart.html | 5 +++++
-|  1 file changed, 5 insertions(+)
-| 
-* commit 1326824f7af4931af20e549192c68a33162621d1
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Fri Mar 24 21:54:29 2023 +0800
-| 
-|     dont print this
-| 
-| :100644 100644 4648f71 cb190ef M	checkout.html
-| :100644 100644 a1a11cd de1d5ff M	styles.css
-|  checkout.html | 3 +++
-|  styles.css    | 2 +-
-|  2 files changed, 4 insertions(+), 1 deletion(-)
-| 
-* commit 45177989f16f7f6da6162a177cd693f386316645
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Fri Mar 24 21:54:24 2023 +0800
-| 
-|     dont print this
-| 
-| :100644 100644 d540df5 e9955fc M	js/checkout.js
-|  js/checkout.js | 60 ++++++++++++++++++++++++++++----------------------------
-|  1 file changed, 30 insertions(+), 30 deletions(-)
-| 
-* commit ee6fb759dfe6bf453b67c5cc96c25588a460a5dd
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Fri Mar 24 21:45:11 2023 +0800
-| 
-|     show that payment is being processed
-| 
-| :100644 100644 9d07951 2fc6885 M	cart.html
-|  cart.html | 5 +++--
-|  1 file changed, 3 insertions(+), 2 deletions(-)
-| 
-* commit 733f4db6c36af46fc3149e6b9ac34d511bf51d6a
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Fri Mar 24 21:44:54 2023 +0800
-| 
-|     style consistency
-| 
-| :100644 100644 c90e38c bf0e6eb M	accommodations.html
-| :100644 100644 7bbd725 fab922a M	accostyles.css
-|  accommodations.html |  2 +-
-|  accostyles.css      | 28 ++++++++++++++++++++++++++++
-|  2 files changed, 29 insertions(+), 1 deletion(-)
-| 
-* commit 5f94c503180f06c3db922bcbb19cf6af10e5744f
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Fri Mar 24 21:31:57 2023 +0800
-| 
-|     dynamically get user data
-| 
-| :100644 100644 0ebf028 d540df5 M	js/checkout.js
-|  js/checkout.js | 12 +++++++++++-
-|  1 file changed, 11 insertions(+), 1 deletion(-)
-| 
-* commit 618651638dd018dfd2e39ae81c668d03566666b9
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Fri Mar 24 21:24:18 2023 +0800
-| 
-|     print invoice optimization
-| 
-| :100644 100644 1ceee22 b015d9d M	checkout.css
-| :100644 100644 3a87ab0 0ebf028 M	js/checkout.js
-| :100644 100644 5bc3345 a1a11cd M	styles.css
-|  checkout.css   |  8 ++++++++
-|  js/checkout.js | 24 ++++++++++++------------
-|  styles.css     |  9 ++++++++-
-|  3 files changed, 28 insertions(+), 13 deletions(-)
-| 
-* commit 3cd5da0e04f0ff029cafac35a7e9eb84769d24c0
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Fri Mar 24 21:07:23 2023 +0800
-| 
-|     pure css animation intro iworked on for like 2hrs
-| 
-| :000000 100644 0000000 76f4bf7 A	admin.css
-| :100644 100644 e69de29 87e9653 M	admin.html
-| :000000 100644 0000000 50bd3de A	grad.png
-| :000000 100644 0000000 20615d3 A	js/admin.js
-|  admin.css   |  82 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-|  admin.html  |  17 ++++++++++++
-|  grad.png    | Bin 0 -> 1518 bytes
-|  js/admin.js |   3 +++
-|  4 files changed, 102 insertions(+)
-|  create mode 100644 admin.css
-|  create mode 100644 grad.png
-|  create mode 100644 js/admin.js
-| 
-* commit f45341854635d06f23cdebfafbfc3eb891403d91
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Fri Mar 24 19:56:39 2023 +0800
-| 
-|     alert system
-| 
-| :100644 100644 581e521 3e55c3a M	js/accommodation.js
-| :100644 100644 fdd3203 510799f M	js/scripts.js
-| :100644 100644 94bfe0b 5bc3345 M	styles.css
-|  js/accommodation.js |  1 +
-|  js/scripts.js       | 32 +++++++++++++++++++++++++++++++-
-|  styles.css          | 37 ++++++++++++++++++++++++++++++++++++-
-|  3 files changed, 68 insertions(+), 2 deletions(-)
-| 
-* commit 93be77b27cee6c4d29c49285c15da5dbf3609f60
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Thu Mar 23 20:41:10 2023 +0800
-| 
-|     finally; to-do: make it printable
-| 
-| :100644 100644 d555bac 4648f71 M	checkout.html
-| :100644 100644 9bc636c 94bfe0b M	styles.css
-|  checkout.html | 10 ++++++----
-|  styles.css    |  5 +++++
-|  2 files changed, 11 insertions(+), 4 deletions(-)
-| 
-* commit 604258d9afdbd96e9c6a971ea75c742a14d0e786
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Thu Mar 23 20:29:00 2023 +0800
-| 
-|     formatted :)
-| 
-| :100644 100644 97a5eaa 3a87ab0 M	js/checkout.js
-|  js/checkout.js | 12 ++++++------
-|  1 file changed, 6 insertions(+), 6 deletions(-)
-| 
-* commit 0dadb386a4793c15373052ad7420ba41bc279184
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Thu Mar 23 20:12:45 2023 +0800
-| 
-|     code works; reimplement to dom later
-| 
-| :100644 100644 5f2f851 97a5eaa M	js/checkout.js
-|  js/checkout.js | 40 +++++++++++++++++++++++++++++++---------
-|  1 file changed, 31 insertions(+), 9 deletions(-)
-| 
-* commit b18d108f6fdd23425e8493e6c3cae3059f791e3c
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Thu Mar 23 20:08:45 2023 +0800
-| 
-|     NO, sa admin
-| 
-| :100644 100644 9e3a2e7 d555bac M	checkout.html
-|  checkout.html | 1 -
-|  1 file changed, 1 deletion(-)
-| 
-* commit 54152b0985100dfe0241d4e854c855753b08096a
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Thu Mar 23 20:08:00 2023 +0800
-| 
-|     feature init
-| 
-| :100644 100644 c0ecb79 9e3a2e7 M	checkout.html
-| :000000 100644 0000000 5f2f851 A	js/checkout.js
-|  checkout.html  | 30 ++++++------------------------
-|  js/checkout.js | 41 +++++++++++++++++++++++++++++++++++++++++
-|  2 files changed, 47 insertions(+), 24 deletions(-)
-|  create mode 100644 js/checkout.js
+| :100644 100644 2f63d4c 690bbab M	accommodations.html
+| :100644 000000 e63afc2 0000000 D	accommodations/double.jpg
+| :100644 000000 172f934 0000000 D	accommodations/family.jpg
+| :000000 100644 0000000 bfd398d A	accommodations/luxdobking.jpg
+| :000000 100644 0000000 2b5c255 A	accommodations/luxdobqueen.jpg
+| :000000 100644 0000000 215faf1 A	accommodations/luxtwin.jpg
+| :100644 000000 814aca0 0000000 D	accommodations/quad.jpg
+| :100644 000000 3f539c7 0000000 D	accommodations/single.jpg
+| :000000 100644 0000000 b45403a A	accommodations/stdking.jpg
+| :000000 100644 0000000 e4ac0ef A	accommodations/stdqueen.png
+| :100644 000000 ff3f29b 0000000 D	accommodations/triple.jpg
+| :100644 100644 9ccf584 6e53404 M	js/pricesDef.js
+|  accommodations.html            |  26 +++++++++++++-------------
+|  accommodations/double.jpg      | Bin 14256 -> 0 bytes
+|  accommodations/family.jpg      | Bin 20931 -> 0 bytes
+|  accommodations/luxdobking.jpg  | Bin 0 -> 158515 bytes
+|  accommodations/luxdobqueen.jpg | Bin 0 -> 249125 bytes
+|  accommodations/luxtwin.jpg     | Bin 0 -> 65535 bytes
+|  accommodations/quad.jpg        | Bin 15485 -> 0 bytes
+|  accommodations/single.jpg      | Bin 12030 -> 0 bytes
+|  accommodations/stdking.jpg     | Bin 0 -> 254267 bytes
+|  accommodations/stdqueen.png    | Bin 0 -> 1442508 bytes
+|  accommodations/triple.jpg      | Bin 15537 -> 0 bytes
+|  js/pricesDef.js                |   2 +-
+|  12 files changed, 14 insertions(+), 14 deletions(-)
+|  delete mode 100644 accommodations/double.jpg
+|  delete mode 100644 accommodations/family.jpg
+|  create mode 100644 accommodations/luxdobking.jpg
+|  create mode 100644 accommodations/luxdobqueen.jpg
+|  create mode 100644 accommodations/luxtwin.jpg
+|  delete mode 100644 accommodations/quad.jpg
+|  delete mode 100644 accommodations/single.jpg
+|  create mode 100644 accommodations/stdking.jpg
+|  create mode 100644 accommodations/stdqueen.png
+|  delete mode 100644 accommodations/triple.jpg
 |   
-*   commit 914a96606e55393067a4b2fbc2e67af696f3e620
-|\  Merge: 78a35e0 195cd51
-| | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
-| | Date:   Thu Mar 23 19:36:10 2023 +0800
-| | 
-| |     Merge branch 'gamer0kayf1n3/issue26' of https://github.com/gamer0kayf1n3/tagaytay into gamer0kayf1n3/issue26
-| | 
-| * commit 195cd51594d98caa3a0b60aef677f95885e9846e
+*   commit 12287bb2d2e06d1610ab7b53d7f841a613f46e1c
+|\  Merge: 96a92ad 1d459a1
 | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| | Date:   Thu Mar 23 19:22:53 2023 +0800
+| | Date:   Tue Mar 28 18:51:53 2023 +0800
 | | 
-| |     remove previous bookings
+| |     Merge pull request #45 from gamer0kayf1n3/44-johann-help
+| |     
+| |     Added johans suggestions (cant figure out navbar)
 | | 
-| | :100644 100644 b68a76e 4362761 M	js/cart.js
-| |  js/cart.js | 14 +++++++++++++-
-| |  1 file changed, 13 insertions(+), 1 deletion(-)
-| | 
-| * commit c62300a1403158f2367a31dd284bb71a884fe9a3
-| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| | Date:   Thu Mar 23 19:05:56 2023 +0800
-| | 
-| |     admin implementation; redirect to admin.html
-| | 
-| | :100644 100644 568a7f8 fdd3203 M	js/scripts.js
-| |  js/scripts.js | 32 +++++++++++++++++++++++++++++++-
-| |  1 file changed, 31 insertions(+), 1 deletion(-)
-| | 
-| * commit 6a83057725be58a865c261fb58dfde3848bfb9cf
-| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| | Date:   Thu Mar 23 18:34:18 2023 +0800
-| | 
-| |     admin panel
-| | 
-| | :100644 100644 92c1a63 674d08f M	about.html
-| | :100644 100644 a709dee c90e38c M	accommodations.html
-| | :100644 100644 520056c e75749e M	booknow.html
-| | :100644 100644 d571e0d 9d07951 M	cart.html
-| | :100644 100644 76daca0 62191f6 M	contact.html
-| | :100644 100644 f8d8b85 ead2ba7 M	delicacies.html
-| | :100644 100644 2705bc2 5341afd M	economical.html
-| | :100644 100644 b09aed1 297ab28 M	endpoint.html
-| | :100644 100644 7214b3a f3fa341 M	explainertemplate.html
-| | :100644 100644 fe42b45 8f8b23a M	index.html
-| | :100644 100644 469ade4 95202e6 M	learnmore.html
-| | :100644 100644 a225e58 da1f9ee M	privacy.html
-| | :100644 100644 420abdb d74859d M	reviews.html
-| | :100644 100644 7399629 07ddbc5 M	signupform.html
-| | :100644 100644 a704693 8347c92 M	static_cart.html
-| | :100644 100644 c9dd70c 72fdfa8 M	template.html
-| | :100644 100644 efed09d 4b1c03a M	terms.html
-| |  about.html             | 2 +-
-| |  accommodations.html    | 2 +-
-| |  booknow.html           | 2 +-
-| |  cart.html              | 2 +-
-| |  contact.html           | 2 +-
-| |  delicacies.html        | 2 +-
-| |  economical.html        | 2 +-
-| |  endpoint.html          | 2 +-
-| |  explainertemplate.html | 2 +-
-| |  index.html             | 2 +-
-| |  learnmore.html         | 2 +-
-| |  privacy.html           | 2 +-
-| |  reviews.html           | 2 +-
-| |  signupform.html        | 2 +-
-| |  static_cart.html       | 2 +-
-| |  template.html          | 2 +-
-| |  terms.html             | 2 +-
-| |  17 files changed, 17 insertions(+), 17 deletions(-)
-| | 
-| * commit 86b7316b66ada72bdac749ba07fd4bf612b45d8a
-| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| | Date:   Thu Mar 23 18:33:10 2023 +0800
-| | 
-| |     a text
-| | 
-| | :000000 100644 0000000 e69de29 A	admin.html
-| | :100644 100644 e43f194 520056c M	booknow.html
-| | :100644 100644 4e13057 d571e0d M	cart.html
-| | :100644 100644 e69de29 f232654 M	checkout.html
-| | :100644 100644 336731a 76daca0 M	contact.html
-| | :100644 100644 43d4927 f8d8b85 M	delicacies.html
-| | :100644 100644 8c61462 2705bc2 M	economical.html
-| | :100644 100644 3d482ae b09aed1 M	endpoint.html
-| | :100644 100644 180bc00 7214b3a M	explainertemplate.html
-| | :100644 100644 b81d9d1 fe42b45 M	index.html
-| | :100644 100644 1f8b92b 469ade4 M	learnmore.html
-| | :100644 100644 2948805 a225e58 M	privacy.html
-| | :100644 100644 8af85a9 420abdb M	reviews.html
-| | :100644 100644 207eada 7399629 M	signupform.html
-| | :100644 100644 004e63c a704693 M	static_cart.html
-| | :100644 100644 2d7463b c9dd70c M	template.html
-| | :100644 100644 0568509 efed09d M	terms.html
-| |  admin.html             |  0
-| |  booknow.html           |  2 +-
-| |  cart.html              |  2 +-
-| |  checkout.html          |  1 +
-| |  contact.html           |  2 +-
-| |  delicacies.html        |  2 +-
-| |  economical.html        |  2 +-
-| |  endpoint.html          |  2 +-
-| |  explainertemplate.html |  2 +-
-| |  index.html             |  2 +-
-| |  learnmore.html         |  2 +-
-| |  privacy.html           |  2 +-
-| |  reviews.html           |  2 +-
-| |  signupform.html        |  2 +-
-| |  static_cart.html       | 59 ++++++++++++++++++++++++++++++++++++++++------
-| |  template.html          |  1 +
-| |  terms.html             |  4 ++--
-| |  17 files changed, 68 insertions(+), 21 deletions(-)
-| |  create mode 100644 admin.html
-| | 
-| * commit c913e6d7b56095188adaeae6f43c6f1c98e84ca4
-| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| | Date:   Thu Mar 23 18:31:50 2023 +0800
-| | 
-| |     admin implementation
-| | 
-| | :100644 100644 85e5f3f 92c1a63 M	about.html
-| | :100644 100644 4476942 a709dee M	accommodations.html
-| |  about.html          |  1 +
-| |  accommodations.html | 15 ++++++++-------
-| |  2 files changed, 9 insertions(+), 7 deletions(-)
-| | 
-* | commit 78a35e059142818917973313f8c6951aec853b46
+| * commit 1d459a1ec89f93acaf5d13d44523522db467027e
 |/  Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
-|   Date:   Thu Mar 23 19:30:43 2023 +0800
+|   Date:   Tue Mar 28 18:37:53 2023 +0800
 |   
-|       recep
+|       Added johans suggestions (cant figure out navbar)
 |       
-|       thanks callMBR
+|       also added additional text to learn more and delicacies
 |   
-|   :000000 100644 0000000 1ceee22 A	checkout.css
-|   :100644 100644 e69de29 9eacc5e M	checkout.html
-|    checkout.css  | 19 ++++++++++++++
-|    checkout.html | 77 +++++++++++++++++++++++++++++++++++++++++++++++++++++++
-|    2 files changed, 96 insertions(+)
-|    create mode 100644 checkout.css
-| 
-* commit efe0f4d908c8808bb1fd426d4ec6c9320d5474b9
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Thu Mar 23 18:27:07 2023 +0800
-| 
-|     old cart removal
-| 
-| :100644 100644 a02b30c 4e13057 M	cart.html
-|  cart.html | 5 +----
-|  1 file changed, 1 insertion(+), 4 deletions(-)
+|   :100644 100644 af39321 a373bbd M	delicacies.html
+|   :100644 100644 c2e3098 4b4d423 M	learnmore.html
+|   :100644 100644 f0120f2 dcde999 M	mainpage.css
+|   :100644 100644 f9a2afb 33d85e9 M	styles.css
+|    delicacies.html | 3 +++
+|    learnmore.html  | 6 ++++--
+|    mainpage.css    | 3 ++-
+|    styles.css      | 5 +++++
+|    4 files changed, 14 insertions(+), 3 deletions(-)
 |   
-*   commit ea9232a92411cac7a68feabfd58a069350e5a082
-|\  Merge: 261e18e ab5334c
+*   commit 96a92ad64bae85a820316bfdb1677f1973f018d1
+|\  Merge: 752d352 d4060fc
 | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| | Date:   Thu Mar 23 18:23:56 2023 +0800
+| | Date:   Tue Mar 28 11:15:03 2023 +0800
 | | 
-| |     Merge branch 'gamer0kayf1n3/issue26' of https://github.com/gamer0kayf1n3/tagaytay into gamer0kayf1n3/issue26
+| |     Merge pull request #43 from gamer0kayf1n3/32-moreexpensive
+| |     
+| |     linked pricesDef.js for control
+| | 
+| * commit d4060fcc8b9102f762ea1d1ad4778c0142e56628
+| | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | Date:   Tue Mar 28 11:10:34 2023 +0800
+| | 
+| |     linked pricesDef.js for control
+| | 
+| | :100644 100644 95c6ef9 3d8a24e M	accommodations.html
+| | :100644 100644 ca1fe57 50c82fe M	cart.html
+| | :100644 100644 cc2ca4a 881a0c8 M	checkout.html
+| | :100644 100644 3e55c3a dd245be M	js/accommodation.js
+| | :100644 100644 4362761 e246cda M	js/cart.js
+| | :100644 100644 e9955fc 26e95f3 M	js/checkout.js
+| | :000000 100644 0000000 9ccf584 A	js/pricesDef.js
+| |  accommodations.html | 11 ++++++-----
+| |  cart.html           |  1 +
+| |  checkout.html       |  1 +
+| |  js/accommodation.js | 14 +++++---------
+| |  js/cart.js          |  8 +-------
+| |  js/checkout.js      |  8 +-------
+| |  js/pricesDef.js     |  7 +++++++
+| |  7 files changed, 22 insertions(+), 28 deletions(-)
+| |  create mode 100644 js/pricesDef.js
 | |   
-| *   commit ab5334c87b3b382bd08ed4cf3ebdaa38998af3bc
-| |\  Merge: 081a568 c99cc62
+* |   commit 752d352b5c5e3ac243d7eae791b2b1472fa6a434
+|\ \  Merge: 8ef153c 14b8e74
+| | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | | Date:   Tue Mar 28 09:36:48 2023 +0800
+| | | 
+| | |     Merge pull request #41 from gamer0kayf1n3/34-styling-separate-receipt-and-thank-you
+| | |     
+| | |     yay
+| | | 
+| * | commit 14b8e7418138d9620a97df5aa1f5581fb998347c
+|/ /  Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| |   Date:   Tue Mar 28 09:30:01 2023 +0800
+| |   
+| |       yay
+| |   
+| |   :100644 100644 41654c4 014bd8b M	checkout.html
+| |    checkout.html | 40 +++++++++++++++++++++-------------------
+| |    1 file changed, 21 insertions(+), 19 deletions(-)
+| |   
+* |   commit 8ef153c306849e3efcdc64c37c7d234ef3e7626c
+|\ \  Merge: 464ecce 3d9d947
+| | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | | Date:   Tue Mar 28 09:21:27 2023 +0800
+| | | 
+| | |     Merge pull request #40 from gamer0kayf1n3/37-morefrontpage
+| | |     
+| | |     37 morefrontpage
+| | | 
+| * | commit 3d9d9475261a40c7162bbbdc60d8306960d3bf17
 | | | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
-| | | Date:   Thu Mar 23 18:14:29 2023 +0800
+| | | Date:   Tue Mar 28 07:28:49 2023 +0800
+| | | 
+| | |     snapshot
+| | | 
+| | | :100644 100644 b96015e a62edd4 M	index.html
+| | | :100644 100644 6e925ef f0120f2 M	mainpage.css
+| | |  index.html   |  5 +++++
+| | |  mainpage.css | 33 +++++++++++++++++++++++++++++++++
+| | |  2 files changed, 38 insertions(+)
+| | | 
+| * | commit e9cf505b0e6ccf3e05c9d2177c32b32e96db8441
+| | | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | | Date:   Mon Mar 27 22:03:20 2023 +0800
+| | | 
+| | |     details is now a class, no wonder why
+| | | 
+| | | :100644 100644 834e382 b96015e M	index.html
+| | |  index.html | 2 +-
+| | |  1 file changed, 1 insertion(+), 1 deletion(-)
+| | | 
+* | | commit 464ecce9f6bb98bafaaa9950fcd6d8f19003c6bb
+|\| | Merge: e5bad76 446dd52
+| |/  Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+|/|   Date:   Mon Mar 27 21:48:46 2023 +0800
+| |   
+| |       Merge pull request #39 from gamer0kayf1n3/kyle-final-updates
+| |       
+| |       Kyle final updates
+| |   
+| *   commit 446dd52d4cbce49c39d2cb506812128987f94506
+| |\  Merge: 0eb70c3 821a2e5
+| | | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | | Date:   Mon Mar 27 21:46:45 2023 +0800
+| | | 
+| | |     Merge branch 'kyle-final-updates' of https://github.com/gamer0kayf1n3/tagaytay into kyle-final-updates
+| | | 
+| | * commit 821a2e58a3849455032e9bdcfbc9c93d43fb4630
+| | | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | | Date:   Mon Mar 27 21:44:26 2023 +0800
+| | | 
+| | |     fix
+| | | 
+| | | :100644 100644 ef1f0b4 21b13fb M	index.html
+| | |  index.html | 19 -------------------
+| | |  1 file changed, 19 deletions(-)
+| | |   
+| | *   commit dc48ae77cc845dc6cfecafb58a76e38b43adbe41
+| | |\  Merge: 72435ff 286bc6b
+| | | | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | | | Date:   Mon Mar 27 21:44:20 2023 +0800
+| | | | 
+| | | |     Merge branch 'kyle-final-updates' of https://github.com/gamer0kayf1n3/tagaytay into kyle-final-updates
+| | | | 
+| | * | commit 72435ff95c6cd52b70b67b2847930e0b72f52929
+| | | | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | | | Date:   Mon Mar 27 21:13:39 2023 +0800
+| | | | 
+| | | |     INDEX EXPANSION
+| | | |     
+| | | |     i added 3 squares with 3 pictures cycling in each also changed the history thing
+| | | | 
+| | | | :100644 100644 674d08f d4468d3 M	about.html
+| | | | :100644 100644 95c6ef9 d87cb20 M	accommodations.html
+| | | | :100644 100644 1f5300a 92af893 M	booknow.html
+| | | | :100644 100644 ca1fe57 5200c0a M	cart.html
+| | | | :100644 100644 cc2ca4a 41654c4 M	checkout.html
+| | | | :100644 100644 46e9038 04e31bc M	contact.html
+| | | | :100644 100644 ead2ba7 af39321 M	delicacies.html
+| | | | :100644 100644 0554e22 1ff3416 M	economical.html
+| | | | :100644 100644 3798825 10623cc M	endpoint.html
+| | | | :100644 100644 f3fa341 f5abdd6 M	explainertemplate.html
+| | | | :100644 100644 739bf72 f8eedb2 M	gallery/index.html
+| | | | :100644 100644 87c2dde 7076ea6 M	index.html
+| | | | :000000 100644 0000000 c10aaa2 A	js/mainpage.js
+| | | | :100644 100644 96fa383 c2e3098 M	learnmore.html
+| | | | :000000 100644 0000000 6e925ef A	mainpage.css
+| | | | :100644 100644 da1f9ee 0acd9c0 M	privacy.html
+| | | | :100644 100644 d74859d ae38aad M	reviews.html
+| | | | :100644 100644 07ddbc5 9600819 M	signupform.html
+| | | | :000000 100644 0000000 08967b0 A	static/mainpage/buffet1.jpg
+| | | | :000000 100644 0000000 efa0786 A	static/mainpage/buffet2.jpg
+| | | | :000000 100644 0000000 26cb5e0 A	static/mainpage/buffet3.jpg
+| | | | :000000 100644 0000000 551e492 A	static/mainpage/buffeticon.png
+| | | | :000000 100644 0000000 9f25410 A	static/mainpage/hotel.jpg
+| | | | :000000 100644 0000000 a55e9d5 A	static/mainpage/pool1.jpg
+| | | | :000000 100644 0000000 fd75222 A	static/mainpage/pool2.jpg
+| | | | :000000 100644 0000000 9bdea2a A	static/mainpage/pool3.jpg
+| | | | :000000 100644 0000000 700f9f8 A	static/mainpage/poolicon.png
+| | | | :000000 100644 0000000 aaf46f5 A	static/mainpage/reception.jpg
+| | | | :000000 100644 0000000 b95d213 A	static/mainpage/service1.jpg
+| | | | :000000 100644 0000000 32bb665 A	static/mainpage/service2.jpg
+| | | | :000000 100644 0000000 990a143 A	static/mainpage/service3.jpg
+| | | | :000000 100644 0000000 e64375b A	static/mainpage/serviceicon.png
+| | | | :100644 100644 98cf094 d54d312 M	static_cart.html
+| | | | :100644 100644 98fc4b7 f9a2afb M	styles.css
+| | | | :100644 100644 72fdfa8 1822350 M	template.html
+| | | | :100644 100644 4b1c03a 17e1380 M	terms.html
+| | | |  about.html                      |   2 +-
+| | | |  accommodations.html             |   2 +-
+| | | |  booknow.html                    |   2 +-
+| | | |  cart.html                       |   2 +-
+| | | |  checkout.html                   |   2 +-
+| | | |  contact.html                    |   2 +-
+| | | |  delicacies.html                 |   2 +-
+| | | |  economical.html                 |   2 +-
+| | | |  endpoint.html                   |   2 +-
+| | | |  explainertemplate.html          |   2 +-
+| | | |  gallery/index.html              |   2 +-
+| | | |  index.html                      |  48 +++++++++++++++--------
+| | | |  js/mainpage.js                  |  24 ++++++++++++
+| | | |  learnmore.html                  |   2 +-
+| | | |  mainpage.css                    |  65 ++++++++++++++++++++++++++++++++
+| | | |  privacy.html                    |   2 +-
+| | | |  reviews.html                    |   2 +-
+| | | |  signupform.html                 |   2 +-
+| | | |  static/mainpage/buffet1.jpg     | Bin 0 -> 490179 bytes
+| | | |  static/mainpage/buffet2.jpg     | Bin 0 -> 2992976 bytes
+| | | |  static/mainpage/buffet3.jpg     | Bin 0 -> 196440 bytes
+| | | |  static/mainpage/buffeticon.png  | Bin 0 -> 123453 bytes
+| | | |  static/mainpage/hotel.jpg       | Bin 0 -> 94051 bytes
+| | | |  static/mainpage/pool1.jpg       | Bin 0 -> 34846 bytes
+| | | |  static/mainpage/pool2.jpg       | Bin 0 -> 151515 bytes
+| | | |  static/mainpage/pool3.jpg       | Bin 0 -> 411303 bytes
+| | | |  static/mainpage/poolicon.png    | Bin 0 -> 98250 bytes
+| | | |  static/mainpage/reception.jpg   | Bin 0 -> 30565 bytes
+| | | |  static/mainpage/service1.jpg    | Bin 0 -> 265148 bytes
+| | | |  static/mainpage/service2.jpg    | Bin 0 -> 10548 bytes
+| | | |  static/mainpage/service3.jpg    | Bin 0 -> 13115 bytes
+| | | |  static/mainpage/serviceicon.png | Bin 0 -> 101293 bytes
+| | | |  static_cart.html                |   2 +-
+| | | |  styles.css                      |   8 +++-
+| | | |  template.html                   |   2 +-
+| | | |  terms.html                      |   2 +-
+| | | |  36 files changed, 145 insertions(+), 36 deletions(-)
+| | | |  create mode 100644 js/mainpage.js
+| | | |  create mode 100644 mainpage.css
+| | | |  create mode 100644 static/mainpage/buffet1.jpg
+| | | |  create mode 100644 static/mainpage/buffet2.jpg
+| | | |  create mode 100644 static/mainpage/buffet3.jpg
+| | | |  create mode 100644 static/mainpage/buffeticon.png
+| | | |  create mode 100644 static/mainpage/hotel.jpg
+| | | |  create mode 100644 static/mainpage/pool1.jpg
+| | | |  create mode 100644 static/mainpage/pool2.jpg
+| | | |  create mode 100644 static/mainpage/pool3.jpg
+| | | |  create mode 100644 static/mainpage/poolicon.png
+| | | |  create mode 100644 static/mainpage/reception.jpg
+| | | |  create mode 100644 static/mainpage/service1.jpg
+| | | |  create mode 100644 static/mainpage/service2.jpg
+| | | |  create mode 100644 static/mainpage/service3.jpg
+| | | |  create mode 100644 static/mainpage/serviceicon.png
+| | | | 
+| | * | commit 5ea3f69c20696b71ada49b3cad7ea67263d71c4f
+| | | | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | | | Date:   Mon Mar 27 13:02:20 2023 +0800
+| | | | 
+| | | |     start of index.html addition
+| | | | 
+| | | | :100644 100644 2038a96 87c2dde M	index.html
+| | | | :000000 100644 0000000 08967b0 A	static/buffet1.jpg
+| | | | :000000 100644 0000000 efa0786 A	static/buffet2.jpg
+| | | | :100644 100644 7a57ae1 98fc4b7 M	styles.css
+| | | |  index.html         |  11 ++++++++++-
+| | | |  static/buffet1.jpg | Bin 0 -> 490179 bytes
+| | | |  static/buffet2.jpg | Bin 0 -> 2992976 bytes
+| | | |  styles.css         |  42 ++++++++++++++++++++++++++++++++++--------
+| | | |  4 files changed, 44 insertions(+), 9 deletions(-)
+| | | |  create mode 100644 static/buffet1.jpg
+| | | |  create mode 100644 static/buffet2.jpg
+| | | | 
+| | * | commit 88e83fe5bc544f1b107e3841d04a265f7b31137f
+| | | | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | | | Date:   Mon Mar 27 09:49:14 2023 +0800
+| | | | 
+| | | |     cloc styling
+| | | | 
+| | | | :100644 100644 3c097d1 57a96df M	admin.css
+| | | | :100644 100644 19b7a27 2bc4b24 M	admin.html
+| | | |  admin.css  | 4 ++--
+| | | |  admin.html | 4 ++++
+| | | |  2 files changed, 6 insertions(+), 2 deletions(-)
+| | | | 
+| | * | commit 69ef612d52cac0e37f01cc575bff199bd2f85d68
+| | | | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | | | Date:   Mon Mar 27 09:49:02 2023 +0800
+| | | | 
+| | | |     grey color chart
+| | | | 
+| | | | :100644 100644 3b2d941 f2fb2e8 M	js/chart.js
+| | | |  js/chart.js | 20 ++++++++++++++++++--
+| | | |  1 file changed, 18 insertions(+), 2 deletions(-)
+| | | | 
+| | * | commit ebbe7ef5b5585d6ee27b88c37cde827f66dce412
+| | | | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | | | Date:   Mon Mar 27 09:48:11 2023 +0800
+| | | | 
+| | | |     add lines of code counter
+| | | | 
+| | | | :100644 100644 22ba64a 68111c3 M	js/admin.js
+| | | |  js/admin.js | 4 ++++
+| | | |  1 file changed, 4 insertions(+)
+| | | | 
+| | * | commit 3db91f28d13961c7bb0b75975d91823d361813e5
+| | | | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | | | Date:   Mon Mar 27 09:34:40 2023 +0800
+| | | | 
+| | | |     the addition of cloc
+| | | |     
+| | | |     Co-authored-by: gamer0kayf1n3 <gamer0kayf1n3@users.noreply.github.com>
+| | | | 
+| | | | :100644 100644 46ebd25 58b2c28 M	.vscode/settings.json
+| | | | :100644 100644 136ce2f 3c097d1 M	admin.css
+| | | | :000000 100644 0000000 ebdac6f A	count.txt
+| | | | :000000 100644 0000000 3bbd0cd A	nodejs-scripts/counter.bat
+| | | | :000000 100644 0000000 64a553c A	nodejs-scripts/linecounter.exe
+| | | |  .vscode/settings.json          |   2 +-
+| | | |  admin.css                      |   4 +++-
+| | | |  count.txt                      |  19 +++++++++++++++++++
+| | | |  nodejs-scripts/counter.bat     |   1 +
+| | | |  nodejs-scripts/linecounter.exe | Bin 0 -> 9704392 bytes
+| | | |  5 files changed, 24 insertions(+), 2 deletions(-)
+| | | |  create mode 100644 count.txt
+| | | |  create mode 100644 nodejs-scripts/counter.bat
+| | | |  create mode 100644 nodejs-scripts/linecounter.exe
+| | | | 
+| | * | commit 863dd111254fd02877eb2426b97a07c6de63afb9
+| |/ /  Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+|/| |   Date:   Mon Mar 27 08:12:47 2023 +0800
+| | |   
+| | |       nbb
+| | |   
+| | |   :100644 100644 0e4abd7 136ce2f M	admin.css
+| | |   :100644 100644 dfdb2b7 19b7a27 M	admin.html
+| | |   :100644 100644 3e55c3a 20b9b26 M	js/accommodation.js
+| | |   :100644 100644 d75154e 3b2d941 M	js/chart.js
+| | |    admin.css           | 5 ++---
+| | |    admin.html          | 4 ++--
+| | |    js/accommodation.js | 2 +-
+| | |    js/chart.js         | 4 ++--
+| | |    4 files changed, 7 insertions(+), 8 deletions(-)
+| | | 
+* | | commit e5bad761b0432e27e9f4d8bb75b1b14f6a3edd01
+| | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | | Date:   Mon Mar 27 19:42:25 2023 +0800
+| | | 
+| | |     load faster done
+| | |     by saving it manually to same server
+| | | 
+| | | :100644 100644 5341afd 0554e22 M	economical.html
+| | | :100644 100644 8f8b23a 2038a96 M	index.html
+| | | :100644 100644 95202e6 96fa383 M	learnmore.html
+| | | :000000 100644 0000000 566631b A	static/imgs/Sky-Ranch-Tagaytay.jpg
+| | | :000000 100644 0000000 1dbea05 A	static/imgs/Taal_Volcano_aerial_2013.jpg
+| | | :000000 100644 0000000 1ae4be6 A	static/imgs/Tags1-1125x624_ymzl37.jfif
+| | | :000000 100644 0000000 78975d3 A	static/imgs/blurred.png
+| | | :000000 100644 0000000 409f5c2 A	static/imgs/philippines-tagaytay-nature-horizon-070722549fa602a175b870f9255a2cbb.jpg
+| | | :000000 100644 0000000 93dbdc4 A	static/imgs/taal-volcano-tagaytay-philippines.jpg
+| | | :100644 100644 f066f66 7a57ae1 M	styles.css
+| | |  economical.html                                 |   4 ++--
+| | |  index.html                                      |   2 +-
+| | |  learnmore.html                                  |   2 +-
+| | |  static/imgs/Sky-Ranch-Tagaytay.jpg              | Bin 0 -> 247455 bytes
+| | |  static/imgs/Taal_Volcano_aerial_2013.jpg        | Bin 0 -> 868910 bytes
+| | |  static/imgs/Tags1-1125x624_ymzl37.jfif          | Bin 0 -> 88563 bytes
+| | |  static/imgs/blurred.png                         | Bin 0 -> 711861 bytes
+| | |  ...horizon-070722549fa602a175b870f9255a2cbb.jpg | Bin 0 -> 1465414 bytes
+| | |  .../imgs/taal-volcano-tagaytay-philippines.jpg  | Bin 0 -> 65749 bytes
+| | |  styles.css                                      |   4 ++--
+| | |  10 files changed, 6 insertions(+), 6 deletions(-)
+| | |  create mode 100644 static/imgs/Sky-Ranch-Tagaytay.jpg
+| | |  create mode 100644 static/imgs/Taal_Volcano_aerial_2013.jpg
+| | |  create mode 100644 static/imgs/Tags1-1125x624_ymzl37.jfif
+| | |  create mode 100644 static/imgs/blurred.png
+| | |  create mode 100644 static/imgs/philippines-tagaytay-nature-horizon-070722549fa602a175b870f9255a2cbb.jpg
+| | |  create mode 100644 static/imgs/taal-volcano-tagaytay-philippines.jpg
+| | | 
+* | | commit 29dd635a15651653b79eb9af262e074960f415f4
+| | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | | Date:   Mon Mar 27 19:30:13 2023 +0800
+| | | 
+| | |     first commit loadingIssue #35
+| | | 
+| * | commit 0eb70c38f30f114bcde76a80c0d97fc63751a9d3
+| | | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | | Date:   Mon Mar 27 21:46:26 2023 +0800
+| | | 
+| | |     Update mainpage.js
+| | | 
+| | | :100644 100644 5cc4038 c10aaa2 M	js/mainpage.js
+| | |  js/mainpage.js | 2 ++
+| | |  1 file changed, 2 insertions(+)
+| | | 
+| * | commit f9fc2ec6567f1d78c8c902834a1ccddf48f39b8a
+| |/  Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| |   Date:   Mon Mar 27 21:04:43 2023 +0800
+| |   
+| |       INDEX.HTML CONTENT EXPANSION
+| |       
+| |       not finished, but is optional to be finished
+| |   
+| |   :100644 100644 674d08f d4468d3 M	about.html
+| |   :100644 100644 95c6ef9 d87cb20 M	accommodations.html
+| |   :100644 100644 1f5300a 92af893 M	booknow.html
+| |   :100644 100644 ca1fe57 5200c0a M	cart.html
+| |   :100644 100644 cc2ca4a 41654c4 M	checkout.html
+| |   :100644 100644 46e9038 04e31bc M	contact.html
+| |   :100644 100644 ead2ba7 af39321 M	delicacies.html
+| |   :100644 100644 5341afd 05ac54f M	economical.html
+| |   :100644 100644 3798825 10623cc M	endpoint.html
+| |   :100644 100644 f3fa341 f5abdd6 M	explainertemplate.html
+| |   :100644 100644 739bf72 f8eedb2 M	gallery/index.html
+| |   :100644 100644 cd1b3de b96015e M	index.html
+| |   :000000 100644 0000000 5cc4038 A	js/mainpage.js
+| |   :100644 100644 95202e6 7a41bf0 M	learnmore.html
+| |   :000000 100644 0000000 6e925ef A	mainpage.css
+| |   :100644 100644 da1f9ee 0acd9c0 M	privacy.html
+| |   :100644 100644 d74859d ae38aad M	reviews.html
+| |   :100644 100644 07ddbc5 9600819 M	signupform.html
+| |   :100644 100644 08967b0 08967b0 R100	static/buffet1.jpg	static/mainpage/buffet1.jpg
+| |   :100644 100644 efa0786 efa0786 R100	static/buffet2.jpg	static/mainpage/buffet2.jpg
+| |   :000000 100644 0000000 26cb5e0 A	static/mainpage/buffet3.jpg
+| |   :000000 100644 0000000 551e492 A	static/mainpage/buffeticon.png
+| |   :000000 100644 0000000 9f25410 A	static/mainpage/hotel.jpg
+| |   :000000 100644 0000000 a55e9d5 A	static/mainpage/pool1.jpg
+| |   :000000 100644 0000000 fd75222 A	static/mainpage/pool2.jpg
+| |   :000000 100644 0000000 9bdea2a A	static/mainpage/pool3.jpg
+| |   :000000 100644 0000000 700f9f8 A	static/mainpage/poolicon.png
+| |   :000000 100644 0000000 aaf46f5 A	static/mainpage/reception.jpg
+| |   :000000 100644 0000000 b95d213 A	static/mainpage/service1.jpg
+| |   :000000 100644 0000000 32bb665 A	static/mainpage/service2.jpg
+| |   :000000 100644 0000000 990a143 A	static/mainpage/service3.jpg
+| |   :000000 100644 0000000 e64375b A	static/mainpage/serviceicon.png
+| |   :100644 100644 98cf094 d54d312 M	static_cart.html
+| |   :100644 100644 cd64627 e7d2341 M	styles.css
+| |   :100644 100644 72fdfa8 1822350 M	template.html
+| |   :100644 100644 4b1c03a 17e1380 M	terms.html
+| |    about.html                        |   2 +-
+| |    accommodations.html               |   2 +-
+| |    booknow.html                      |   2 +-
+| |    cart.html                         |   2 +-
+| |    checkout.html                     |   2 +-
+| |    contact.html                      |   2 +-
+| |    delicacies.html                   |   2 +-
+| |    economical.html                   |   2 +-
+| |    endpoint.html                     |   2 +-
+| |    explainertemplate.html            |   2 +-
+| |    gallery/index.html                |   2 +-
+| |    index.html                        |  44 +++++++++++++--------
+| |    js/mainpage.js                    |  22 +++++++++++
+| |    learnmore.html                    |   2 +-
+| |    mainpage.css                      |  65 ++++++++++++++++++++++++++++++++
+| |    privacy.html                      |   2 +-
+| |    reviews.html                      |   2 +-
+| |    signupform.html                   |   2 +-
+| |    static/{ => mainpage}/buffet1.jpg | Bin
+| |    static/{ => mainpage}/buffet2.jpg | Bin
+| |    static/mainpage/buffet3.jpg       | Bin 0 -> 196440 bytes
+| |    static/mainpage/buffeticon.png    | Bin 0 -> 123453 bytes
+| |    static/mainpage/hotel.jpg         | Bin 0 -> 94051 bytes
+| |    static/mainpage/pool1.jpg         | Bin 0 -> 34846 bytes
+| |    static/mainpage/pool2.jpg         | Bin 0 -> 151515 bytes
+| |    static/mainpage/pool3.jpg         | Bin 0 -> 411303 bytes
+| |    static/mainpage/poolicon.png      | Bin 0 -> 98250 bytes
+| |    static/mainpage/reception.jpg     | Bin 0 -> 30565 bytes
+| |    static/mainpage/service1.jpg      | Bin 0 -> 265148 bytes
+| |    static/mainpage/service2.jpg      | Bin 0 -> 10548 bytes
+| |    static/mainpage/service3.jpg      | Bin 0 -> 13115 bytes
+| |    static/mainpage/serviceicon.png   | Bin 0 -> 101293 bytes
+| |    static_cart.html                  |   2 +-
+| |    styles.css                        |   8 +++-
+| |    template.html                     |   2 +-
+| |    terms.html                        |   2 +-
+| |    36 files changed, 140 insertions(+), 35 deletions(-)
+| |    create mode 100644 js/mainpage.js
+| |    create mode 100644 mainpage.css
+| |    rename static/{ => mainpage}/buffet1.jpg (100%)
+| |    rename static/{ => mainpage}/buffet2.jpg (100%)
+| |    create mode 100644 static/mainpage/buffet3.jpg
+| |    create mode 100644 static/mainpage/buffeticon.png
+| |    create mode 100644 static/mainpage/hotel.jpg
+| |    create mode 100644 static/mainpage/pool1.jpg
+| |    create mode 100644 static/mainpage/pool2.jpg
+| |    create mode 100644 static/mainpage/pool3.jpg
+| |    create mode 100644 static/mainpage/poolicon.png
+| |    create mode 100644 static/mainpage/reception.jpg
+| |    create mode 100644 static/mainpage/service1.jpg
+| |    create mode 100644 static/mainpage/service2.jpg
+| |    create mode 100644 static/mainpage/service3.jpg
+| |    create mode 100644 static/mainpage/serviceicon.png
+| | 
+| * commit 286bc6b7eeb5950296a2f72d6d85d056e99fff3a
+| | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | Date:   Mon Mar 27 13:02:20 2023 +0800
+| | 
+| |     start of index.html addition
+| | 
+| | :100644 100644 8f8b23a cd1b3de M	index.html
+| | :000000 100644 0000000 08967b0 A	static/buffet1.jpg
+| | :000000 100644 0000000 efa0786 A	static/buffet2.jpg
+| | :100644 100644 f066f66 cd64627 M	styles.css
+| |  index.html         |  11 ++++++++++-
+| |  static/buffet1.jpg | Bin 0 -> 490179 bytes
+| |  static/buffet2.jpg | Bin 0 -> 2992976 bytes
+| |  styles.css         |  42 ++++++++++++++++++++++++++++++++++--------
+| |  4 files changed, 44 insertions(+), 9 deletions(-)
+| |  create mode 100644 static/buffet1.jpg
+| |  create mode 100644 static/buffet2.jpg
+| | 
+| * commit d93f61631353546fe1e8996c1612fadbf1d8fd64
+| | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | Date:   Mon Mar 27 09:49:14 2023 +0800
+| | 
+| |     cloc styling
+| | 
+| | :100644 100644 3c097d1 57a96df M	admin.css
+| | :100644 100644 19b7a27 2bc4b24 M	admin.html
+| |  admin.css  | 4 ++--
+| |  admin.html | 4 ++++
+| |  2 files changed, 6 insertions(+), 2 deletions(-)
+| | 
+| * commit 99c6e475c6b4b99fd9eb852877c09d9819ea77c4
+| | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | Date:   Mon Mar 27 09:49:02 2023 +0800
+| | 
+| |     grey color chart
+| | 
+| | :100644 100644 3b2d941 f2fb2e8 M	js/chart.js
+| |  js/chart.js | 20 ++++++++++++++++++--
+| |  1 file changed, 18 insertions(+), 2 deletions(-)
+| | 
+| * commit cde01a4619af802447a52a7e05ed54a3137cad68
+| | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | Date:   Mon Mar 27 09:48:11 2023 +0800
+| | 
+| |     add lines of code counter
+| | 
+| | :100644 100644 22ba64a 68111c3 M	js/admin.js
+| |  js/admin.js | 4 ++++
+| |  1 file changed, 4 insertions(+)
+| | 
+| * commit a829ab21a3e3088ab860298170cd25b1a4ec5b4b
+| | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | Date:   Mon Mar 27 09:34:40 2023 +0800
+| | 
+| |     the addition of cloc
+| |     
+| |     Co-authored-by: gamer0kayf1n3 <gamer0kayf1n3@users.noreply.github.com>
+| | 
+| | :100644 100644 46ebd25 58b2c28 M	.vscode/settings.json
+| | :100644 100644 136ce2f 3c097d1 M	admin.css
+| | :000000 100644 0000000 ebdac6f A	count.txt
+| | :000000 100644 0000000 3bbd0cd A	nodejs-scripts/counter.bat
+| | :000000 100644 0000000 64a553c A	nodejs-scripts/linecounter.exe
+| |  .vscode/settings.json          |   2 +-
+| |  admin.css                      |   4 +++-
+| |  count.txt                      |  19 +++++++++++++++++++
+| |  nodejs-scripts/counter.bat     |   1 +
+| |  nodejs-scripts/linecounter.exe | Bin 0 -> 9704392 bytes
+| |  5 files changed, 24 insertions(+), 2 deletions(-)
+| |  create mode 100644 count.txt
+| |  create mode 100644 nodejs-scripts/counter.bat
+| |  create mode 100644 nodejs-scripts/linecounter.exe
+| | 
+| * commit ead87289cd414d7a4069b7bc91828aada2ff55e2
+|/  Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+|   Date:   Mon Mar 27 08:12:47 2023 +0800
+|   
+|       nbb
+|   
+|   :100644 100644 0e4abd7 136ce2f M	admin.css
+|   :100644 100644 dfdb2b7 19b7a27 M	admin.html
+|   :100644 100644 3e55c3a 20b9b26 M	js/accommodation.js
+|   :100644 100644 d75154e 3b2d941 M	js/chart.js
+|    admin.css           | 5 ++---
+|    admin.html          | 4 ++--
+|    js/accommodation.js | 2 +-
+|    js/chart.js         | 4 ++--
+|    4 files changed, 7 insertions(+), 8 deletions(-)
+| 
+* commit 5688edd219fd0304ca34ee3b2e5f6a2712f66236
+| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| Date:   Mon Mar 27 05:19:45 2023 +0800
+| 
+|     a dot is al it needs
+|     
+|     basically github linking issues
+| 
+| :100644 100644 0db1e5d 22ba64a M	js/admin.js
+|  js/admin.js | 2 +-
+|  1 file changed, 1 insertion(+), 1 deletion(-)
+|   
+*   commit 5f61ecca14f99155e0131f1e259ea0c12fe03b58
+|\  Merge: 9d17c7e abc282e
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Mon Mar 27 05:12:28 2023 +0800
+| | 
+| |     Merge pull request #31 from gamer0kayf1n3/gamer0kayf1n3/issue26
+| |     
+| |     gamer0kayf1n3/issue26
+| | 
+| * commit abc282e87ea2724cd17f157a6c90a65097425522
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Sun Mar 26 21:52:37 2023 +0800
+| | 
+| |     commit history update + thumbnail update
+| | 
+| | :100644 100644 fc38a1c d5587ea M	commit_history.txt
+| | :100644 100644 1d86c37 0d33399 M	thumbnails/html-ss -hq/about.png
+| | :100644 100644 d6706aa 9cd9496 M	thumbnails/html-ss -hq/accommodations.png
+| | :100644 100644 53af330 369f43d M	thumbnails/html-ss -hq/admin.png
+| | :100644 100644 7bef997 c4785d4 M	thumbnails/html-ss -hq/booknow.png
+| | :100644 100644 52f1e76 34d75f5 M	thumbnails/html-ss -hq/cart.png
+| | :100644 100644 bbe31eb ef566bb M	thumbnails/html-ss -hq/checkout.png
+| | :100644 100644 8bb032a d39427f M	thumbnails/html-ss -hq/contact.png
+| | :100644 100644 34f1d4d a2cc333 M	thumbnails/html-ss -hq/delicacies.png
+| | :100644 100644 d23e4df 6c6d824 M	thumbnails/html-ss -hq/economical.png
+| | :100644 100644 dbb44a5 670014f M	thumbnails/html-ss -hq/endpoint.png
+| | :100644 100644 9f344e6 6b6866e M	thumbnails/html-ss -hq/explainertemplate.png
+| | :100644 100644 29e0d80 ed8aeec M	thumbnails/html-ss -hq/index.png
+| | :100644 100644 5b06ea3 46c3994 M	thumbnails/html-ss -hq/learnmore.png
+| | :100644 100644 5018e2e 3a1aa9a M	thumbnails/html-ss -hq/privacy.png
+| | :100644 100644 16ef6a3 3e5da84 M	thumbnails/html-ss -hq/reviews.png
+| | :100644 100644 ae4edb6 e6c1bf3 M	thumbnails/html-ss -hq/signupform.png
+| | :100644 100644 20be51c d054c7e M	thumbnails/html-ss -hq/static_cart.png
+| | :100644 100644 9f344e6 6b6866e M	thumbnails/html-ss -hq/template.png
+| | :100644 100644 7c4cb7f e7e92be M	thumbnails/html-ss -hq/terms.png
+| | :100644 100644 d51d308 ac93847 M	thumbnails/html-ss/about.jpg
+| | :100644 100644 a61a933 db6b81d M	thumbnails/html-ss/accommodations.jpg
+| | :100644 100644 72ae6e5 b25628e M	thumbnails/html-ss/admin.jpg
+| | :100644 100644 0879870 3d5587b M	thumbnails/html-ss/booknow.jpg
+| | :100644 100644 9eed599 ad5d0ed M	thumbnails/html-ss/cart.jpg
+| | :100644 100644 1ef11c0 bc471ba M	thumbnails/html-ss/checkout.jpg
+| | :100644 100644 645bc78 0d22dd1 M	thumbnails/html-ss/contact.jpg
+| | :100644 100644 ea5ce94 12bedf4 M	thumbnails/html-ss/delicacies.jpg
+| | :100644 100644 3b884ce 7bd80a7 M	thumbnails/html-ss/economical.jpg
+| | :100644 100644 5459659 66c1edb M	thumbnails/html-ss/endpoint.jpg
+| | :100644 100644 e998f09 c1b6ba7 M	thumbnails/html-ss/explainertemplate.jpg
+| | :100644 100644 d7b0b99 9051038 M	thumbnails/html-ss/index.jpg
+| | :100644 100644 ab27fed 121a47a M	thumbnails/html-ss/learnmore.jpg
+| | :100644 100644 c091efd d4bc7d1 M	thumbnails/html-ss/privacy.jpg
+| | :100644 100644 1f16f57 65ffbd0 M	thumbnails/html-ss/reviews.jpg
+| | :100644 100644 efc7e2f 777d8f9 M	thumbnails/html-ss/signupform.jpg
+| | :100644 100644 7f07daa 23759a0 M	thumbnails/html-ss/static_cart.jpg
+| | :100644 100644 e998f09 c1b6ba7 M	thumbnails/html-ss/template.jpg
+| | :100644 100644 0f8dda9 ed7ec39 M	thumbnails/html-ss/terms.jpg
+| |  commit_history.txt                           | 165 +++++++++++++++++++++++
+| |  thumbnails/html-ss -hq/about.png             | Bin 270048 -> 515065 bytes
+| |  thumbnails/html-ss -hq/accommodations.png    | Bin 172954 -> 515757 bytes
+| |  thumbnails/html-ss -hq/admin.png             | Bin 7081 -> 72885 bytes
+| |  thumbnails/html-ss -hq/booknow.png           | Bin 39169 -> 471579 bytes
+| |  thumbnails/html-ss -hq/cart.png              | Bin 40915 -> 403956 bytes
+| |  thumbnails/html-ss -hq/checkout.png          | Bin 63111 -> 203380 bytes
+| |  thumbnails/html-ss -hq/contact.png           | Bin 39687 -> 432751 bytes
+| |  thumbnails/html-ss -hq/delicacies.png        | Bin 523535 -> 665822 bytes
+| |  thumbnails/html-ss -hq/economical.png        | Bin 861427 -> 1010224 bytes
+| |  thumbnails/html-ss -hq/endpoint.png          | Bin 62561 -> 205519 bytes
+| |  thumbnails/html-ss -hq/explainertemplate.png | Bin 35517 -> 516602 bytes
+| |  thumbnails/html-ss -hq/index.png             | Bin 751381 -> 827209 bytes
+| |  thumbnails/html-ss -hq/learnmore.png         | Bin 909012 -> 1049366 bytes
+| |  thumbnails/html-ss -hq/privacy.png           | Bin 115291 -> 260305 bytes
+| |  thumbnails/html-ss -hq/reviews.png           | Bin 235959 -> 379076 bytes
+| |  thumbnails/html-ss -hq/signupform.png        | Bin 41418 -> 302627 bytes
+| |  thumbnails/html-ss -hq/static_cart.png       | Bin 61984 -> 380398 bytes
+| |  thumbnails/html-ss -hq/template.png          | Bin 35517 -> 516602 bytes
+| |  thumbnails/html-ss -hq/terms.png             | Bin 118843 -> 264252 bytes
+| |  thumbnails/html-ss/about.jpg                 | Bin 43390 -> 49447 bytes
+| |  thumbnails/html-ss/accommodations.jpg        | Bin 26359 -> 36960 bytes
+| |  thumbnails/html-ss/admin.jpg                 | Bin 7300 -> 20106 bytes
+| |  thumbnails/html-ss/booknow.jpg               | Bin 18267 -> 29894 bytes
+| |  thumbnails/html-ss/cart.jpg                  | Bin 18929 -> 29136 bytes
+| |  thumbnails/html-ss/checkout.jpg              | Bin 29982 -> 32517 bytes
+| |  thumbnails/html-ss/contact.jpg               | Bin 18275 -> 28603 bytes
+| |  thumbnails/html-ss/delicacies.jpg            | Bin 42972 -> 46271 bytes
+| |  thumbnails/html-ss/economical.jpg            | Bin 56364 -> 59639 bytes
+| |  thumbnails/html-ss/endpoint.jpg              | Bin 28682 -> 32272 bytes
+| |  thumbnails/html-ss/explainertemplate.jpg     | Bin 16915 -> 29627 bytes
+| |  thumbnails/html-ss/index.jpg                 | Bin 40952 -> 43198 bytes
+| |  thumbnails/html-ss/learnmore.jpg             | Bin 53257 -> 56477 bytes
+| |  thumbnails/html-ss/privacy.jpg               | Bin 54980 -> 58337 bytes
+| |  thumbnails/html-ss/reviews.jpg               | Bin 50580 -> 54020 bytes
+| |  thumbnails/html-ss/signupform.jpg            | Bin 29945 -> 36504 bytes
+| |  thumbnails/html-ss/static_cart.jpg           | Bin 37240 -> 45490 bytes
+| |  thumbnails/html-ss/template.jpg              | Bin 16915 -> 29627 bytes
+| |  thumbnails/html-ss/terms.jpg                 | Bin 45839 -> 49124 bytes
+| |  39 files changed, 165 insertions(+)
+| | 
+| * commit 8ab88ae0ddcca1f417789ee58721ac3036b6916b
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Sun Mar 26 21:38:55 2023 +0800
+| | 
+| |     BIG FINAL EDIT
+| |     
+| |     Co-authored-by: BermudaVI <BermudaVI@users.noreply.github.com>
+| | 
+| | :000000 100644 0000000 46ebd25 A	.vscode/settings.json
+| | :100644 100644 6d23913 0e4abd7 M	admin.css
+| | :100644 100644 1a70529 dfdb2b7 M	admin.html
+| | :000000 100644 0000000 fc38a1c A	commit_history.txt
+| | :100644 100644 3a0ee93 0db1e5d M	js/admin.js
+| | :000000 100644 0000000 d75154e A	js/chart.js
+| | :000000 100644 0000000 4027924 A	js/flow.js
+| | :100644 100644 510799f c9a7f79 M	js/scripts.js
+| | :000000 100644 0000000 b1099e4 A	nodejs-scripts/commits.bat
+| | :000000 100644 0000000 b512c09 A	static/modules/flowchart/.gitignore
+| | :000000 100644 0000000 f4d6c05 A	static/modules/flowchart/Gruntfile.js
+| | :000000 100644 0000000 7030384 A	static/modules/flowchart/MIT-LICENSE
+| | :000000 100644 0000000 42dd6e6 A	static/modules/flowchart/README.md
+| | :000000 100644 0000000 779b4a4 A	static/modules/flowchart/contributors.txt
+| | :000000 100644 0000000 b322c6b A	static/modules/flowchart/dist/flowsvg.js
+| | :000000 100644 0000000 a378177 A	static/modules/flowchart/dist/flowsvg.min.js
+| | :000000 100644 0000000 25714ed A	static/modules/flowchart/example/jquery-2.1.3.min.js
+| | :000000 100644 0000000 d9f9b15 A	static/modules/flowchart/example/jquery.scrollTo.min.js
+| | :000000 100644 0000000 95e16ab A	static/modules/flowchart/example/rcuk.html
+| | :000000 100644 0000000 fe53bc5 A	static/modules/flowchart/example/svg.js
+| | :000000 100644 0000000 95c284b A	static/modules/flowchart/package.json
+| | :000000 100644 0000000 8f6d92b A	static/modules/flowchart/spec/configSpec.js
+| | :000000 100644 0000000 bb527ea A	static/modules/flowchart/src/addarrows.js
+| | :000000 100644 0000000 0bf26d7 A	static/modules/flowchart/src/addconnectors.js
+| | :000000 100644 0000000 74a94b6 A	static/modules/flowchart/src/addlabels.js
+| | :000000 100644 0000000 897a19e A	static/modules/flowchart/src/angleline.js
+| | :000000 100644 0000000 459a3dc A	static/modules/flowchart/src/arrowhead.js
+| | :000000 100644 0000000 9bce077 A	static/modules/flowchart/src/arrowline.js
+| | :000000 100644 0000000 5ab4161 A	static/modules/flowchart/src/buttonbar.js
+| | :000000 100644 0000000 a371a4b A	static/modules/flowchart/src/decision.js
+| | :000000 100644 0000000 073eb78 A	static/modules/flowchart/src/finish.js
+| | :000000 100644 0000000 74eed55 A	static/modules/flowchart/src/generatelookups.js
+| | :000000 100644 0000000 d323e2b A	static/modules/flowchart/src/hideshapes.js
+| | :000000 100644 0000000 962d43c A	static/modules/flowchart/src/init.js
+| | :000000 100644 0000000 1923bae A	static/modules/flowchart/src/intro.js
+| | :000000 100644 0000000 e1c2d47 A	static/modules/flowchart/src/layoutshapes.js
+| | :000000 100644 0000000 9c7d54c A	static/modules/flowchart/src/linelabel.js
+| | :000000 100644 0000000 a62860f A	static/modules/flowchart/src/makeshapes.js
+| | :000000 100644 0000000 7ab73b2 A	static/modules/flowchart/src/nodepoints.js
+| | :000000 100644 0000000 06fe44a A	static/modules/flowchart/src/outro.js
+| | :000000 100644 0000000 6937f8d A	static/modules/flowchart/src/positionshapes.js
+| | :000000 100644 0000000 41adcdb A	static/modules/flowchart/src/process.js
+| | :000000 100644 0000000 b18fc94 A	static/modules/flowchart/src/referringids.js
+| | :000000 100644 0000000 58ea5b8 A	static/modules/flowchart/src/setroot.js
+| | :000000 100644 0000000 e97af70 A	static/modules/flowchart/src/shapefuncs.js
+| | :000000 100644 0000000 eca9f53 A	static/modules/flowchart/src/start.js
+| | :000000 100644 0000000 48956d5 A	static/modules/flowchart/src/staticaddarrows.js
+| | :000000 100644 0000000 466cec4 A	static/modules/flowchart/src/staticaddconnectors.js
+| | :000000 100644 0000000 17c76b9 A	static/modules/flowchart/src/staticaddlabels.js
+| | :000000 100644 0000000 6a70c59 A	static/modules/flowchart/src/staticnodepoints.js
+| | :000000 100644 0000000 b19ec67 A	static/modules/flowchart/src/togglenext.js
+| | :000000 100644 0000000 4397281 A	static/modules/flowchart/src/yesnoids.js
+| | :000000 100644 0000000 fe53bc5 A	static/modules/flowchart/vendor/svg.js
+| |  .vscode/settings.json                            |    8 +
+| |  admin.css                                        |  119 +-
+| |  admin.html                                       |   77 +-
+| |  commit_history.txt                               | 2552 ++++++++++++
+| |  js/admin.js                                      |   16 +-
+| |  js/chart.js                                      |   47 +
+| |  js/flow.js                                       |   49 +
+| |  js/scripts.js                                    |    1 +
+| |  nodejs-scripts/commits.bat                       |    1 +
+| |  static/modules/flowchart/.gitignore              |    1 +
+| |  static/modules/flowchart/Gruntfile.js            |  126 +
+| |  static/modules/flowchart/MIT-LICENSE             |   19 +
+| |  static/modules/flowchart/README.md               |  184 +
+| |  static/modules/flowchart/contributors.txt        |    1 +
+| |  static/modules/flowchart/dist/flowsvg.js         | 1267 ++++++
+| |  static/modules/flowchart/dist/flowsvg.min.js     |    3 +
+| |  .../flowchart/example/jquery-2.1.3.min.js        |    4 +
+| |  .../flowchart/example/jquery.scrollTo.min.js     |    7 +
+| |  static/modules/flowchart/example/rcuk.html       |  250 ++
+| |  static/modules/flowchart/example/svg.js          | 3621 ++++++++++++++++++
+| |  static/modules/flowchart/package.json            |   45 +
+| |  static/modules/flowchart/spec/configSpec.js      |   20 +
+| |  static/modules/flowchart/src/addarrows.js        |   46 +
+| |  static/modules/flowchart/src/addconnectors.js    |   46 +
+| |  static/modules/flowchart/src/addlabels.js        |   37 +
+| |  static/modules/flowchart/src/angleline.js        |   64 +
+| |  static/modules/flowchart/src/arrowhead.js        |   15 +
+| |  static/modules/flowchart/src/arrowline.js        |   17 +
+| |  static/modules/flowchart/src/buttonbar.js        |   82 +
+| |  static/modules/flowchart/src/decision.js         |   30 +
+| |  static/modules/flowchart/src/finish.js           |   76 +
+| |  static/modules/flowchart/src/generatelookups.js  |    6 +
+| |  static/modules/flowchart/src/hideshapes.js       |   10 +
+| |  static/modules/flowchart/src/init.js             |   80 +
+| |  static/modules/flowchart/src/intro.js            |    5 +
+| |  static/modules/flowchart/src/layoutshapes.js     |   32 +
+| |  static/modules/flowchart/src/linelabel.js        |   29 +
+| |  static/modules/flowchart/src/makeshapes.js       |   22 +
+| |  static/modules/flowchart/src/nodepoints.js       |   86 +
+| |  static/modules/flowchart/src/outro.js            |    6 +
+| |  static/modules/flowchart/src/positionshapes.js   |   35 +
+| |  static/modules/flowchart/src/process.js          |   41 +
+| |  static/modules/flowchart/src/referringids.js     |   62 +
+| |  static/modules/flowchart/src/setroot.js          |   18 +
+| |  static/modules/flowchart/src/shapefuncs.js       |    5 +
+| |  static/modules/flowchart/src/start.js            |   56 +
+| |  static/modules/flowchart/src/staticaddarrows.js  |   54 +
+| |  .../modules/flowchart/src/staticaddconnectors.js |   25 +
+| |  static/modules/flowchart/src/staticaddlabels.js  |   27 +
+| |  static/modules/flowchart/src/staticnodepoints.js |   89 +
+| |  static/modules/flowchart/src/togglenext.js       |  121 +
+| |  static/modules/flowchart/src/yesnoids.js         |   14 +
+| |  static/modules/flowchart/vendor/svg.js           | 3621 ++++++++++++++++++
+| |  53 files changed, 13188 insertions(+), 87 deletions(-)
+| |  create mode 100644 .vscode/settings.json
+| |  create mode 100644 commit_history.txt
+| |  create mode 100644 js/chart.js
+| |  create mode 100644 js/flow.js
+| |  create mode 100644 nodejs-scripts/commits.bat
+| |  create mode 100644 static/modules/flowchart/.gitignore
+| |  create mode 100644 static/modules/flowchart/Gruntfile.js
+| |  create mode 100644 static/modules/flowchart/MIT-LICENSE
+| |  create mode 100644 static/modules/flowchart/README.md
+| |  create mode 100644 static/modules/flowchart/contributors.txt
+| |  create mode 100644 static/modules/flowchart/dist/flowsvg.js
+| |  create mode 100644 static/modules/flowchart/dist/flowsvg.min.js
+| |  create mode 100644 static/modules/flowchart/example/jquery-2.1.3.min.js
+| |  create mode 100644 static/modules/flowchart/example/jquery.scrollTo.min.js
+| |  create mode 100644 static/modules/flowchart/example/rcuk.html
+| |  create mode 100644 static/modules/flowchart/example/svg.js
+| |  create mode 100644 static/modules/flowchart/package.json
+| |  create mode 100644 static/modules/flowchart/spec/configSpec.js
+| |  create mode 100644 static/modules/flowchart/src/addarrows.js
+| |  create mode 100644 static/modules/flowchart/src/addconnectors.js
+| |  create mode 100644 static/modules/flowchart/src/addlabels.js
+| |  create mode 100644 static/modules/flowchart/src/angleline.js
+| |  create mode 100644 static/modules/flowchart/src/arrowhead.js
+| |  create mode 100644 static/modules/flowchart/src/arrowline.js
+| |  create mode 100644 static/modules/flowchart/src/buttonbar.js
+| |  create mode 100644 static/modules/flowchart/src/decision.js
+| |  create mode 100644 static/modules/flowchart/src/finish.js
+| |  create mode 100644 static/modules/flowchart/src/generatelookups.js
+| |  create mode 100644 static/modules/flowchart/src/hideshapes.js
+| |  create mode 100644 static/modules/flowchart/src/init.js
+| |  create mode 100644 static/modules/flowchart/src/intro.js
+| |  create mode 100644 static/modules/flowchart/src/layoutshapes.js
+| |  create mode 100644 static/modules/flowchart/src/linelabel.js
+| |  create mode 100644 static/modules/flowchart/src/makeshapes.js
+| |  create mode 100644 static/modules/flowchart/src/nodepoints.js
+| |  create mode 100644 static/modules/flowchart/src/outro.js
+| |  create mode 100644 static/modules/flowchart/src/positionshapes.js
+| |  create mode 100644 static/modules/flowchart/src/process.js
+| |  create mode 100644 static/modules/flowchart/src/referringids.js
+| |  create mode 100644 static/modules/flowchart/src/setroot.js
+| |  create mode 100644 static/modules/flowchart/src/shapefuncs.js
+| |  create mode 100644 static/modules/flowchart/src/start.js
+| |  create mode 100644 static/modules/flowchart/src/staticaddarrows.js
+| |  create mode 100644 static/modules/flowchart/src/staticaddconnectors.js
+| |  create mode 100644 static/modules/flowchart/src/staticaddlabels.js
+| |  create mode 100644 static/modules/flowchart/src/staticnodepoints.js
+| |  create mode 100644 static/modules/flowchart/src/togglenext.js
+| |  create mode 100644 static/modules/flowchart/src/yesnoids.js
+| |  create mode 100644 static/modules/flowchart/vendor/svg.js
+| | 
+| * commit 143984b62162805352993c78dc3b6c82f91e4da8
+| | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | Date:   Sun Mar 26 12:37:25 2023 +0800
+| | 
+| |     Layout Update
+| |     
+| |     - Eliminated bottom half div
+| |     - Placed sItemap in its place
+| |     - Adjusted styles accordingly
+| |     - Gave image previews a hover effect
+| |     
+| |     Note:
+| |     uh
+| | 
+| | :100644 100644 a763fbc 6d23913 M	admin.css
+| | :100644 100644 9247fe9 1a70529 M	admin.html
+| |  admin.css  | 20 ++++++++++----------
+| |  admin.html | 22 ++++++++++++----------
+| |  2 files changed, 22 insertions(+), 20 deletions(-)
+| |   
+| *   commit f4ae3eb0bf656a619121aa216ff7bb97c84f08f5
+| |\  Merge: 81992cc 104ec32
+| | | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | | Date:   Sat Mar 25 20:47:04 2023 +0800
 | | | 
 | | |     Merge branch 'gamer0kayf1n3/issue26' of https://github.com/gamer0kayf1n3/tagaytay into gamer0kayf1n3/issue26
 | | | 
-| * | commit 081a5687b129da2758a25de9ff6352f8228eb25b
-| | | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
-| | | Date:   Thu Mar 23 18:12:54 2023 +0800
-| | | 
-| | |     Styling of some elemertns in checkout
-| | |     
-| | |     lol
-| | | 
-| | | :100644 100644 d0af0f8 5ef22c5 M	cart.css
-| | | :100644 100644 db7cbfb c9c00f9 M	cart.html
-| | |  cart.css  | 49 ++++++++++++++++++++++++++++++++++++++++++++++++-
-| | |  cart.html | 12 +++++++-----
-| | |  2 files changed, 55 insertions(+), 6 deletions(-)
-| | | 
-* | | commit 261e18e0db1bd5cc6cbde8b6ad177cd3e94bbd65
+| | * commit 104ec329ba8d4e4af526ab4df34ea7ab934fe2ad
 | | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| | | Date:   Thu Mar 23 18:21:09 2023 +0800
+| | | Date:   Sat Mar 25 20:45:56 2023 +0800
 | | | 
-| | |     add check out button; style this kyle
+| | |     title changes; next time fix og tags
 | | | 
-| | | :100644 100644 8207964 7e8cf47 M	cart.html
-| | | :000000 100644 0000000 e69de29 A	checkout.html
-| | | :100644 100644 31d7eb2 581e521 M	js/accommodation.js
-| | |  cart.html           | 2 +-
-| | |  checkout.html       | 0
-| | |  js/accommodation.js | 1 +
-| | |  3 files changed, 2 insertions(+), 1 deletion(-)
-| | |  create mode 100644 checkout.html
-| | | 
-* | | commit 675be3a855b0fa3a86d76ac8aa7b11ee86279f84
-| | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| | | Date:   Thu Mar 23 18:20:50 2023 +0800
-| | | 
-| | |     cart redirect and dont refresh page
-| | | 
-| | | :100644 100644 ca3b822 4476942 M	accommodations.html
-| | |  accommodations.html | 8 ++++----
-| | |  1 file changed, 4 insertions(+), 4 deletions(-)
-| | | 
-* | | commit 6c29542798507ec3bd97bdda400071bbea3d60a2
-| | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| | | Date:   Thu Mar 23 18:12:44 2023 +0800
-| | | 
-| | |     again
-| | | 
-| | | :100644 100644 0839594 ca3b822 M	accommodations.html
+| | | :100644 100644 46fa78d 95c6ef9 M	accommodations.html
+| | | :100644 100644 e457612 b328543 M	admin.html
+| | | :100644 100644 e75749e 1f5300a M	booknow.html
+| | | :100644 100644 d014b6d ca1fe57 M	cart.html
+| | | :100644 100644 139ca9c cc2ca4a M	checkout.html
+| | | :100644 100644 efd8b6d 3798825 M	endpoint.html
+| | | :100644 100644 c798166 739bf72 M	gallery/index.html
+| | | :100644 100644 8347c92 98cf094 M	static_cart.html
 | | |  accommodations.html | 2 +-
-| | |  1 file changed, 1 insertion(+), 1 deletion(-)
+| | |  admin.html          | 2 +-
+| | |  booknow.html        | 2 +-
+| | |  cart.html           | 2 +-
+| | |  checkout.html       | 2 +-
+| | |  endpoint.html       | 2 +-
+| | |  gallery/index.html  | 2 +-
+| | |  static_cart.html    | 2 +-
+| | |  8 files changed, 8 insertions(+), 8 deletions(-)
 | | | 
-* | | commit ab1ab3e50c196a5792bd83192b6a6df1bdd2627f
-| |/  Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-|/|   Date:   Thu Mar 23 18:12:17 2023 +0800
+| | * commit c807d4f4a7663c73612cf48620c7e21add97ea22
+| | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | | Date:   Sat Mar 25 20:42:33 2023 +0800
+| | | 
+| | |     logs template
+| | | 
+| | | :100644 100644 337e588 e457612 M	admin.html
+| | |  admin.html | 3 +++
+| | |  1 file changed, 3 insertions(+)
+| | | 
+| | * commit d93f7ba3260d00b3100df2a3779efd54284ad73e
+| | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | | Date:   Sat Mar 25 20:41:26 2023 +0800
+| | | 
+| | |     css for previous
+| | | 
+| | | :100644 100644 5cc7daf c22b57d M	accostyles.css
+| | | :100644 100644 cb190ef 139ca9c M	checkout.html
+| | | :100644 100644 297ab28 efd8b6d M	endpoint.html
+| | |  accostyles.css |  3 ++-
+| | |  checkout.html  | 25 +++++++++++++++++++++++++
+| | |  endpoint.html  |  3 ---
+| | |  3 files changed, 27 insertions(+), 4 deletions(-)
+| | | 
+| | * commit be446a385f1be51eb40301acefd04c9e89b6ea55
+| | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | | Date:   Sat Mar 25 20:41:10 2023 +0800
+| | | 
+| | |     desc fix
+| | | 
+| | | :100644 100644 8aeae38 46fa78d M	accommodations.html
+| | |  accommodations.html | 11 ++++++-----
+| | |  1 file changed, 6 insertions(+), 5 deletions(-)
+| | | 
+| * | commit 81992ccb6eddcea27b8a75fc926b5e935b1ddfe0
+| |/  Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| |   Date:   Sat Mar 25 20:46:47 2023 +0800
 | |   
-| |       replace old booknow buttons to new
+| |       .
 | |   
-| |   :100644 100644 8686075 c798166 M	gallery/index.html
-| |    gallery/index.html | 2 +-
-| |    1 file changed, 1 insertion(+), 1 deletion(-)
+| |   :100644 100644 bf1d284 a763fbc M	admin.css
+| |   :100644 100644 337e588 18602b4 M	admin.html
+| |    admin.css  | 11 +----------
+| |    admin.html | 11 ++++++-----
+| |    2 files changed, 7 insertions(+), 15 deletions(-)
 | | 
-* | commit c99cc624d1abab33edd9d2af96d36fc04e322d5d
+| * commit 1bbe4c416e7e6c7174dd7caddb5db37004352960
 | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| | Date:   Thu Mar 23 18:08:21 2023 +0800
+| | Date:   Sat Mar 25 19:55:59 2023 +0800
 | | 
-| |     total sum implementation
+| |     intro bug
 | | 
-| | :100644 100644 d0af0f8 63b1092 M	cart.css
-| | :100644 100644 db7cbfb 8207964 M	cart.html
-| | :100644 100644 f590304 b68a76e M	js/cart.js
-| |  cart.css   |  6 ++++++
-| |  cart.html  |  5 ++++-
-| |  js/cart.js | 22 +++++++++++++++++++++-
-| |  3 files changed, 31 insertions(+), 2 deletions(-)
+| | :100644 100644 f5c6603 bf1d284 M	admin.css
+| | :100644 100644 4b4d532 3a0ee93 M	js/admin.js
+| |  admin.css   | 1 +
+| |  js/admin.js | 1 +
+| |  2 files changed, 2 insertions(+)
 | | 
-* | commit 1c70dea9c4c3472f7e962d29e7634c1fcb8c7405
-|/  Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-|   Date:   Thu Mar 23 17:43:16 2023 +0800
-|   
-|       DONT DELETE HEADER ROW LOL
-|   
-|   :100644 100644 0813f00 f590304 M	js/cart.js
-|    js/cart.js | 5 ++++-
-|    1 file changed, 4 insertions(+), 1 deletion(-)
-| 
-* commit 28bb3d58bcdcf4129d547fc03c514693074e191b
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Thu Mar 23 17:30:51 2023 +0800
-| 
-|     make cart persistent when deleted
-|     Co-authored-by: BermudaVI <BermudaVI@users.noreply.github.com>
-| 
-| :100644 100644 744904a 31d7eb2 M	js/accommodation.js
-| :100644 100644 dcefb4b 0813f00 M	js/cart.js
-|  js/accommodation.js | 2 +-
-|  js/cart.js          | 6 ++++++
-|  2 files changed, 7 insertions(+), 1 deletion(-)
-| 
-* commit dbec7398056e64026d3e5794dfce77ced422d630
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Thu Mar 23 16:55:53 2023 +0800
-| 
-|     inclusive calendar
-| 
-| :100644 100644 b99ac68 dcefb4b M	js/cart.js
-|  js/cart.js | 2 +-
-|  1 file changed, 1 insertion(+), 1 deletion(-)
-| 
-* commit d80922a351376dbae2fd3e6338f57a28904e07eb
-| Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
-| Date:   Thu Mar 23 13:56:16 2023 +0800
-| 
-|     delete cartl action done; next: make it persistent
-| 
-| :100644 100644 b2e76f3 7bbd725 M	accostyles.css
-| :100644 100644 8610168 d0af0f8 M	cart.css
-| :100644 100644 d27918f db7cbfb M	cart.html
-| :100644 100644 65d7633 b2b7b29 M	js/bloat.js
-| :100644 100644 67261f3 b99ac68 M	js/cart.js
-| :100644 100644 5f2c215 9bc636c M	styles.css
-|  accostyles.css | 52 -----------------------------------------------
-|  cart.css       | 24 ++++++++++++++++++++--
-|  cart.html      | 20 ++++++++++++++++---
-|  js/bloat.js    |  5 +++--
-|  js/cart.js     | 40 +++++++++++++++++++++++++++++++++++--
-|  styles.css     | 61 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-|  6 files changed, 141 insertions(+), 61 deletions(-)
-| 
-* commit 852bb66692a04968db488de87d5849e26911897c
-| Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
-| Date:   Thu Mar 23 11:32:13 2023 +0800
-| 
-|     improvment for cart.html
-| 
-| :100644 100644 29bcd72 8610168 M	cart.css
-| :100644 100644 7d52aa4 744904a M	js/accommodation.js
-| :100644 100644 d769e38 67261f3 M	js/cart.js
-| :000000 100644 0000000 493480d A	test.html
-|  cart.css            |  8 ++++++++
-|  js/accommodation.js |  1 +
-|  js/cart.js          | 19 ++++++++++++++++---
-|  test.html           |  1 +
-|  4 files changed, 26 insertions(+), 3 deletions(-)
-|  create mode 100644 test.html
-| 
-* commit ddc43a88fccb26111802afb3ff6ef577ecc1d825
-| Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
-| Date:   Thu Mar 23 11:32:08 2023 +0800
-| 
-|     cart.html improvements
-| 
-| :100644 100644 fb04ba5 d27918f M	cart.html
-|  cart.html | 3 +++
-|  1 file changed, 3 insertions(+)
-| 
-* commit 342665757d5de755c91cce0053d77d0004a5db5d
-| Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
-| Date:   Thu Mar 23 11:04:14 2023 +0800
-| 
-|     fixed bug of setting "val", even when no more tag
-| 
-| :100644 100644 6cec1b0 7d52aa4 M	js/accommodation.js
-|  js/accommodation.js | 2 --
-|  1 file changed, 2 deletions(-)
-| 
-* commit 2273cb359fd224b7e5baa3b5bba6bb0326ec4939
-| Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
-| Date:   Thu Mar 23 10:57:46 2023 +0800
-| 
-|     size change for header
-| 
-| :100644 100644 83b636b 29bcd72 M	cart.css
-|  cart.css | 4 ++++
-|  1 file changed, 4 insertions(+)
-| 
-* commit 73480ec245d63d443c5d5eabfe97ea563a034882
-| Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
-| Date:   Wed Mar 22 21:43:23 2023 +0800
-| 
-|     Initial changes god help me ill collapse at any moment
-|     
-|     ill continue tom i still have math and notes i love
-| 
-| :100644 100644 a8e065c 83b636b M	cart.css
-|  cart.css | 18 +++++++++++++++++-
-|  1 file changed, 17 insertions(+), 1 deletion(-)
-| 
-* commit 89cfec905047b69f24c61e5a41080a996867b17e
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Wed Mar 22 19:49:23 2023 +0800
-| 
-|     kyle i'll leave styling up to you; cart.css
-| 
-| :000000 100644 0000000 a8e065c A	cart.css
-| :100644 100644 180bc00 fb04ba5 M	cart.html
-| :000000 100644 0000000 d769e38 A	js/cart.js
-| :000000 100644 0000000 004e63c A	static_cart.html
-|  cart.css         |  9 +++++++++
-|  cart.html        |  4 +++-
-|  js/cart.js       |  6 ++++++
-|  static_cart.html | 50 ++++++++++++++++++++++++++++++++++++++++++++++++++
-|  4 files changed, 68 insertions(+), 1 deletion(-)
-|  create mode 100644 cart.css
-|  create mode 100644 js/cart.js
-|  create mode 100644 static_cart.html
-| 
-* commit ad40813d39c00adf9a7b5517e9c024a68beab6eb
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Wed Mar 22 19:37:04 2023 +0800
-| 
-|     make function return html table instead
-| 
-| :100644 100644 9f2e6ce 65d7633 M	js/bloat.js
-|  js/bloat.js | 2 +-
-|  1 file changed, 1 insertion(+), 1 deletion(-)
-| 
-* commit 65bcbb832f5e300d9687d035dcb73e6606cf99f5
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Wed Mar 22 19:35:09 2023 +0800
-| 
-|     added bloat createTable()
-| 
-| :100644 100644 12d0e13 9f2e6ce M	js/bloat.js
-|  js/bloat.js | 23 ++++++++++++++++++++++-
-|  1 file changed, 22 insertions(+), 1 deletion(-)
-| 
-* commit ec11c47ee49b8977f4c36c4846281c9fb0500f0f
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Wed Mar 22 19:28:55 2023 +0800
-| 
-|     setting the cookie now work normally yay
-| 
-| :100644 100644 9c7aece 6cec1b0 M	js/accommodation.js
-|  js/accommodation.js | 20 +++++++++++---------
-|  1 file changed, 11 insertions(+), 9 deletions(-)
-| 
-* commit f1b10a176150b99db6f1b4d8666629cec02061ea
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Wed Mar 22 18:16:21 2023 +0800
-| 
-|     adapting css to 768p monitors
-| 
-| :100644 100644 b394f85 b2e76f3 M	accostyles.css
-|  accostyles.css | 6 +++---
-|  1 file changed, 3 insertions(+), 3 deletions(-)
-| 
-* commit 127ff42c571877b7854d1547537ed13d3635516d
-| Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
-| Date:   Wed Mar 22 12:49:46 2023 +0800
-| 
-|     broken2
-| 
-| :100644 100644 ee768a0 9c7aece M	js/accommodation.js
-|  js/accommodation.js | 5 ++---
-|  1 file changed, 2 insertions(+), 3 deletions(-)
-| 
-* commit 15415ec438d97a221d77e636c5eff9c31dad5b28
-| Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
-| Date:   Wed Mar 22 12:33:04 2023 +0800
-| 
-|     broken saving cart; fix later @gamer0kayf1n3
-| 
-| :100644 100644 aa852de 0839594 M	accommodations.html
-| :100644 100644 0222a6f ee768a0 M	js/accommodation.js
-|  accommodations.html |  2 +-
-|  js/accommodation.js | 13 +++++++++++++
-|  2 files changed, 14 insertions(+), 1 deletion(-)
-| 
-* commit 513c3b2cdf7638068b1be8615b669b5a3a6d49c1
-| Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
-| Date:   Wed Mar 22 12:10:57 2023 +0800
-| 
-|     modal finalize
-| 
-| :100644 100644 5bb2f24 aa852de M	accommodations.html
-| :100644 100644 a0caa18 0222a6f M	js/accommodation.js
-| :100644 100644 5d32e09 5f2c215 M	styles.css
-|  accommodations.html | 10 ++++++----
-|  js/accommodation.js | 34 ++++++++++++++++++++++++----------
-|  styles.css          |  7 +++++++
-|  3 files changed, 37 insertions(+), 14 deletions(-)
-| 
-* commit 31e38a4b0aba75db352d465c8b0813530675ef63
-| Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
-| Date:   Wed Mar 22 10:47:49 2023 +0800
-| 
-|     pricing imp
-| 
-| :000000 100644 0000000 180bc00 A	cart.html
-| :100644 100644 03ba752 a0caa18 M	js/accommodation.js
-|  cart.html           | 52 +++++++++++++++++++++++++++++++++++++++++++++++++++
-|  js/accommodation.js |  9 +++++++++
-|  2 files changed, 61 insertions(+)
-|  create mode 100644 cart.html
-| 
-* commit 95e521d07ae22459718d3df5be2e3897aa9236da
-| Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
-| Date:   Wed Mar 22 10:41:34 2023 +0800
-| 
-|     limit start date to today and
-|     end date to after start date
-| 
-| :100644 100644 8e1c516 5bb2f24 M	accommodations.html
-| :100644 100644 581b91e 03ba752 M	js/accommodation.js
-|  accommodations.html |  8 ++++++--
-|  js/accommodation.js | 12 ++++++++++--
-|  2 files changed, 16 insertions(+), 4 deletions(-)
-| 
-* commit 693f31563a41352838ec84e13650a225c8c92ce5
-| Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
-| Date:   Tue Mar 21 21:14:32 2023 +0800
-| 
-|     literally no changes atm
-| 
-| :100644 100644 d88e536 5d32e09 M	styles.css
-|  styles.css | 4 ++++
-|  1 file changed, 4 insertions(+)
-| 
-* commit 6ef0956a2bd497c65c237dd3bf51b051a590b43c
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Tue Mar 21 20:54:23 2023 +0800
-| 
-|     center add to cart button
-| 
-| :100644 100644 f33da6d 8e1c516 M	accommodations.html
-| :100644 100644 5f90dab b394f85 M	accostyles.css
-|  accommodations.html | 4 +++-
-|  accostyles.css      | 7 +++++++
-|  2 files changed, 10 insertions(+), 1 deletion(-)
-| 
-* commit f096e2582a2459d7560f3456ca78a2f2bddc848d
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Tue Mar 21 20:46:25 2023 +0800
-| 
-|     added coupons <3
-| 
-| :100644 100644 eac8d4e f33da6d M	accommodations.html
-|  accommodations.html | 4 +++-
-|  1 file changed, 3 insertions(+), 1 deletion(-)
-| 
-* commit ef2dcfb2b33dc501040e3783e4e5ec5c7c7715c5
-| Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| Date:   Tue Mar 21 20:44:46 2023 +0800
-| 
-|     bug fix by manually making photo blurred;
-|     thanks gdrive hotlinks
-| 
-| :100644 100644 850fd11 eac8d4e M	accommodations.html
-| :100644 100644 cef0c1d 5f90dab M	accostyles.css
-| :100644 100644 c767843 581b91e M	js/accommodation.js
-| :100644 100644 c3b5300 12d0e13 M	js/bloat.js
-| :100644 100644 db61e80 d88e536 M	styles.css
-|  accommodations.html | 26 +++++++++--------
-|  accostyles.css      | 78 +++++++++++++++++++++++++++++----------------------
-|  js/accommodation.js | 22 ++++++---------
-|  js/bloat.js         |  3 ++
-|  styles.css          | 10 +++----
-|  5 files changed, 75 insertions(+), 64 deletions(-)
-| 
-* commit 37337366ccb61de13da22442e8cb92e8ce625fee
-| Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
-| Date:   Tue Mar 21 11:29:44 2023 +0800
-| 
-|     03/21/2023 activity
-|     co-authored by: @gamer0kayf1n3
-|     attemp to add modal
-| 
-| :100644 100644 23288af 850fd11 M	accommodations.html
-| :100644 100644 7bbd725 cef0c1d M	accostyles.css
-| :000000 100644 0000000 c767843 A	js/accommodation.js
-| :100644 100644 1f5d9c2 c3b5300 M	js/bloat.js
-| :100644 100644 ec9bf00 568a7f8 M	js/scripts.js
-| :100644 100644 9973f60 0568509 M	terms.html
-|  accommodations.html | 33 ++++++++++++++++++++++++++++-----
-|  accostyles.css      | 37 ++++++++++++++++++++++++++++++++++++-
-|  js/accommodation.js | 31 +++++++++++++++++++++++++++++++
-|  js/bloat.js         |  8 ++++++++
-|  js/scripts.js       |  2 +-
-|  terms.html          |  1 +
-|  6 files changed, 105 insertions(+), 7 deletions(-)
-|  create mode 100644 js/accommodation.js
-|   
-*   commit 22519aa6b149d87ce1388d433f16ab0ff772afd8
-|\  Merge: 6225b10 b98008b
+| * commit 079c8b88b38b3d5c1bee1ad56dc35e42bbb7646b
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Sat Mar 25 19:52:15 2023 +0800
+| | 
+| |     massive sitemap update
+| | 
+| | :100644 100644 b2ea208 f5c6603 M	admin.css
+| | :100644 100644 2b15764 337e588 M	admin.html
+| | :100644 100644 1ad4c89 4b4d532 M	js/admin.js
+| | :000000 100644 0000000 0df368d A	nodejs-scripts/compressimg.js
+| | :000000 100644 0000000 67b6a16 A	nodejs-scripts/thumbnails.js
+| | :000000 100644 0000000 e69de29 A	thumbnails/a
+| | :000000 100644 0000000 1d86c37 A	thumbnails/html-ss -hq/about.png
+| | :000000 100644 0000000 d6706aa A	thumbnails/html-ss -hq/accommodations.png
+| | :000000 100644 0000000 53af330 A	thumbnails/html-ss -hq/admin.png
+| | :000000 100644 0000000 7bef997 A	thumbnails/html-ss -hq/booknow.png
+| | :000000 100644 0000000 52f1e76 A	thumbnails/html-ss -hq/cart.png
+| | :000000 100644 0000000 bbe31eb A	thumbnails/html-ss -hq/checkout.png
+| | :000000 100644 0000000 8bb032a A	thumbnails/html-ss -hq/contact.png
+| | :000000 100644 0000000 34f1d4d A	thumbnails/html-ss -hq/delicacies.png
+| | :000000 100644 0000000 d23e4df A	thumbnails/html-ss -hq/economical.png
+| | :000000 100644 0000000 dbb44a5 A	thumbnails/html-ss -hq/endpoint.png
+| | :000000 100644 0000000 9f344e6 A	thumbnails/html-ss -hq/explainertemplate.png
+| | :000000 100644 0000000 29e0d80 A	thumbnails/html-ss -hq/index.png
+| | :000000 100644 0000000 5b06ea3 A	thumbnails/html-ss -hq/learnmore.png
+| | :000000 100644 0000000 5018e2e A	thumbnails/html-ss -hq/privacy.png
+| | :000000 100644 0000000 16ef6a3 A	thumbnails/html-ss -hq/reviews.png
+| | :000000 100644 0000000 ae4edb6 A	thumbnails/html-ss -hq/signupform.png
+| | :000000 100644 0000000 20be51c A	thumbnails/html-ss -hq/static_cart.png
+| | :000000 100644 0000000 9f344e6 A	thumbnails/html-ss -hq/template.png
+| | :000000 100644 0000000 7c4cb7f A	thumbnails/html-ss -hq/terms.png
+| | :000000 100644 0000000 f56c531 A	thumbnails/html-ss -hq/test.png
+| | :000000 100644 0000000 d51d308 A	thumbnails/html-ss/about.jpg
+| | :000000 100644 0000000 a61a933 A	thumbnails/html-ss/accommodations.jpg
+| | :000000 100644 0000000 72ae6e5 A	thumbnails/html-ss/admin.jpg
+| | :000000 100644 0000000 0879870 A	thumbnails/html-ss/booknow.jpg
+| | :000000 100644 0000000 9eed599 A	thumbnails/html-ss/cart.jpg
+| | :000000 100644 0000000 1ef11c0 A	thumbnails/html-ss/checkout.jpg
+| | :000000 100644 0000000 645bc78 A	thumbnails/html-ss/contact.jpg
+| | :000000 100644 0000000 ea5ce94 A	thumbnails/html-ss/delicacies.jpg
+| | :000000 100644 0000000 3b884ce A	thumbnails/html-ss/economical.jpg
+| | :000000 100644 0000000 5459659 A	thumbnails/html-ss/endpoint.jpg
+| | :000000 100644 0000000 e998f09 A	thumbnails/html-ss/explainertemplate.jpg
+| | :000000 100644 0000000 d7b0b99 A	thumbnails/html-ss/index.jpg
+| | :000000 100644 0000000 ab27fed A	thumbnails/html-ss/learnmore.jpg
+| | :000000 100644 0000000 c091efd A	thumbnails/html-ss/privacy.jpg
+| | :000000 100644 0000000 1f16f57 A	thumbnails/html-ss/reviews.jpg
+| | :000000 100644 0000000 efc7e2f A	thumbnails/html-ss/signupform.jpg
+| | :000000 100644 0000000 7f07daa A	thumbnails/html-ss/static_cart.jpg
+| | :000000 100644 0000000 e998f09 A	thumbnails/html-ss/template.jpg
+| | :000000 100644 0000000 0f8dda9 A	thumbnails/html-ss/terms.jpg
+| | :000000 100644 0000000 16824ea A	thumbnails/html-ss/test.jpg
+| |  admin.css                                    |  30 +++++++++++---
+| |  admin.html                                   |   5 ++-
+| |  js/admin.js                                  |  35 +++++++++++++++-
+| |  nodejs-scripts/compressimg.js                |  27 +++++++++++++
+| |  nodejs-scripts/thumbnails.js                 |  49 +++++++++++++++++++++++
+| |  thumbnails/a                                 |   0
+| |  thumbnails/html-ss -hq/about.png             | Bin 0 -> 270048 bytes
+| |  thumbnails/html-ss -hq/accommodations.png    | Bin 0 -> 172954 bytes
+| |  thumbnails/html-ss -hq/admin.png             | Bin 0 -> 7081 bytes
+| |  thumbnails/html-ss -hq/booknow.png           | Bin 0 -> 39169 bytes
+| |  thumbnails/html-ss -hq/cart.png              | Bin 0 -> 40915 bytes
+| |  thumbnails/html-ss -hq/checkout.png          | Bin 0 -> 63111 bytes
+| |  thumbnails/html-ss -hq/contact.png           | Bin 0 -> 39687 bytes
+| |  thumbnails/html-ss -hq/delicacies.png        | Bin 0 -> 523535 bytes
+| |  thumbnails/html-ss -hq/economical.png        | Bin 0 -> 861427 bytes
+| |  thumbnails/html-ss -hq/endpoint.png          | Bin 0 -> 62561 bytes
+| |  thumbnails/html-ss -hq/explainertemplate.png | Bin 0 -> 35517 bytes
+| |  thumbnails/html-ss -hq/index.png             | Bin 0 -> 751381 bytes
+| |  thumbnails/html-ss -hq/learnmore.png         | Bin 0 -> 909012 bytes
+| |  thumbnails/html-ss -hq/privacy.png           | Bin 0 -> 115291 bytes
+| |  thumbnails/html-ss -hq/reviews.png           | Bin 0 -> 235959 bytes
+| |  thumbnails/html-ss -hq/signupform.png        | Bin 0 -> 41418 bytes
+| |  thumbnails/html-ss -hq/static_cart.png       | Bin 0 -> 61984 bytes
+| |  thumbnails/html-ss -hq/template.png          | Bin 0 -> 35517 bytes
+| |  thumbnails/html-ss -hq/terms.png             | Bin 0 -> 118843 bytes
+| |  thumbnails/html-ss -hq/test.png              | Bin 0 -> 12319 bytes
+| |  thumbnails/html-ss/about.jpg                 | Bin 0 -> 43390 bytes
+| |  thumbnails/html-ss/accommodations.jpg        | Bin 0 -> 26359 bytes
+| |  thumbnails/html-ss/admin.jpg                 | Bin 0 -> 7300 bytes
+| |  thumbnails/html-ss/booknow.jpg               | Bin 0 -> 18267 bytes
+| |  thumbnails/html-ss/cart.jpg                  | Bin 0 -> 18929 bytes
+| |  thumbnails/html-ss/checkout.jpg              | Bin 0 -> 29982 bytes
+| |  thumbnails/html-ss/contact.jpg               | Bin 0 -> 18275 bytes
+| |  thumbnails/html-ss/delicacies.jpg            | Bin 0 -> 42972 bytes
+| |  thumbnails/html-ss/economical.jpg            | Bin 0 -> 56364 bytes
+| |  thumbnails/html-ss/endpoint.jpg              | Bin 0 -> 28682 bytes
+| |  thumbnails/html-ss/explainertemplate.jpg     | Bin 0 -> 16915 bytes
+| |  thumbnails/html-ss/index.jpg                 | Bin 0 -> 40952 bytes
+| |  thumbnails/html-ss/learnmore.jpg             | Bin 0 -> 53257 bytes
+| |  thumbnails/html-ss/privacy.jpg               | Bin 0 -> 54980 bytes
+| |  thumbnails/html-ss/reviews.jpg               | Bin 0 -> 50580 bytes
+| |  thumbnails/html-ss/signupform.jpg            | Bin 0 -> 29945 bytes
+| |  thumbnails/html-ss/static_cart.jpg           | Bin 0 -> 37240 bytes
+| |  thumbnails/html-ss/template.jpg              | Bin 0 -> 16915 bytes
+| |  thumbnails/html-ss/terms.jpg                 | Bin 0 -> 45839 bytes
+| |  thumbnails/html-ss/test.jpg                  | Bin 0 -> 11108 bytes
+| |  46 files changed, 137 insertions(+), 9 deletions(-)
+| |  create mode 100644 nodejs-scripts/compressimg.js
+| |  create mode 100644 nodejs-scripts/thumbnails.js
+| |  create mode 100644 thumbnails/a
+| |  create mode 100644 thumbnails/html-ss -hq/about.png
+| |  create mode 100644 thumbnails/html-ss -hq/accommodations.png
+| |  create mode 100644 thumbnails/html-ss -hq/admin.png
+| |  create mode 100644 thumbnails/html-ss -hq/booknow.png
+| |  create mode 100644 thumbnails/html-ss -hq/cart.png
+| |  create mode 100644 thumbnails/html-ss -hq/checkout.png
+| |  create mode 100644 thumbnails/html-ss -hq/contact.png
+| |  create mode 100644 thumbnails/html-ss -hq/delicacies.png
+| |  create mode 100644 thumbnails/html-ss -hq/economical.png
+| |  create mode 100644 thumbnails/html-ss -hq/endpoint.png
+| |  create mode 100644 thumbnails/html-ss -hq/explainertemplate.png
+| |  create mode 100644 thumbnails/html-ss -hq/index.png
+| |  create mode 100644 thumbnails/html-ss -hq/learnmore.png
+| |  create mode 100644 thumbnails/html-ss -hq/privacy.png
+| |  create mode 100644 thumbnails/html-ss -hq/reviews.png
+| |  create mode 100644 thumbnails/html-ss -hq/signupform.png
+| |  create mode 100644 thumbnails/html-ss -hq/static_cart.png
+| |  create mode 100644 thumbnails/html-ss -hq/template.png
+| |  create mode 100644 thumbnails/html-ss -hq/terms.png
+| |  create mode 100644 thumbnails/html-ss -hq/test.png
+| |  create mode 100644 thumbnails/html-ss/about.jpg
+| |  create mode 100644 thumbnails/html-ss/accommodations.jpg
+| |  create mode 100644 thumbnails/html-ss/admin.jpg
+| |  create mode 100644 thumbnails/html-ss/booknow.jpg
+| |  create mode 100644 thumbnails/html-ss/cart.jpg
+| |  create mode 100644 thumbnails/html-ss/checkout.jpg
+| |  create mode 100644 thumbnails/html-ss/contact.jpg
+| |  create mode 100644 thumbnails/html-ss/delicacies.jpg
+| |  create mode 100644 thumbnails/html-ss/economical.jpg
+| |  create mode 100644 thumbnails/html-ss/endpoint.jpg
+| |  create mode 100644 thumbnails/html-ss/explainertemplate.jpg
+| |  create mode 100644 thumbnails/html-ss/index.jpg
+| |  create mode 100644 thumbnails/html-ss/learnmore.jpg
+| |  create mode 100644 thumbnails/html-ss/privacy.jpg
+| |  create mode 100644 thumbnails/html-ss/reviews.jpg
+| |  create mode 100644 thumbnails/html-ss/signupform.jpg
+| |  create mode 100644 thumbnails/html-ss/static_cart.jpg
+| |  create mode 100644 thumbnails/html-ss/template.jpg
+| |  create mode 100644 thumbnails/html-ss/terms.jpg
+| |  create mode 100644 thumbnails/html-ss/test.jpg
+| | 
+| * commit b96f5eb6834da212b84cb919f917997d2afbc7fb
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Sat Mar 25 18:12:48 2023 +0800
+| | 
+| |     fix css issues
+| | 
+| | :100644 100644 ff789cd b2ea208 M	admin.css
+| |  admin.css | 9 ++++++---
+| |  1 file changed, 6 insertions(+), 3 deletions(-)
+| | 
+| * commit 06fa90aac980c2a8532aa5eaf660bc774b89abed
 | | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
-| | Date:   Tue Mar 21 09:48:05 2023 +0800
+| | Date:   Sat Mar 25 15:17:18 2023 +0800
 | | 
-| |     Merge branch 'accommodations' into issue26
-| | 
-| * commit b98008b7d6e2e5741b252de198d58565ebef6818
-| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| | Date:   Sun Mar 19 21:38:10 2023 +0800
-| | 
-| |     trying not to mess up merge conflictss
-| | 
-| | :100644 000000 69a96e6 0000000 D	signupform.css
-| | :100644 000000 2f5da7f 0000000 D	signupform.html
-| |  signupform.css  | 109 ----------------------------------------------------
-| |  signupform.html |  94 --------------------------------------------
-| |  2 files changed, 203 deletions(-)
-| |  delete mode 100644 signupform.css
-| |  delete mode 100644 signupform.html
-| | 
-| * commit 9c89d2a4ebe82916d9f0871da2610106452de809
-| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| | Date:   Sun Mar 19 21:36:00 2023 +0800
-| | 
-| |     quick updates
-| | 
-| | :100644 100644 388aedb 23288af M	accommodations.html
-| | :100644 100644 9fed15e 7bbd725 M	accostyles.css
-| | :100644 100644 2e6e6a1 13a061a M	styles.css
-| |  accommodations.html | 1 +
-| |  accostyles.css      | 8 ++++++--
-| |  styles.css          | 1 +
-| |  3 files changed, 8 insertions(+), 2 deletions(-)
-| | 
-| * commit fc0addbc4c0229a66e4a51da8062ab2192abaafe
-| | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
-| | Date:   Sun Mar 19 14:15:25 2023 +0800
-| | 
-| |     Accommodations page | Buttons Inconsistent
+| |     Steam UI replication 30%-ish done
 | |     
-| |     pls fix and add if any missign
+| |     top cards dont have content and the bottom half (sitemap) unfinished
 | | 
-| | :000000 100644 0000000 388aedb A	accommodations.html
-| | :000000 100644 0000000 e63afc2 A	accommodations/double.jpg
-| | :000000 100644 0000000 172f934 A	accommodations/family.jpg
-| | :000000 100644 0000000 814aca0 A	accommodations/quad.jpg
-| | :000000 100644 0000000 3f539c7 A	accommodations/single.jpg
-| | :000000 100644 0000000 ff3f29b A	accommodations/triple.jpg
-| | :000000 100644 0000000 9fed15e A	accostyles.css
-| |  accommodations.html       |  97 ++++++++++++++++++++++++++++++++++++++++++
-| |  accommodations/double.jpg | Bin 0 -> 14256 bytes
-| |  accommodations/family.jpg | Bin 0 -> 20931 bytes
-| |  accommodations/quad.jpg   | Bin 0 -> 15485 bytes
-| |  accommodations/single.jpg | Bin 0 -> 12030 bytes
-| |  accommodations/triple.jpg | Bin 0 -> 15537 bytes
-| |  accostyles.css            |  42 ++++++++++++++++++
-| |  7 files changed, 139 insertions(+)
-| |  create mode 100644 accommodations.html
-| |  create mode 100644 accommodations/double.jpg
-| |  create mode 100644 accommodations/family.jpg
-| |  create mode 100644 accommodations/quad.jpg
-| |  create mode 100644 accommodations/single.jpg
-| |  create mode 100644 accommodations/triple.jpg
-| |  create mode 100644 accostyles.css
+| | :100644 100644 7b8c33c ff789cd M	admin.css
+| | :100644 100644 1fed203 2b15764 M	admin.html
+| | :100644 100644 af88e87 1ad4c89 M	js/admin.js
+| |  admin.css   | 100 ++++++++++++++++++++++++++++++++++++++++++++++++++------
+| |  admin.html  |  36 ++++++++++++++++++++
+| |  js/admin.js |  13 +++++++-
+| |  3 files changed, 138 insertions(+), 11 deletions(-)
+| | 
+| * commit d40df4e7eb5efd266d1a2d5a8ea0d204b2b629e6
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Sat Mar 25 13:27:20 2023 +0800
+| | 
+| |     time + sidebar
+| | 
+| | :100644 100644 0605dba 7b8c33c M	admin.css
+| | :100644 100644 56e8a48 1fed203 M	admin.html
+| | :100644 100644 20615d3 af88e87 M	js/admin.js
+| |  admin.css   | 46 ++++++++++++++++++++++++++++++++++++++++++++++
+| |  admin.html  | 11 +++++++++--
+| |  js/admin.js | 26 +++++++++++++++++++++++++-
+| |  3 files changed, 80 insertions(+), 3 deletions(-)
+| | 
+| * commit 285064fb11216bdebe6c1be3d06d095c4acb303e
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Sat Mar 25 12:42:11 2023 +0800
+| | 
+| |     bugfix for adminpanel
+| | 
+| | :100644 100644 76f4bf7 0605dba M	admin.css
+| | :100644 100644 87e9653 56e8a48 M	admin.html
+| |  admin.css  | 19 ++++++++++++++++++-
+| |  admin.html |  4 ++++
+| |  2 files changed, 22 insertions(+), 1 deletion(-)
+| | 
+| * commit 92112bc95ff63e4ab4ce67873ee8394259a8c9f8
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Sat Mar 25 12:35:38 2023 +0800
+| | 
+| |     improved contact us page
+| | 
+| | :100644 100644 62191f6 46e9038 M	contact.html
+| | :100644 100644 de1d5ff f066f66 M	styles.css
+| |  contact.html | 45 +++++++++++++++++++++++----------------------
+| |  styles.css   | 47 ++++++++++++++++++++++++++++++++++++++++++++++-
+| |  2 files changed, 69 insertions(+), 23 deletions(-)
+| | 
+| * commit 6101345464dd0ef9c7952869485ea9c6fbc6bd99
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Sat Mar 25 12:10:17 2023 +0800
+| | 
+| |     improved acco modal
+| | 
+| | :100644 100644 bf0e6eb 8aeae38 M	accommodations.html
+| | :100644 100644 fab922a 5cc7daf M	accostyles.css
+| |  accommodations.html | 6 +++---
+| |  accostyles.css      | 4 ++++
+| |  2 files changed, 7 insertions(+), 3 deletions(-)
+| | 
+| * commit 86ec01eb71dfb95eed9f88ed9aa79b6c1f5d0b46
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Fri Mar 24 22:02:58 2023 +0800
+| | 
+| |     for sum reason total in cart.html disappeared
+| | 
+| | :100644 100644 2fc6885 d014b6d M	cart.html
+| |  cart.html | 5 +++++
+| |  1 file changed, 5 insertions(+)
+| | 
+| * commit 1326824f7af4931af20e549192c68a33162621d1
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Fri Mar 24 21:54:29 2023 +0800
+| | 
+| |     dont print this
+| | 
+| | :100644 100644 4648f71 cb190ef M	checkout.html
+| | :100644 100644 a1a11cd de1d5ff M	styles.css
+| |  checkout.html | 3 +++
+| |  styles.css    | 2 +-
+| |  2 files changed, 4 insertions(+), 1 deletion(-)
+| | 
+| * commit 45177989f16f7f6da6162a177cd693f386316645
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Fri Mar 24 21:54:24 2023 +0800
+| | 
+| |     dont print this
+| | 
+| | :100644 100644 d540df5 e9955fc M	js/checkout.js
+| |  js/checkout.js | 60 +++++++++++++++++++++++++++---------------------------
+| |  1 file changed, 30 insertions(+), 30 deletions(-)
+| | 
+| * commit ee6fb759dfe6bf453b67c5cc96c25588a460a5dd
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Fri Mar 24 21:45:11 2023 +0800
+| | 
+| |     show that payment is being processed
+| | 
+| | :100644 100644 9d07951 2fc6885 M	cart.html
+| |  cart.html | 5 +++--
+| |  1 file changed, 3 insertions(+), 2 deletions(-)
+| | 
+| * commit 733f4db6c36af46fc3149e6b9ac34d511bf51d6a
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Fri Mar 24 21:44:54 2023 +0800
+| | 
+| |     style consistency
+| | 
+| | :100644 100644 c90e38c bf0e6eb M	accommodations.html
+| | :100644 100644 7bbd725 fab922a M	accostyles.css
+| |  accommodations.html |  2 +-
+| |  accostyles.css      | 28 ++++++++++++++++++++++++++++
+| |  2 files changed, 29 insertions(+), 1 deletion(-)
+| | 
+| * commit 5f94c503180f06c3db922bcbb19cf6af10e5744f
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Fri Mar 24 21:31:57 2023 +0800
+| | 
+| |     dynamically get user data
+| | 
+| | :100644 100644 0ebf028 d540df5 M	js/checkout.js
+| |  js/checkout.js | 12 +++++++++++-
+| |  1 file changed, 11 insertions(+), 1 deletion(-)
+| | 
+| * commit 618651638dd018dfd2e39ae81c668d03566666b9
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Fri Mar 24 21:24:18 2023 +0800
+| | 
+| |     print invoice optimization
+| | 
+| | :100644 100644 1ceee22 b015d9d M	checkout.css
+| | :100644 100644 3a87ab0 0ebf028 M	js/checkout.js
+| | :100644 100644 5bc3345 a1a11cd M	styles.css
+| |  checkout.css   |  8 ++++++++
+| |  js/checkout.js | 24 ++++++++++++------------
+| |  styles.css     |  9 ++++++++-
+| |  3 files changed, 28 insertions(+), 13 deletions(-)
+| | 
+| * commit 3cd5da0e04f0ff029cafac35a7e9eb84769d24c0
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Fri Mar 24 21:07:23 2023 +0800
+| | 
+| |     pure css animation intro iworked on for like 2hrs
+| | 
+| | :000000 100644 0000000 76f4bf7 A	admin.css
+| | :100644 100644 e69de29 87e9653 M	admin.html
+| | :000000 100644 0000000 50bd3de A	grad.png
+| | :000000 100644 0000000 20615d3 A	js/admin.js
+| |  admin.css   |  82 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+| |  admin.html  |  17 ++++++++++++
+| |  grad.png    | Bin 0 -> 1518 bytes
+| |  js/admin.js |   3 +++
+| |  4 files changed, 102 insertions(+)
+| |  create mode 100644 admin.css
+| |  create mode 100644 grad.png
+| |  create mode 100644 js/admin.js
+| | 
+| * commit f45341854635d06f23cdebfafbfc3eb891403d91
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Fri Mar 24 19:56:39 2023 +0800
+| | 
+| |     alert system
+| | 
+| | :100644 100644 581e521 3e55c3a M	js/accommodation.js
+| | :100644 100644 fdd3203 510799f M	js/scripts.js
+| | :100644 100644 94bfe0b 5bc3345 M	styles.css
+| |  js/accommodation.js |  1 +
+| |  js/scripts.js       | 32 +++++++++++++++++++++++++++++++-
+| |  styles.css          | 37 ++++++++++++++++++++++++++++++++++++-
+| |  3 files changed, 68 insertions(+), 2 deletions(-)
+| | 
+| * commit 93be77b27cee6c4d29c49285c15da5dbf3609f60
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Thu Mar 23 20:41:10 2023 +0800
+| | 
+| |     finally; to-do: make it printable
+| | 
+| | :100644 100644 d555bac 4648f71 M	checkout.html
+| | :100644 100644 9bc636c 94bfe0b M	styles.css
+| |  checkout.html | 10 ++++++----
+| |  styles.css    |  5 +++++
+| |  2 files changed, 11 insertions(+), 4 deletions(-)
+| | 
+| * commit 604258d9afdbd96e9c6a971ea75c742a14d0e786
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Thu Mar 23 20:29:00 2023 +0800
+| | 
+| |     formatted :)
+| | 
+| | :100644 100644 97a5eaa 3a87ab0 M	js/checkout.js
+| |  js/checkout.js | 12 ++++++------
+| |  1 file changed, 6 insertions(+), 6 deletions(-)
+| | 
+| * commit 0dadb386a4793c15373052ad7420ba41bc279184
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Thu Mar 23 20:12:45 2023 +0800
+| | 
+| |     code works; reimplement to dom later
+| | 
+| | :100644 100644 5f2f851 97a5eaa M	js/checkout.js
+| |  js/checkout.js | 40 +++++++++++++++++++++++++++++++---------
+| |  1 file changed, 31 insertions(+), 9 deletions(-)
+| | 
+| * commit b18d108f6fdd23425e8493e6c3cae3059f791e3c
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Thu Mar 23 20:08:45 2023 +0800
+| | 
+| |     NO, sa admin
+| | 
+| | :100644 100644 9e3a2e7 d555bac M	checkout.html
+| |  checkout.html | 1 -
+| |  1 file changed, 1 deletion(-)
+| | 
+| * commit 54152b0985100dfe0241d4e854c855753b08096a
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Thu Mar 23 20:08:00 2023 +0800
+| | 
+| |     feature init
+| | 
+| | :100644 100644 c0ecb79 9e3a2e7 M	checkout.html
+| | :000000 100644 0000000 5f2f851 A	js/checkout.js
+| |  checkout.html  | 30 ++++++------------------------
+| |  js/checkout.js | 41 +++++++++++++++++++++++++++++++++++++++++
+| |  2 files changed, 47 insertions(+), 24 deletions(-)
+| |  create mode 100644 js/checkout.js
 | |   
-| *   commit 9d17c7e20b56d2078dcaf374d73b9d463128e329
-| |\  Merge: 42ed1e1 701df58
+| *   commit 914a96606e55393067a4b2fbc2e67af696f3e620
+| |\  Merge: 78a35e0 195cd51
+| | | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | | Date:   Thu Mar 23 19:36:10 2023 +0800
+| | | 
+| | |     Merge branch 'gamer0kayf1n3/issue26' of https://github.com/gamer0kayf1n3/tagaytay into gamer0kayf1n3/issue26
+| | | 
+| | * commit 195cd51594d98caa3a0b60aef677f95885e9846e
+| | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | | Date:   Thu Mar 23 19:22:53 2023 +0800
+| | | 
+| | |     remove previous bookings
+| | | 
+| | | :100644 100644 b68a76e 4362761 M	js/cart.js
+| | |  js/cart.js | 14 +++++++++++++-
+| | |  1 file changed, 13 insertions(+), 1 deletion(-)
+| | | 
+| | * commit c62300a1403158f2367a31dd284bb71a884fe9a3
+| | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | | Date:   Thu Mar 23 19:05:56 2023 +0800
+| | | 
+| | |     admin implementation; redirect to admin.html
+| | | 
+| | | :100644 100644 568a7f8 fdd3203 M	js/scripts.js
+| | |  js/scripts.js | 32 +++++++++++++++++++++++++++++++-
+| | |  1 file changed, 31 insertions(+), 1 deletion(-)
+| | | 
+| | * commit 6a83057725be58a865c261fb58dfde3848bfb9cf
+| | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | | Date:   Thu Mar 23 18:34:18 2023 +0800
+| | | 
+| | |     admin panel
+| | | 
+| | | :100644 100644 92c1a63 674d08f M	about.html
+| | | :100644 100644 a709dee c90e38c M	accommodations.html
+| | | :100644 100644 520056c e75749e M	booknow.html
+| | | :100644 100644 d571e0d 9d07951 M	cart.html
+| | | :100644 100644 76daca0 62191f6 M	contact.html
+| | | :100644 100644 f8d8b85 ead2ba7 M	delicacies.html
+| | | :100644 100644 2705bc2 5341afd M	economical.html
+| | | :100644 100644 b09aed1 297ab28 M	endpoint.html
+| | | :100644 100644 7214b3a f3fa341 M	explainertemplate.html
+| | | :100644 100644 fe42b45 8f8b23a M	index.html
+| | | :100644 100644 469ade4 95202e6 M	learnmore.html
+| | | :100644 100644 a225e58 da1f9ee M	privacy.html
+| | | :100644 100644 420abdb d74859d M	reviews.html
+| | | :100644 100644 7399629 07ddbc5 M	signupform.html
+| | | :100644 100644 a704693 8347c92 M	static_cart.html
+| | | :100644 100644 c9dd70c 72fdfa8 M	template.html
+| | | :100644 100644 efed09d 4b1c03a M	terms.html
+| | |  about.html             | 2 +-
+| | |  accommodations.html    | 2 +-
+| | |  booknow.html           | 2 +-
+| | |  cart.html              | 2 +-
+| | |  contact.html           | 2 +-
+| | |  delicacies.html        | 2 +-
+| | |  economical.html        | 2 +-
+| | |  endpoint.html          | 2 +-
+| | |  explainertemplate.html | 2 +-
+| | |  index.html             | 2 +-
+| | |  learnmore.html         | 2 +-
+| | |  privacy.html           | 2 +-
+| | |  reviews.html           | 2 +-
+| | |  signupform.html        | 2 +-
+| | |  static_cart.html       | 2 +-
+| | |  template.html          | 2 +-
+| | |  terms.html             | 2 +-
+| | |  17 files changed, 17 insertions(+), 17 deletions(-)
+| | | 
+| | * commit 86b7316b66ada72bdac749ba07fd4bf612b45d8a
+| | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | | Date:   Thu Mar 23 18:33:10 2023 +0800
+| | | 
+| | |     a text
+| | | 
+| | | :000000 100644 0000000 e69de29 A	admin.html
+| | | :100644 100644 e43f194 520056c M	booknow.html
+| | | :100644 100644 4e13057 d571e0d M	cart.html
+| | | :100644 100644 e69de29 f232654 M	checkout.html
+| | | :100644 100644 336731a 76daca0 M	contact.html
+| | | :100644 100644 43d4927 f8d8b85 M	delicacies.html
+| | | :100644 100644 8c61462 2705bc2 M	economical.html
+| | | :100644 100644 3d482ae b09aed1 M	endpoint.html
+| | | :100644 100644 180bc00 7214b3a M	explainertemplate.html
+| | | :100644 100644 b81d9d1 fe42b45 M	index.html
+| | | :100644 100644 1f8b92b 469ade4 M	learnmore.html
+| | | :100644 100644 2948805 a225e58 M	privacy.html
+| | | :100644 100644 8af85a9 420abdb M	reviews.html
+| | | :100644 100644 207eada 7399629 M	signupform.html
+| | | :100644 100644 004e63c a704693 M	static_cart.html
+| | | :100644 100644 2d7463b c9dd70c M	template.html
+| | | :100644 100644 0568509 efed09d M	terms.html
+| | |  admin.html             |  0
+| | |  booknow.html           |  2 +-
+| | |  cart.html              |  2 +-
+| | |  checkout.html          |  1 +
+| | |  contact.html           |  2 +-
+| | |  delicacies.html        |  2 +-
+| | |  economical.html        |  2 +-
+| | |  endpoint.html          |  2 +-
+| | |  explainertemplate.html |  2 +-
+| | |  index.html             |  2 +-
+| | |  learnmore.html         |  2 +-
+| | |  privacy.html           |  2 +-
+| | |  reviews.html           |  2 +-
+| | |  signupform.html        |  2 +-
+| | |  static_cart.html       | 59 ++++++++++++++++++++++++++++++++++++++------
+| | |  template.html          |  1 +
+| | |  terms.html             |  4 +--
+| | |  17 files changed, 68 insertions(+), 21 deletions(-)
+| | |  create mode 100644 admin.html
+| | | 
+| | * commit c913e6d7b56095188adaeae6f43c6f1c98e84ca4
+| | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | | Date:   Thu Mar 23 18:31:50 2023 +0800
+| | | 
+| | |     admin implementation
+| | | 
+| | | :100644 100644 85e5f3f 92c1a63 M	about.html
+| | | :100644 100644 4476942 a709dee M	accommodations.html
+| | |  about.html          |  1 +
+| | |  accommodations.html | 15 ++++++++-------
+| | |  2 files changed, 9 insertions(+), 7 deletions(-)
+| | | 
+| * | commit 78a35e059142818917973313f8c6951aec853b46
+| |/  Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| |   Date:   Thu Mar 23 19:30:43 2023 +0800
+| |   
+| |       recep
+| |       
+| |       thanks callMBR
+| |   
+| |   :000000 100644 0000000 1ceee22 A	checkout.css
+| |   :100644 100644 e69de29 9eacc5e M	checkout.html
+| |    checkout.css  | 19 +++++++++++++
+| |    checkout.html | 77 +++++++++++++++++++++++++++++++++++++++++++++++++++++
+| |    2 files changed, 96 insertions(+)
+| |    create mode 100644 checkout.css
+| | 
+| * commit efe0f4d908c8808bb1fd426d4ec6c9320d5474b9
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Thu Mar 23 18:27:07 2023 +0800
+| | 
+| |     old cart removal
+| | 
+| | :100644 100644 a02b30c 4e13057 M	cart.html
+| |  cart.html | 5 +----
+| |  1 file changed, 1 insertion(+), 4 deletions(-)
+| |   
+| *   commit ea9232a92411cac7a68feabfd58a069350e5a082
+| |\  Merge: 261e18e ab5334c
+| | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | | Date:   Thu Mar 23 18:23:56 2023 +0800
+| | | 
+| | |     Merge branch 'gamer0kayf1n3/issue26' of https://github.com/gamer0kayf1n3/tagaytay into gamer0kayf1n3/issue26
+| | |   
+| | *   commit ab5334c87b3b382bd08ed4cf3ebdaa38998af3bc
+| | |\  Merge: 081a568 c99cc62
+| | | | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | | | Date:   Thu Mar 23 18:14:29 2023 +0800
+| | | | 
+| | | |     Merge branch 'gamer0kayf1n3/issue26' of https://github.com/gamer0kayf1n3/tagaytay into gamer0kayf1n3/issue26
+| | | | 
+| | * | commit 081a5687b129da2758a25de9ff6352f8228eb25b
+| | | | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | | | Date:   Thu Mar 23 18:12:54 2023 +0800
+| | | | 
+| | | |     Styling of some elemertns in checkout
+| | | |     
+| | | |     lol
+| | | | 
+| | | | :100644 100644 d0af0f8 5ef22c5 M	cart.css
+| | | | :100644 100644 db7cbfb c9c00f9 M	cart.html
+| | | |  cart.css  | 49 ++++++++++++++++++++++++++++++++++++++++++++++++-
+| | | |  cart.html | 12 +++++++-----
+| | | |  2 files changed, 55 insertions(+), 6 deletions(-)
+| | | | 
+| * | | commit 261e18e0db1bd5cc6cbde8b6ad177cd3e94bbd65
+| | | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | | | Date:   Thu Mar 23 18:21:09 2023 +0800
+| | | | 
+| | | |     add check out button; style this kyle
+| | | | 
+| | | | :100644 100644 8207964 7e8cf47 M	cart.html
+| | | | :000000 100644 0000000 e69de29 A	checkout.html
+| | | | :100644 100644 31d7eb2 581e521 M	js/accommodation.js
+| | | |  cart.html           | 2 +-
+| | | |  checkout.html       | 0
+| | | |  js/accommodation.js | 1 +
+| | | |  3 files changed, 2 insertions(+), 1 deletion(-)
+| | | |  create mode 100644 checkout.html
+| | | | 
+| * | | commit 675be3a855b0fa3a86d76ac8aa7b11ee86279f84
+| | | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | | | Date:   Thu Mar 23 18:20:50 2023 +0800
+| | | | 
+| | | |     cart redirect and dont refresh page
+| | | | 
+| | | | :100644 100644 ca3b822 4476942 M	accommodations.html
+| | | |  accommodations.html | 8 ++++----
+| | | |  1 file changed, 4 insertions(+), 4 deletions(-)
+| | | | 
+| * | | commit 6c29542798507ec3bd97bdda400071bbea3d60a2
+| | | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | | | Date:   Thu Mar 23 18:12:44 2023 +0800
+| | | | 
+| | | |     again
+| | | | 
+| | | | :100644 100644 0839594 ca3b822 M	accommodations.html
+| | | |  accommodations.html | 2 +-
+| | | |  1 file changed, 1 insertion(+), 1 deletion(-)
+| | | | 
+| * | | commit ab1ab3e50c196a5792bd83192b6a6df1bdd2627f
+| | |/  Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| |/|   Date:   Thu Mar 23 18:12:17 2023 +0800
+| | |   
+| | |       replace old booknow buttons to new
+| | |   
+| | |   :100644 100644 8686075 c798166 M	gallery/index.html
+| | |    gallery/index.html | 2 +-
+| | |    1 file changed, 1 insertion(+), 1 deletion(-)
+| | | 
+| * | commit c99cc624d1abab33edd9d2af96d36fc04e322d5d
+| | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | | Date:   Thu Mar 23 18:08:21 2023 +0800
+| | | 
+| | |     total sum implementation
+| | | 
+| | | :100644 100644 d0af0f8 63b1092 M	cart.css
+| | | :100644 100644 db7cbfb 8207964 M	cart.html
+| | | :100644 100644 f590304 b68a76e M	js/cart.js
+| | |  cart.css   |  6 ++++++
+| | |  cart.html  |  5 ++++-
+| | |  js/cart.js | 22 +++++++++++++++++++++-
+| | |  3 files changed, 31 insertions(+), 2 deletions(-)
+| | | 
+| * | commit 1c70dea9c4c3472f7e962d29e7634c1fcb8c7405
+| |/  Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| |   Date:   Thu Mar 23 17:43:16 2023 +0800
+| |   
+| |       DONT DELETE HEADER ROW LOL
+| |   
+| |   :100644 100644 0813f00 f590304 M	js/cart.js
+| |    js/cart.js | 5 ++++-
+| |    1 file changed, 4 insertions(+), 1 deletion(-)
+| | 
+| * commit 28bb3d58bcdcf4129d547fc03c514693074e191b
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Thu Mar 23 17:30:51 2023 +0800
+| | 
+| |     make cart persistent when deleted
+| |     Co-authored-by: BermudaVI <BermudaVI@users.noreply.github.com>
+| | 
+| | :100644 100644 744904a 31d7eb2 M	js/accommodation.js
+| | :100644 100644 dcefb4b 0813f00 M	js/cart.js
+| |  js/accommodation.js | 2 +-
+| |  js/cart.js          | 6 ++++++
+| |  2 files changed, 7 insertions(+), 1 deletion(-)
+| | 
+| * commit dbec7398056e64026d3e5794dfce77ced422d630
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Thu Mar 23 16:55:53 2023 +0800
+| | 
+| |     inclusive calendar
+| | 
+| | :100644 100644 b99ac68 dcefb4b M	js/cart.js
+| |  js/cart.js | 2 +-
+| |  1 file changed, 1 insertion(+), 1 deletion(-)
+| | 
+| * commit d80922a351376dbae2fd3e6338f57a28904e07eb
+| | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | Date:   Thu Mar 23 13:56:16 2023 +0800
+| | 
+| |     delete cartl action done; next: make it persistent
+| | 
+| | :100644 100644 b2e76f3 7bbd725 M	accostyles.css
+| | :100644 100644 8610168 d0af0f8 M	cart.css
+| | :100644 100644 d27918f db7cbfb M	cart.html
+| | :100644 100644 65d7633 b2b7b29 M	js/bloat.js
+| | :100644 100644 67261f3 b99ac68 M	js/cart.js
+| | :100644 100644 5f2c215 9bc636c M	styles.css
+| |  accostyles.css | 52 ----------------------------------------------
+| |  cart.css       | 24 +++++++++++++++++++--
+| |  cart.html      | 20 +++++++++++++++---
+| |  js/bloat.js    |  5 +++--
+| |  js/cart.js     | 40 +++++++++++++++++++++++++++++++++--
+| |  styles.css     | 61 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+| |  6 files changed, 141 insertions(+), 61 deletions(-)
+| | 
+| * commit 852bb66692a04968db488de87d5849e26911897c
+| | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | Date:   Thu Mar 23 11:32:13 2023 +0800
+| | 
+| |     improvment for cart.html
+| | 
+| | :100644 100644 29bcd72 8610168 M	cart.css
+| | :100644 100644 7d52aa4 744904a M	js/accommodation.js
+| | :100644 100644 d769e38 67261f3 M	js/cart.js
+| | :000000 100644 0000000 493480d A	test.html
+| |  cart.css            |  8 ++++++++
+| |  js/accommodation.js |  1 +
+| |  js/cart.js          | 19 ++++++++++++++++---
+| |  test.html           |  1 +
+| |  4 files changed, 26 insertions(+), 3 deletions(-)
+| |  create mode 100644 test.html
+| | 
+| * commit ddc43a88fccb26111802afb3ff6ef577ecc1d825
+| | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | Date:   Thu Mar 23 11:32:08 2023 +0800
+| | 
+| |     cart.html improvements
+| | 
+| | :100644 100644 fb04ba5 d27918f M	cart.html
+| |  cart.html | 3 +++
+| |  1 file changed, 3 insertions(+)
+| | 
+| * commit 342665757d5de755c91cce0053d77d0004a5db5d
+| | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | Date:   Thu Mar 23 11:04:14 2023 +0800
+| | 
+| |     fixed bug of setting "val", even when no more tag
+| | 
+| | :100644 100644 6cec1b0 7d52aa4 M	js/accommodation.js
+| |  js/accommodation.js | 2 --
+| |  1 file changed, 2 deletions(-)
+| | 
+| * commit 2273cb359fd224b7e5baa3b5bba6bb0326ec4939
+| | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | Date:   Thu Mar 23 10:57:46 2023 +0800
+| | 
+| |     size change for header
+| | 
+| | :100644 100644 83b636b 29bcd72 M	cart.css
+| |  cart.css | 4 ++++
+| |  1 file changed, 4 insertions(+)
+| | 
+| * commit 73480ec245d63d443c5d5eabfe97ea563a034882
+| | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | Date:   Wed Mar 22 21:43:23 2023 +0800
+| | 
+| |     Initial changes god help me ill collapse at any moment
+| |     
+| |     ill continue tom i still have math and notes i love
+| | 
+| | :100644 100644 a8e065c 83b636b M	cart.css
+| |  cart.css | 18 +++++++++++++++++-
+| |  1 file changed, 17 insertions(+), 1 deletion(-)
+| | 
+| * commit 89cfec905047b69f24c61e5a41080a996867b17e
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Wed Mar 22 19:49:23 2023 +0800
+| | 
+| |     kyle i'll leave styling up to you; cart.css
+| | 
+| | :000000 100644 0000000 a8e065c A	cart.css
+| | :100644 100644 180bc00 fb04ba5 M	cart.html
+| | :000000 100644 0000000 d769e38 A	js/cart.js
+| | :000000 100644 0000000 004e63c A	static_cart.html
+| |  cart.css         |  9 +++++++++
+| |  cart.html        |  4 +++-
+| |  js/cart.js       |  6 ++++++
+| |  static_cart.html | 50 ++++++++++++++++++++++++++++++++++++++++++++++++++
+| |  4 files changed, 68 insertions(+), 1 deletion(-)
+| |  create mode 100644 cart.css
+| |  create mode 100644 js/cart.js
+| |  create mode 100644 static_cart.html
+| | 
+| * commit ad40813d39c00adf9a7b5517e9c024a68beab6eb
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Wed Mar 22 19:37:04 2023 +0800
+| | 
+| |     make function return html table instead
+| | 
+| | :100644 100644 9f2e6ce 65d7633 M	js/bloat.js
+| |  js/bloat.js | 2 +-
+| |  1 file changed, 1 insertion(+), 1 deletion(-)
+| | 
+| * commit 65bcbb832f5e300d9687d035dcb73e6606cf99f5
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Wed Mar 22 19:35:09 2023 +0800
+| | 
+| |     added bloat createTable()
+| | 
+| | :100644 100644 12d0e13 9f2e6ce M	js/bloat.js
+| |  js/bloat.js | 23 ++++++++++++++++++++++-
+| |  1 file changed, 22 insertions(+), 1 deletion(-)
+| | 
+| * commit ec11c47ee49b8977f4c36c4846281c9fb0500f0f
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Wed Mar 22 19:28:55 2023 +0800
+| | 
+| |     setting the cookie now work normally yay
+| | 
+| | :100644 100644 9c7aece 6cec1b0 M	js/accommodation.js
+| |  js/accommodation.js | 20 +++++++++++---------
+| |  1 file changed, 11 insertions(+), 9 deletions(-)
+| | 
+| * commit f1b10a176150b99db6f1b4d8666629cec02061ea
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Wed Mar 22 18:16:21 2023 +0800
+| | 
+| |     adapting css to 768p monitors
+| | 
+| | :100644 100644 b394f85 b2e76f3 M	accostyles.css
+| |  accostyles.css | 6 +++---
+| |  1 file changed, 3 insertions(+), 3 deletions(-)
+| | 
+| * commit 127ff42c571877b7854d1547537ed13d3635516d
+| | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | Date:   Wed Mar 22 12:49:46 2023 +0800
+| | 
+| |     broken2
+| | 
+| | :100644 100644 ee768a0 9c7aece M	js/accommodation.js
+| |  js/accommodation.js | 5 ++---
+| |  1 file changed, 2 insertions(+), 3 deletions(-)
+| | 
+| * commit 15415ec438d97a221d77e636c5eff9c31dad5b28
+| | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | Date:   Wed Mar 22 12:33:04 2023 +0800
+| | 
+| |     broken saving cart; fix later @gamer0kayf1n3
+| | 
+| | :100644 100644 aa852de 0839594 M	accommodations.html
+| | :100644 100644 0222a6f ee768a0 M	js/accommodation.js
+| |  accommodations.html |  2 +-
+| |  js/accommodation.js | 13 +++++++++++++
+| |  2 files changed, 14 insertions(+), 1 deletion(-)
+| | 
+| * commit 513c3b2cdf7638068b1be8615b669b5a3a6d49c1
+| | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | Date:   Wed Mar 22 12:10:57 2023 +0800
+| | 
+| |     modal finalize
+| | 
+| | :100644 100644 5bb2f24 aa852de M	accommodations.html
+| | :100644 100644 a0caa18 0222a6f M	js/accommodation.js
+| | :100644 100644 5d32e09 5f2c215 M	styles.css
+| |  accommodations.html | 10 ++++++----
+| |  js/accommodation.js | 34 ++++++++++++++++++++++++----------
+| |  styles.css          |  7 +++++++
+| |  3 files changed, 37 insertions(+), 14 deletions(-)
+| | 
+| * commit 31e38a4b0aba75db352d465c8b0813530675ef63
+| | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | Date:   Wed Mar 22 10:47:49 2023 +0800
+| | 
+| |     pricing imp
+| | 
+| | :000000 100644 0000000 180bc00 A	cart.html
+| | :100644 100644 03ba752 a0caa18 M	js/accommodation.js
+| |  cart.html           | 52 +++++++++++++++++++++++++++++++++++++++++++++++++
+| |  js/accommodation.js |  9 +++++++++
+| |  2 files changed, 61 insertions(+)
+| |  create mode 100644 cart.html
+| | 
+| * commit 95e521d07ae22459718d3df5be2e3897aa9236da
+| | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | Date:   Wed Mar 22 10:41:34 2023 +0800
+| | 
+| |     limit start date to today and
+| |     end date to after start date
+| | 
+| | :100644 100644 8e1c516 5bb2f24 M	accommodations.html
+| | :100644 100644 581b91e 03ba752 M	js/accommodation.js
+| |  accommodations.html |  8 ++++++--
+| |  js/accommodation.js | 12 ++++++++++--
+| |  2 files changed, 16 insertions(+), 4 deletions(-)
+| | 
+| * commit 693f31563a41352838ec84e13650a225c8c92ce5
+| | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | Date:   Tue Mar 21 21:14:32 2023 +0800
+| | 
+| |     literally no changes atm
+| | 
+| | :100644 100644 d88e536 5d32e09 M	styles.css
+| |  styles.css | 4 ++++
+| |  1 file changed, 4 insertions(+)
+| | 
+| * commit 6ef0956a2bd497c65c237dd3bf51b051a590b43c
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Tue Mar 21 20:54:23 2023 +0800
+| | 
+| |     center add to cart button
+| | 
+| | :100644 100644 f33da6d 8e1c516 M	accommodations.html
+| | :100644 100644 5f90dab b394f85 M	accostyles.css
+| |  accommodations.html | 4 +++-
+| |  accostyles.css      | 7 +++++++
+| |  2 files changed, 10 insertions(+), 1 deletion(-)
+| | 
+| * commit f096e2582a2459d7560f3456ca78a2f2bddc848d
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Tue Mar 21 20:46:25 2023 +0800
+| | 
+| |     added coupons <3
+| | 
+| | :100644 100644 eac8d4e f33da6d M	accommodations.html
+| |  accommodations.html | 4 +++-
+| |  1 file changed, 3 insertions(+), 1 deletion(-)
+| | 
+| * commit ef2dcfb2b33dc501040e3783e4e5ec5c7c7715c5
+| | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | Date:   Tue Mar 21 20:44:46 2023 +0800
+| | 
+| |     bug fix by manually making photo blurred;
+| |     thanks gdrive hotlinks
+| | 
+| | :100644 100644 850fd11 eac8d4e M	accommodations.html
+| | :100644 100644 cef0c1d 5f90dab M	accostyles.css
+| | :100644 100644 c767843 581b91e M	js/accommodation.js
+| | :100644 100644 c3b5300 12d0e13 M	js/bloat.js
+| | :100644 100644 db61e80 d88e536 M	styles.css
+| |  accommodations.html | 26 ++++++++++-------
+| |  accostyles.css      | 78 ++++++++++++++++++++++++++++---------------------
+| |  js/accommodation.js | 22 +++++---------
+| |  js/bloat.js         |  3 ++
+| |  styles.css          | 10 +++----
+| |  5 files changed, 75 insertions(+), 64 deletions(-)
+| | 
+| * commit 37337366ccb61de13da22442e8cb92e8ce625fee
+| | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | Date:   Tue Mar 21 11:29:44 2023 +0800
+| | 
+| |     03/21/2023 activity
+| |     co-authored by: @gamer0kayf1n3
+| |     attemp to add modal
+| | 
+| | :100644 100644 23288af 850fd11 M	accommodations.html
+| | :100644 100644 7bbd725 cef0c1d M	accostyles.css
+| | :000000 100644 0000000 c767843 A	js/accommodation.js
+| | :100644 100644 1f5d9c2 c3b5300 M	js/bloat.js
+| | :100644 100644 ec9bf00 568a7f8 M	js/scripts.js
+| | :100644 100644 9973f60 0568509 M	terms.html
+| |  accommodations.html | 33 ++++++++++++++++++++++++++++-----
+| |  accostyles.css      | 37 ++++++++++++++++++++++++++++++++++++-
+| |  js/accommodation.js | 31 +++++++++++++++++++++++++++++++
+| |  js/bloat.js         |  8 ++++++++
+| |  js/scripts.js       |  2 +-
+| |  terms.html          |  1 +
+| |  6 files changed, 105 insertions(+), 7 deletions(-)
+| |  create mode 100644 js/accommodation.js
+| |   
+| *   commit 22519aa6b149d87ce1388d433f16ab0ff772afd8
+| |\  Merge: 6225b10 b98008b
+| | | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+| | | Date:   Tue Mar 21 09:48:05 2023 +0800
+| | | 
+| | |     Merge branch 'accommodations' into issue26
+| | | 
+| | * commit b98008b7d6e2e5741b252de198d58565ebef6818
+| | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | | Date:   Sun Mar 19 21:38:10 2023 +0800
+| | | 
+| | |     trying not to mess up merge conflictss
+| | | 
+| | | :100644 000000 69a96e6 0000000 D	signupform.css
+| | | :100644 000000 2f5da7f 0000000 D	signupform.html
+| | |  signupform.css  | 109 --------------------------------------------------
+| | |  signupform.html |  94 -------------------------------------------
+| | |  2 files changed, 203 deletions(-)
+| | |  delete mode 100644 signupform.css
+| | |  delete mode 100644 signupform.html
+| | | 
+| | * commit 9c89d2a4ebe82916d9f0871da2610106452de809
+| | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | | Date:   Sun Mar 19 21:36:00 2023 +0800
+| | | 
+| | |     quick updates
+| | | 
+| | | :100644 100644 388aedb 23288af M	accommodations.html
+| | | :100644 100644 9fed15e 7bbd725 M	accostyles.css
+| | | :100644 100644 2e6e6a1 13a061a M	styles.css
+| | |  accommodations.html | 1 +
+| | |  accostyles.css      | 8 ++++++--
+| | |  styles.css          | 1 +
+| | |  3 files changed, 8 insertions(+), 2 deletions(-)
+| | | 
+| | * commit fc0addbc4c0229a66e4a51da8062ab2192abaafe
+| |/  Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
+|/|   Date:   Sun Mar 19 14:15:25 2023 +0800
+| |   
+| |       Accommodations page | Buttons Inconsistent
+| |       
+| |       pls fix and add if any missign
+| |   
+| |   :000000 100644 0000000 388aedb A	accommodations.html
+| |   :000000 100644 0000000 e63afc2 A	accommodations/double.jpg
+| |   :000000 100644 0000000 172f934 A	accommodations/family.jpg
+| |   :000000 100644 0000000 814aca0 A	accommodations/quad.jpg
+| |   :000000 100644 0000000 3f539c7 A	accommodations/single.jpg
+| |   :000000 100644 0000000 ff3f29b A	accommodations/triple.jpg
+| |   :000000 100644 0000000 9fed15e A	accostyles.css
+| |    accommodations.html       |  97 ++++++++++++++++++++++++++++++++++++++++
+| |    accommodations/double.jpg | Bin 0 -> 14256 bytes
+| |    accommodations/family.jpg | Bin 0 -> 20931 bytes
+| |    accommodations/quad.jpg   | Bin 0 -> 15485 bytes
+| |    accommodations/single.jpg | Bin 0 -> 12030 bytes
+| |    accommodations/triple.jpg | Bin 0 -> 15537 bytes
+| |    accostyles.css            |  42 +++++++++++++++++
+| |    7 files changed, 139 insertions(+)
+| |    create mode 100644 accommodations.html
+| |    create mode 100644 accommodations/double.jpg
+| |    create mode 100644 accommodations/family.jpg
+| |    create mode 100644 accommodations/quad.jpg
+| |    create mode 100644 accommodations/single.jpg
+| |    create mode 100644 accommodations/triple.jpg
+| |    create mode 100644 accostyles.css
+| |   
+* |   commit 9d17c7e20b56d2078dcaf374d73b9d463128e329
+|\ \  Merge: 42ed1e1 701df58
 | | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
 | | | Date:   Thu Mar 16 18:38:45 2023 +0800
 | | | 
@@ -1275,7 +2135,7 @@
 | | |     
 | | |     Signupform
 | | | 
-* | | commit 6225b1029ce4e378170c325c481eb0464ff4351f
+| | * commit 6225b1029ce4e378170c325c481eb0464ff4351f
 | | | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
 | | | Date:   Tue Mar 21 09:10:46 2023 +0800
 | | | 
@@ -1289,7 +2149,7 @@
 | | |  js/signup.js       | 2 +-
 | | |  3 files changed, 3 insertions(+), 5 deletions(-)
 | | | 
-* | | commit e962b5dadc3548d642bfe75683298b31d9fb540c
+| | * commit e962b5dadc3548d642bfe75683298b31d9fb540c
 | | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
 | | | Date:   Sun Mar 19 21:23:50 2023 +0800
 | | | 
@@ -1299,7 +2159,7 @@
 | | |  js/signup.js | 2 +-
 | | |  1 file changed, 1 insertion(+), 1 deletion(-)
 | | | 
-* | | commit d4b41d383231f2b3e1a271a28c3447f7ad825619
+| | * commit d4b41d383231f2b3e1a271a28c3447f7ad825619
 | | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
 | | | Date:   Sun Mar 19 21:23:14 2023 +0800
 | | | 
@@ -1311,7 +2171,7 @@
 | | |  styles.css      | 8 ++++++--
 | | |  2 files changed, 6 insertions(+), 3 deletions(-)
 | | | 
-* | | commit b4285d0998970fba6ba9646b8cdd8680bd256889
+| | * commit b4285d0998970fba6ba9646b8cdd8680bd256889
 | | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
 | | | Date:   Sun Mar 19 21:22:58 2023 +0800
 | | | 
@@ -1321,15 +2181,15 @@
 | | |  js/signup.js | 5 +++--
 | | |  1 file changed, 3 insertions(+), 2 deletions(-)
 | | |   
-* | |   commit 80cb319d5fec721da941bb17ace25f5207a5494e
-|\ \ \  Merge: 5424c35 e55ba9a
+| | *   commit 80cb319d5fec721da941bb17ace25f5207a5494e
+| | |\  Merge: 5424c35 e55ba9a
 | | | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
 | | | | Date:   Sun Mar 19 20:13:35 2023 +0800
 | | | | 
 | | | |     implement book now
 | | | |     Fixes #26
 | | | | 
-| * | | commit e55ba9a7095db7599094cb8a6c85a20dacae1a83
+| | | * commit e55ba9a7095db7599094cb8a6c85a20dacae1a83
 | | | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
 | | | | Date:   Sun Mar 19 20:04:27 2023 +0800
 | | | | 
@@ -1341,14 +2201,14 @@
 | | | |  signupform.html |  2 +-
 | | | |  2 files changed, 20 insertions(+), 5 deletions(-)
 | | | |   
-| * | |   commit 3ab76b5f6ad987096c0f2ac51f0633d2224a5f1f
-| |\ \ \  Merge: 348ca2e c06049a
+| | | *   commit 3ab76b5f6ad987096c0f2ac51f0633d2224a5f1f
+| | | |\  Merge: 348ca2e c06049a
 | | | | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
 | | | | | Date:   Sun Mar 19 13:11:24 2023 +0800
 | | | | | 
 | | | | |     Merge branch 'signupform' of https://github.com/gamer0kayf1n3/tagaytay into signupform
 | | | | | 
-| | * | | commit c06049a490dcfc0a3e3e3350e89c2915fe8a302a
+| | | | * commit c06049a490dcfc0a3e3e3350e89c2915fe8a302a
 | | | | | Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
 | | | | | Date:   Sun Mar 19 13:01:42 2023 +0800
 | | | | | 
@@ -1362,8 +2222,8 @@
 | | | | |  signupform.html | 64 +++++++++++++++++++++++++++++------------------
 | | | | |  2 files changed, 72 insertions(+), 28 deletions(-)
 | | | | | 
-| * | | | commit 348ca2e49271ab98b245c3a223c93316ec8e1171
-| |/ / /  Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| | | * | commit 348ca2e49271ab98b245c3a223c93316ec8e1171
+| | | |/  Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
 | | | |   Date:   Sun Mar 19 13:08:44 2023 +0800
 | | | |   
 | | | |       about to fix the credit card later
@@ -1374,7 +2234,7 @@
 | | | |    signupform.html |  65 +++++++++++++++------------
 | | | |    2 files changed, 125 insertions(+), 49 deletions(-)
 | | | | 
-| * | | commit a14b84e6c019f86e324a17a51484e4834e84168b
+| | | * commit a14b84e6c019f86e324a17a51484e4834e84168b
 | | | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
 | | | | Date:   Fri Mar 17 05:15:51 2023 +0800
 | | | | 
@@ -1386,7 +2246,7 @@
 | | | |  signupform.html |  49 +++++-------
 | | | |  2 files changed, 57 insertions(+), 184 deletions(-)
 | | | | 
-| * | | commit 71a7b0fb63dc74e2feb16c135ed3395662a21953
+| | | * commit 71a7b0fb63dc74e2feb16c135ed3395662a21953
 | | |/  Author: BermudaVI <95553053+BermudaVI@users.noreply.github.com>
 | |/|   Date:   Thu Mar 16 22:59:28 2023 +0800
 | | |   
@@ -1400,7 +2260,7 @@
 | | |    signupform.html | 32 ++++++++++++++---------------
 | | |    2 files changed, 66 insertions(+), 19 deletions(-)
 | | | 
-* | | commit 5424c359c607144135df33ed1b1edaeb6759b1a3
+| | * commit 5424c359c607144135df33ed1b1edaeb6759b1a3
 | | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
 | | | Date:   Thu Mar 16 20:18:55 2023 +0800
 | | | 
@@ -1410,7 +2270,7 @@
 | | |  js/scripts.js | 14 +++++++++++++-
 | | |  1 file changed, 13 insertions(+), 1 deletion(-)
 | | | 
-* | | commit 288593dfff24b4321204075399128cf197e889f1
+| | * commit 288593dfff24b4321204075399128cf197e889f1
 | | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
 | | | Date:   Thu Mar 16 20:07:40 2023 +0800
 | | | 
@@ -1459,13 +2319,13 @@
 | | |  create mode 100644 js/bloat.js
 | | |  create mode 100644 js/scripts.js
 | | |  create mode 100644 js/signup.js
-| | | 
-* | | commit 6b9cd4a7c09b0aeb353d86e6596fe87561a7db77
-|\| | Merge: 39951a9 701df58
-| | | Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
-| | | Date:   Thu Mar 16 18:42:47 2023 +0800
-| | | 
-| | |     Merge branch 'signupform' into gamer0kayf1n3/issue26
+| | |   
+| | *   commit 6b9cd4a7c09b0aeb353d86e6596fe87561a7db77
+| | |\  Merge: 39951a9 701df58
+| | |/  Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
+| |/|   Date:   Thu Mar 16 18:42:47 2023 +0800
+| | |   
+| | |       Merge branch 'signupform' into gamer0kayf1n3/issue26
 | | | 
 | * | commit 701df588d48b4a70ebf52f0a018d4367e30daeee
 | | | Author: Kyle <bermudezkylenathan@gmail.com>
@@ -1505,7 +2365,7 @@
 | | |  create mode 100644 signupform.css
 | | |  create mode 100644 signupform.html
 | | | 
-* | | commit 39951a91f4000211d0d5a87b5ceb0d110602f7a7
+| | * commit 39951a91f4000211d0d5a87b5ceb0d110602f7a7
 | |/  Author: gamer0kayf1n3 <81130943+gamer0kayf1n3@users.noreply.github.com>
 |/|   Date:   Thu Mar 16 18:35:33 2023 +0800
 | |   

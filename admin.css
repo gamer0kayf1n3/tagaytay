@@ -11,7 +11,9 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
 }
-
+#formulas {
+    transform: scale(300%);
+}
 body,
 html {
     padding: 0;
@@ -256,3 +258,42 @@ h1 {
 }
 
 #sec-sink {color:white;}
+
+table {
+    margin: 0 auto;
+}
+table,tr,td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 8px;
+    font-size: 32px;
+}
+.glance {
+    display: inline-block;
+    background-color: rgb(153, 213, 110);
+    color:black;
+    padding: 30px;
+    margin: 0 20px;
+    transition: all 200ms;
+}
+.title-,.subtitle- {
+    display: block;
+}
+.subtitle- {
+    font-size: 32px;
+}
+.title- {
+    font-size: 64px;
+    font-weight: 400;
+}
+#glanceparent {
+    display: flex;
+    justify-content: center;
+}
+.glance:hover {
+    transform: scale(110%);
+}
+
+#formdef {
+    text-align: center;
+}

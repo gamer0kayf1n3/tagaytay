@@ -12,6 +12,8 @@
     <script src="static/modules/flowchart/example/jquery.scrollTo.min.js"></script>
     <script src="static/modules/flowchart/example/svg.js"></script>
     <script src="static/modules/flowchart/dist/flowsvg.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="js/pricesDef.js"></script>
 
 </head>
@@ -94,7 +96,148 @@
     </div>
     <h1 id="chart">Projected Sales Chart</h1>
     <canvas id="myChart"></canvas>
+    <table>
+        <tr>
+            <td></td>
+            <td>Days/Month</td>
+            <td>Events</td>
+            <td>Occupancy Rate</td>
+            <td>Projected Sales</td>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>31</td>
+            <td>17</td>
+            <td>54%</td>
+            <td> 28,458,926.00 </td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>28</td>
+            <td>18</td>
+            <td>62%</td>
+            <td> 29,516,664.00 </td>
+        </tr>
+        <tr>
+            <td>March</td>
+            <td>31</td>
+            <td>20</td>
+            <td>70%</td>
+            <td> 36,870,830.00 </td>
+        </tr>
+        <tr>
+            <td>April</td>
+            <td>30</td>
+            <td>20</td>
+            <td>65%</td>
+            <td> 33,153,050.00 </td>
+        </tr>
+        <tr>
+            <td>May</td>
+            <td>31</td>
+            <td>22</td>
+            <td>60%</td>
+            <td> 31,652,140.00 </td>
+        </tr>
+        <tr>
+            <td>June</td>
+            <td>30</td>
+            <td>22</td>
+            <td>72%</td>
+            <td> 36,721,840.00 </td>
+        </tr>
+        <tr>
+            <td>July</td>
+            <td>31</td>
+            <td>21</td>
+            <td>70%</td>
+            <td> 36,880,830.00 </td>
+        </tr>
+        <tr>
+            <td>August</td>
+            <td>31</td>
+            <td>20</td>
+            <td>64%</td>
+            <td> 33,727,616.00 </td>
+        </tr>
+        <tr>
+            <td>September</td>
+            <td>30</td>
+            <td>19</td>
+            <td>60%</td>
+            <td> 30,608,200.00 </td>
+        </tr>
+        <tr>
+            <td>October</td>
+            <td>31</td>
+            <td>21</td>
+            <td>66%</td>
+            <td> 34,785,354.00 </td>
+        </tr>
+        <tr>
+            <td>November</td>
+            <td>30</td>
+            <td>20</td>
+            <td>72%</td>
+            <td> 36,701,840.00 </td>
+        </tr>
+        <tr>
+            <td>December</td>
+            <td>31</td>
+            <td>26</td>
+            <td>100%</td>
+            <td> 52,646,900.00</td>
+        </tr>
+    </table>
     <canvas id="myChart2"></canvas>
+    <h1>Formula</h1>
+    <p id="formulas">
+        \[GR = (\frac{x_1+x_2+…+x_5}{5}*(250*OR)*D)+(E * 10,000)\]
+    </p>
+    <br>
+    <div id="formdef">
+        <table>
+            <tr>
+                <td>\(GR\)</td>
+                <td>Gross Revenue</td>
+            </tr>
+            <tr>
+                <td>\(\frac{x_1+x_2+…+x_5}{5}\)</td>
+                <td>Average Cost of Rooms</td>
+            </tr>
+            <tr>
+                <td>\(OR\)</td>
+                <td>Occupancy Rate</td>
+            </tr>
+            <tr>
+                <td>\((250*OR)\)</td>
+                <td>Occupancy Rate multiplied to 250 rooms</td>
+            </tr>
+            <tr>
+                <td>\(D\) </td>
+                <td>Days per Month</td>
+            </tr>
+            <tr>
+                <td>\(E\)</td>
+                <td>Events</td>
+            </tr>
+            <tr>
+                <td>\(E * 10,000\)</td>
+                <td>Events multiplied to average cost of each Event</td>
+            </tr>
+        </table>
+    </div>
+    <h1>Analytics in a Glance</h1>
+    <div id="glanceparent">
+        <div class="glance">
+            <span class="subtitle-">Average Room Cost</span>
+            <span class="title-">6,759.60</span>
+        </div>
+        <div class="glance">
+            <span class="subtitle-">Yearly Projected Sales</span>
+            <span class="title-"> 421,724,190.00</span>
+        </div>
+    </div>
     <br>
     <audio id="myAudio" autoplay>
         <source src="bom.mp3" type="audio/mp3">
